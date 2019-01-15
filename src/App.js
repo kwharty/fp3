@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Tier2 from "./components/Tier2";
+import Tier1 from "./components/Tier1";
 
 
 
@@ -14,6 +15,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Tier1 />
       <Tier2 />
 
       <div className="masthead container d-flex h-100 align-items-center">
