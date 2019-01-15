@@ -1,11 +1,8 @@
 import React from "react";
 import "./about.css";
 
-///P-CODE TO WORK///
-
-function About() {
+function Header() {
   return (
-
     <div className="masthead container d-flex h-100 align-items-center">
       <div className="mx-auto text-center">
         <h1 className="mx-auto my-0 text-uppercase headerAutoBongs ">AutoBongs</h1>
@@ -13,9 +10,7 @@ function About() {
         <a href="pages/login.html" class="btn btn-primary js-scroll-trigger ">Get Started</a>
       </div>
     </div>
-
-
   );
 }
 
-export default About;
+export default Header;
