@@ -1,9 +1,8 @@
 import React from "react";
 import "./what.css";
 
-function What() {
+function About() {
   return (
-
     <section id="about" className="about-section text-center">
       <div className="container">
         <div className="row">
@@ -11,9 +10,9 @@ function What() {
             <h2 className="text-white mb-4">What is AutoBongs?</h2>
             <h4 className="text-white-50">Autobongs is the premiere monthly subscription box for the fine water
               pipe
-            enthusiast.<br><br>
+            enthusiast.
                 The service is comprised of 3 tiers of increasing quality and price.
-            Each tier is curated according to your preferences, hand picked and arranged just for you. <br><br>
+            Each tier is curated according to your preferences, hand picked and arranged just for you. 
 
                   We strive to deliver the most quality bang for your buck. Each box contains a varety of water pipes
                   and
@@ -22,9 +21,7 @@ function What() {
       </div>
     </div>
   </section>
-
-
             );
           }
           
-export default What;
+export default About;

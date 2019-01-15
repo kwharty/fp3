@@ -1,18 +1,18 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./nav.css";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-      <div className="navbar-brand" to="/">
+      <Link className="navbar-brand" to="/">
         AutoBongs
-      </div>
+      </Link >
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <div
+            <Link
               to="/"
               className={
                 window.location.pathname === "/" || window.location.pathname === "/about"
@@ -21,23 +21,23 @@ function Navbar() {
               }
             >
               About
-            </div>
+            </Link>
           </li>
           <li className="nav-item">
-            <div
+            <Link
               to="/plans"
               className={window.location.pathname === "/plans" ? "nav-link active" : "nav-link"}
             >
-              plans
-            </div>
+              Plans
+            </Link>
           </li>
           <li className="nav-item">
-            <div
-              to="/search"
+            <Link
+              to="/contact"
               className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}
             >
               Contact
-            </div>
+            </Link>
           </li>
         </ul>
       </div>

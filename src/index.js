@@ -4,7 +4,6 @@ import App from "./App";
 import './index.css';
 
 
-// ReactDOM.render(<Navbar />, document.getElementById('root'));
 ReactDOM.render(<App />, document.getElementById('root'));
 
 
