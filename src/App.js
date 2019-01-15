@@ -7,6 +7,7 @@ import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import './App.css';
 import Tier2 from "./components/Tier2";
+import Tier1 from "./components/Tier1";
 
 function App() {
   return (
