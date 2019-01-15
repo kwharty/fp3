@@ -1,19 +1,30 @@
 import React from "react";
-import "./about.css";
+import "./what.css";
 
-function About() {
+function What() {
   return (
 
-    <div className="masthead container d-flex h-100 align-items-center">
-      <div className="mx-auto text-center">
-        <h1 className="mx-auto my-0 text-uppercase headerAutoBongs ">AutoBongs</h1>
-        <h2 className="text-white-50 mx-auto mt-2 mb-5">The Ultimate Monthly Subscription for Glass Collectors </h2>
-        <a href="pages/login.html" class="btn btn-primary js-scroll-trigger ">Get Started</a>
+    <section id="about" className="about-section text-center">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-8 mx-auto ">
+            <h2 className="text-white mb-4">What is AutoBongs?</h2>
+            <h4 className="text-white-50">Autobongs is the premiere monthly subscription box for the fine water
+              pipe
+            enthusiast.<br><br>
+                The service is comprised of 3 tiers of increasing quality and price.
+            Each tier is curated according to your preferences, hand picked and arranged just for you. <br><br>
+
+                  We strive to deliver the most quality bang for your buck. Each box contains a varety of water pipes
+                  and
+            accesorries with quality and quantity increasing with each tier.</h4>
+        </div>
       </div>
     </div>
+  </section>
 
 
-  );
-}
-
-export default About;
+            );
+          }
+          
+export default What;

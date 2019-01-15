@@ -1,35 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import About from "./components/About"
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Header from "./components/About";
 import './App.css';
 
-
-
-
-
-
-
-
-class App extends Component { 
-  render() {
-    return (
-        
-
-
-      <div className="masthead container d-flex h-100 align-items-center">
-      <div className="mx-auto text-center">
-        <h1 className="mx-auto my-0 text-uppercase headerAutoBongs ">AutoBongs</h1>
-        <h2 className="text-white-50 mx-auto mt-2 mb-5">The Ultimate Monthly Subscription for Glass Collectors </h2>
-        <a href="pages/login.html" class="btn btn-primary js-scroll-trigger ">Get Started</a>
+function App() {
+  return (
+    <Router>
+      <div>
+        <Navbar />
+        <Wrapper>
+          <Route exact path="/" component={About} />
+        </Wrapper>
+        <Header />
+        <About />
+        <Footer />
       </div>
-    </div>
 
-
-
-
-
-
-    );
-  }
+    </Router>
+  );
 }
+
+
+
 
 export default App;
