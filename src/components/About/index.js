@@ -1,7 +1,9 @@
 import React from "react";
 import "./what.css";
 
-function About() {
+///P-CODE TO WORK///
+
+const About = () => {
   return (
     <section id="about" className="about-section text-center">
       <div className="container">
