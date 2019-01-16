@@ -1,37 +1,32 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import About from "./pages/About";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Wrapper from "./components/Wrapper";
+import Header from "./components/Header";
 import './App.css';
 import Tier2 from "./components/Tier2";
-import Navbar from "./components/Navbar"
+import Tier1 from "./components/Tier1";
 
-
-
-
-
-
-
-class App extends Component { 
-  render() {
-    return (
+function App() {
+  return (
+    <Router>
       <div>
-      <Tier2 />
-      <Navbar />
-
-      <div className="masthead container d-flex h-100 align-items-center">
-      <div className="mx-auto text-center">
-        <h1 className="mx-auto my-0 text-uppercase headerAutoBongs ">AutoBongs</h1>
-        <h2 className="text-white-50 mx-auto mt-2 mb-5">The Ultimate Monthly Subscription for Glass Collectors </h2>
-        <a href="pages/login.html" class="btn btn-primary js-scroll-trigger ">Get Started</a>
-      </div>
+        <Navbar />
+        <Tier2 />
+        <Wrapper>
+            <Route exact path="/" component={About} />
+            <Route exact path="/about" component={About} />
+        </Wrapper>
+        <Header />
+        <Footer />
     </div>
-    </div>
-
-
-
-
-
-    );
-  }
+    </Router>
+      );
 }
+
+
+
 
 export default App;
