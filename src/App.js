@@ -16,9 +16,8 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar />
-        
-        <Wrapper>
+       <Wrapper>
+          <Navbar />
             <Route exact path="/" component={About} />
             <Route exact path="/about" component={About} />
             <Route exact path="/plans" component={Plans} />
