@@ -57,35 +57,35 @@ const Tier3 = () => {
                     <ul className="list-unstyled mt-3 mb-4" />
                     <li>or a single box $200</li>
                     <li>Shipped to you in discrete packaging.</li>
-                      <li>Collectible box</li>
-                        <li>Top shelf water pipe and accesorries</li>
-                          <li>add teir 1 + teir 2 combo for only $60</li>
-                          <li>4x Raffle entry for giveaways.</li>
-                      <li>A $420 Value!</li>
-                             
+                    <li>Collectible box</li>
+                    <li>Top shelf water pipe and accesorries</li>
+                    <li>add teir 1 + teir 2 combo for only $60</li>
+                    <li>4x Raffle entry for giveaways.</li>
+                    <li>A $420 Value!</li>
 
-                            <button type="button" className="btn btn-md btn-block btn-primary"><a href="pages/login.html">
-                              <h4 className="text-white"> Get started</h4>
-                            </a></button>
-                      </div>   
-             </div> 
-                        <hr className="d-none d-lg-block mb-0 mr-0"></hr>
-                            </div>
-        </div>
+
+                    <button type="button" className="btn btn-md btn-block btn-primary"><a href="pages/login.html">
+                      <h4 className="text-white"> Get started</h4>
+                    </a></button>
                   </div>
                 </div>
+                <hr className="d-none d-lg-block mb-0 mr-0"></hr>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            </div> 
+    </div>
 
 
-          
-
-        
 
 
-          );
- 
-        }
-        
+
+
+
+  );
+
+}
+
 export default Tier3;
