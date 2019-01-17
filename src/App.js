@@ -9,6 +9,7 @@ import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import Tier2 from "./components/Tier2";
 import Tier1 from "./components/Tier1";
+import Tier3 from "./components/Tier3";
 import './App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <Tier2 />
+        
         <Wrapper>
             <Route exact path="/" component={About} />
             <Route exact path="/about" component={About} />
@@ -24,6 +25,9 @@ function App() {
             <Route exact path="/contact" component={Contact} />
         </Wrapper>
         <Header />
+        <Tier1 />
+        <Tier2 />
+        <Tier3 />
         <Footer />
     </div>
     </Router>
