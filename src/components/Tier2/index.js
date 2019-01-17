@@ -73,7 +73,7 @@ const Tier2 = () => {
                   </a></button>
                 </div>
               </div>
-              <hr className="d-none d-lg-block mb-0 ml-0"></hr>/>
+              <hr className="d-none d-lg-block mb-0 ml-0"></hr>
                           </div>
           </div>
 
