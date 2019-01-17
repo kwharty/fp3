@@ -16,18 +16,11 @@ function App() {
   return (
     <Router>
       <div>
-       <Wrapper>
-          <Navbar />
             <Route exact path="/" component={About} />
             <Route exact path="/about" component={About} />
             <Route exact path="/plans" component={Plans} />
             <Route exact path="/contact" component={Contact} />
-        </Wrapper>
-        <Header />
-        <Tier1 />
-        <Tier2 />
-        <Tier3 />
-        <Footer />
+        
     </div>
     </Router>
       );
