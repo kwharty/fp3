@@ -56,34 +56,34 @@ const Tier1 = () => {
                     <h1 className="card-title pricing-card-title">$30 <small className="text-muted">/ mo</small></h1>
                     <ul className="list-unstyled mt-3 mb-4" />
                     <li>Shipped to you in discrete packaging.</li>
-                      <li>Collectible box</li><br/>
-                        <li>One handpicked water pipe & a clollection of accesorries</li>
-                          <li>Raffle entry for giveaways.</li>
-                            <li>A $60 value!</li>
-                             
+                    <li>Collectible box</li><br />
+                    <li>One handpicked water pipe & a clollection of accesorries</li>
+                    <li>Raffle entry for giveaways.</li>
+                    <li>A $60 value!</li>
 
-                            <button type="button" className="btn btn-md btn-block btn-primary"><a href="pages/login.html">
-                              <h4 className="text-white"> Get started</h4>
-                            </a></button>
-                      </div>   
-             </div> 
-                        <hr className="d-none d-lg-block mb-0 mr-0"></hr>
-                            </div>
-        </div>
+
+                    <button type="button" className="btn btn-md btn-block btn-primary"><a href="pages/login.html">
+                      <h4 className="text-white"> Get started</h4>
+                    </a></button>
                   </div>
                 </div>
+                <hr className="d-none d-lg-block mb-0 mr-0"></hr>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            </div> 
+    </div>
 
 
-          
-
-        
 
 
-          );
- 
-        }
-        
+
+
+
+  );
+
+}
+
 export default Tier1;
