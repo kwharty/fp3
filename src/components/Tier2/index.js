@@ -1,5 +1,10 @@
 import React from 'react';
 import "./about.css";
+import bong from "./bong.jpg";
+import bong1 from "./bong1.jpg";
+import bong2 from "./bong3.jpg";
+import bong3 from "./bowl1.jpg";
+import bong4 from "./bong2.jpg";
 
 
 
@@ -14,7 +19,7 @@ const Tier2 = () => {
 
 
               <div>
-                <img className="img-fluid" src="img/bong3.jpg" alt="" />
+                <img className="img-fluid" src={bong4} alt="" />
                 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                   <ol className="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -23,13 +28,13 @@ const Tier2 = () => {
                   </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
-                      <img className="d-block w-100" src="./img/bong1.jpg" alt="glass" />
+                      <img className="d-block w-100" src={bong3} alt="glass" />
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block w-100" src="./img/ashCatch1.jpg" alt="Accoriess" />
+                      <img className="d-block w-100" src={bong2} alt="Accoriess" />
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block w-100" src="./img/bowl1.jpg" alt="swag" />
+                      <img className="d-block w-100" src={bong} alt="swag" />
                     </div>
                   </div>
                   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
