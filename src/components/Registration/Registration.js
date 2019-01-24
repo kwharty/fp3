@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './NewUser.module.css';
+import './Registration.module.css';
 
-class NewUser extends Component {
+class Registration extends Component {
     // Setting the component's initial state
     state = {
         firstName: "",
@@ -88,7 +88,7 @@ class NewUser extends Component {
     }
 }
 
-export default NewUser;
+export default Registration;
 
 
 
