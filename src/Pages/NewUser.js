@@ -1,16 +1,16 @@
 import React from "react";
-import Login from "../components/Login/Login"
+import NewUser from "../components/NewUser";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 
 
-const Login = () => {
+const NewUser = () => {
 
     return (
         <div>
             <Navbar />
-            <Login />
+            <NewUser />
             <Footer />
 
         </div>
@@ -18,4 +18,4 @@ const Login = () => {
 
 }
 
-export default Login;
+export default NewUser;

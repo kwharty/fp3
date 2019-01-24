@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Login.module.css';
+import './NewUser.module.css';
 
-class Form extends Component {
+class NewUser extends Component {
     // Setting the component's initial state
     state = {
         firstName: "",
@@ -88,7 +88,7 @@ class Form extends Component {
     }
 }
 
-export default Form;
+export default NewUser;
 
 
 
