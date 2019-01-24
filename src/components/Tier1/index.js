@@ -7,7 +7,9 @@ import bong1 from "./bong.jpg";
 const Tier1 = () => {
   return (
 
-    <div>
+    <div style={{
+      margin: '50px'
+  }}>
       <div className="row justify-content-center no-gutters">
         <div className="col-lg-6">
           <div>
