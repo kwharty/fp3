@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Irvin Nelson",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
+        "about": "Fry Cook",
+        "linkedIn": "A Pineapple Under the Sea"
+    },
+    {
+        "id": 2,
+        "name": "Nathan Evans",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
+        "about": "Fry Cook",
+        "linkedIn": "A Pineapple Under the Sea"
+    },
+    {
+        "id": 3,
+        "name": "Kevin Harty",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
+        "about": "Fry Cook",
+        "linkedIn": "A Pineapple Under the Sea"
+    },
+    {
+        "id": 4,
+        "name": "Philip Ross",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
+        "about": "Fry Cook",
+        "linkedIn": "A Pineapple Under the Sea"
+    }
+]
