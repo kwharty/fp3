@@ -1,7 +1,7 @@
 import React from "react";
-import NewUser from "../components/NewUser";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Registration from "../components/Registration/Registration";
 
 
 
@@ -10,7 +10,7 @@ const NewUser = () => {
     return (
         <div>
             <Navbar />
-            <NewUser />
+            <Registration />
             <Footer />
 
         </div>

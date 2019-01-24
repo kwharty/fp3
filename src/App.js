@@ -7,6 +7,7 @@ import Plans from "./pages/Plans";
 import NewUser from "./pages/NewUser";
 
 import './App.css';
+import Registration from "./components/Registration/Registration";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
             <Route exact path="/about" component={About} />
             <Route exact path="/plans" component={Plans} />
             <Route exact path="/contact" component={Contact} />
-            <Route exact path="/login" component={NewUser} />
+            <Route exact path="/login" component={Registration} />
         
     </div>
     </Router>
