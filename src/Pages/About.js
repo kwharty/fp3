@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import DeveloperCard from "../components/DeveloperCard";
+import developers from "../developers.json";
+import BrandStatement from "../components/BrandStatement";
 // import Tier1 from "../components/Tier1";
 
 
@@ -13,7 +14,17 @@ const About = () => {
 
     <div>
       <Navbar />
-      <Header />
+      <BrandStatement />
+      {developers.map(developer => (
+      <DeveloperCard 
+      id={developers.id}
+      key={developers.id}
+      name={developers.name}
+      about={developers.about}
+      message={developers.message}
+      contact={developers.contact}
+      />
+      ))}
       <Footer />
     </div>
   );
