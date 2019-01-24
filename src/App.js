@@ -10,6 +10,8 @@ import Header from "./components/Header";
 import Tier2 from "./components/Tier2";
 import Tier1 from "./components/Tier1";
 import Tier3 from "./components/Tier3";
+import Login from "./components/Login/Login"
+
 import './App.css';
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
             <Route exact path="/about" component={About} />
             <Route exact path="/plans" component={Plans} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/login" component={Login} />
         
     </div>
     </Router>

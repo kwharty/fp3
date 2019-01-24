@@ -39,6 +39,16 @@ function Navbar() {
               Contact
             </Link>
           </li>
+          <li>
+            <input className="nav-item"
+             type="text" placeholder="username" name="username">
+          </input>
+          </li>
+          <li>
+           <input className="nav-item"
+            type="password" placeholder="password" name="password">
+            </input>
+          </li>
         </ul>
       </div>
     </nav>
