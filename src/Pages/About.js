@@ -19,6 +19,7 @@ const About = () => {
       <DeveloperCard 
       id={developers.id}
       key={developers.id}
+      image={developers.image}
       name={developers.name}
       about={developers.about}
       message={developers.message}
