@@ -2,7 +2,7 @@ var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 
-var PORT = 3000;
+var PORT = 3001;
 
 // Requiring the `User` model for accessing the `users` collection
 var User = require("./userModel.js");
@@ -26,7 +26,7 @@ mongoose.connect("mongodb://localhost/testdb", { useNewUrlParser: true });
 // Routes
 
 // Route to post our form submission to mongoDB via mongoose
-app.post("/submit", function(req, res) {
+app.post("/user", function(req, res) {
   // Create a new user using req.body
   User.create(req.body)
     .then(function(dbUser) {
