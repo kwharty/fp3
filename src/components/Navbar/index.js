@@ -5,16 +5,21 @@ import "./nav.css";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top" style={{
+     background: '#bdc3c7'
+      
+
+    }}>
       <Link 
       to="/"
       className={
         window.location.pathname === "/" ? "nav-link active" : "nav-link"
       }>
         AutoBongs
-      </Link >
+        </Link >
       <div>
-        <ul className="navbar-nav">
+    
+        <ul className="navbar-nav" >
           <li className="nav-item">
             <Link
               to="/about"
@@ -40,13 +45,23 @@ function Navbar() {
               Contact
             </Link>
           </li>
-          <li>
-            <input className="nav-item"
-             type="text" placeholder="username" name="username">
+          <li >
+            <input className="nav-item" style={{
+              position: 'relative', WebkitFilter: 'blur(0.75px) saturate(7)',
+              float: "left",
+              margin:'3px'
+
+             }}
+             type="text" placeholder="username" name="username"  >
           </input>
           </li>
           <li>
-           <input className="nav-item"
+           <input className="nav-item" style={{
+              position: 'relative', WebkitFilter: 'blur(0.75px) saturate(7)',
+              float: "right",
+              margin: "3px"
+
+             }}
             type="password" placeholder="password" name="password">
             </input>
           </li>
