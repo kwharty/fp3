@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Registration.module.css';
 
+const axios = require('axios');
+
 class Registration extends Component {
     // Setting the component's initial state
     state = {
@@ -48,6 +50,21 @@ class Registration extends Component {
             userEmail: "",
             userPwd: ""
         });
+
+        //MAKE API CALL TO POST USER DATA TO DB
+
+        axios({
+            method: 'post',
+            url: '/user',
+            data: {
+                userName: this.state.userName,
+                userEmail: this.state.userEmail,
+                userPwd: this.state.userPwd
+            }
+
+        })
+        
+        console.log(this.state);
     };
 
     render() {
@@ -58,10 +75,8 @@ class Registration extends Component {
                 <div className="row">
                     <div className="col-sm-6">
                         <h1>Please Enter New User Information</h1>
-                        {/* <p>
-                    Hello {this.state.userName} {this.state.userEmail}
-                </p> */}
-                        <form className="form" action="/submit"  method="post">
+                       
+                        <form className="form" action ="/submit"  method="post">
                             <input
                                 value={this.state.userName}
                                 name="userName"
