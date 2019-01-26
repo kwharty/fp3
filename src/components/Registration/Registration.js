@@ -55,7 +55,7 @@ class Registration extends Component {
 
         axios({
             method: 'post',
-            url: 'localhost:3001/user',
+            url: '/user',
             data: {
                 userName: this.state.userName,
                 userEmail: this.state.userEmail,
