@@ -2,29 +2,29 @@
     {
         "id": 1,
         "name": "Irvin Nelson",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
+        "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/21369550_10210122404802198_4532238396389099365_n.jpg?_nc_cat=111&_nc_ht=scontent-lax3-2.xx&oh=4b16c9c0941836591f0a38ac5e01ba14&oe=5CF43A89",
         "about": "Fry Cook",
-        "linkedIn": "A Pineapple Under the Sea"
+        "linkedIn": "https://www.linkedin.com/in/irvin-nelson-6215b2a1/"
     },
     {
         "id": 2,
         "name": "Nathan Evans",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
+        "image": "https://media.licdn.com/dms/image/C5603AQFaBHTqOS8HoQ/profile-displayphoto-shrink_200_200/0?e=1553731200&v=beta&t=OcEUKUNlvUMMlJt9Fl8552WINaFVhHIYxDapP2tzaio",
         "about": "Fry Cook",
-        "linkedIn": "A Pineapple Under the Sea"
+        "linkedIn": "https://www.linkedin.com/in/nathan-evans-web-dev/"
     },
     {
         "id": 3,
         "name": "Kevin Harty",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
+        "image": "https://media.licdn.com/dms/image/C5603AQHzvRtISpEx5w/profile-displayphoto-shrink_200_200/0?e=1553731200&v=beta&t=F6IiwCviSYztAeOJxqvQm5nEJPOOBlNWCzcVob2VYos",
         "about": "Fry Cook",
-        "linkedIn": "A Pineapple Under the Sea"
+        "linkedIn": "https://www.linkedin.com/in/kevin-h-61547a41/"
     },
     {
         "id": 4,
         "name": "Philip Ross",
         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
         "about": "Fry Cook",
-        "linkedIn": "A Pineapple Under the Sea"
+        "linkedIn": "https://www.linkedin.com/in/philiplross/"
     }
 ]
