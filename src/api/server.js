@@ -9,7 +9,14 @@ var User = require("../api/userModel");
 
 // Initialize Express
 var app = express();
-
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS,PATCH');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+  // intercept OPTIONS method
+  if ('OPTIONS' == req.method) return res.send(200);
+  else return next()
+})
 // Configure middleware
 
 // Use morgan logger for logging requests
@@ -21,25 +28,25 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/testdb", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost:27017/bonguserDB", { useNewUrlParser: true });
 
 // Routes
 
 // Route to post our form submission to mongoDB via mongoose
-app.post("/user", function(req, res) {
+app.post("/user", function (req, res) {
   // Create a new user using req.body
   User.create(req.body)
-    .then(function(dbUser) {
+    .then(function (dbUser) {
       // If saved successfully, send the the new User document to the client
       res.json(dbUser);
     })
-    .catch(function(err) {
+    .catch(function (err) {
       // If an error occurs, send the error to the client
       res.json(err);
     });
 });
 
 // Start the server
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log("App running on port " + PORT + "!");
 });
