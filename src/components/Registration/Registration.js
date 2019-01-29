@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Registration.module.css';
+// import User from '../api/userModel.js'
 
 const axios = require('axios');
 
@@ -55,7 +56,7 @@ class Registration extends Component {
 
         axios({
             method: 'post',
-            url: '/user',
+            url: 'http://localhost:3001/user',
             data: {
                 userName: this.state.userName,
                 userEmail: this.state.userEmail,
@@ -63,6 +64,15 @@ class Registration extends Component {
             }
 
         })
+
+        .then(function (response) {
+            //handle success
+            console.log(response);
+        })
+        .catch(function (response) {
+            //handle error
+            console.log(response);
+        });
         
         console.log(this.state);
     };
