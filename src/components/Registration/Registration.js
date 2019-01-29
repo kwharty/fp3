@@ -4,9 +4,9 @@ import './Registration.module.css';
 class Registration extends Component {
     // Setting the component's initial state
     state = {
-        firstName: "",
-        lastName: "",
-        password: ""
+        userName: "",
+        userEmail: "",
+        userPwd: ""
     };
 
     handleInputChange = event => {
@@ -15,7 +15,7 @@ class Registration extends Component {
         let value = event.target.value;
         const name = event.target.name;
 
-        if (name === "password") {
+        if (name === "userPwd") {
             value = value.substring(0, 15);
         }
         // Updating the input's state
@@ -28,22 +28,28 @@ class Registration extends Component {
         // Preventing the default behavior of the 
         // form submit ( which is to refresh the page)
         event.preventDefault();
-        if (!this.state.firstName || !this.state.lastName) {
-            alert("Please include your first and last name.");
-        } else if (this.state.password.length < 6) {
+        if (!this.state.userName || !this.state.userEmail) {
+            alert("Please include your username and email.");
+
+
+        } else if (this.state.userPwd.length < 6) {
             alert(`Please choose a more secure password 
-                ${this.state.firstName} ${this.state.lastName}`
+                ${this.state.userName}`
             );
+
+
         } else {
-            alert(`Hello ${this.state.firstName} ${this.state.lastName}. Welcome
+            alert(`Hello ${this.state.userName}. Welcome
                 to Autobongs!`)
         }
 
         this.setState({
-            firstName: "",
-            lastName: "",
-            password: ""
+            userName: "",
+            userEmail: "",
+            userPwd: ""
         });
+
+        
     };
 
     render() {
@@ -51,38 +57,38 @@ class Registration extends Component {
         // 'onChange' props are
         return (
             <container>
-            <div className="row">
-            <div className="col-sm-6">
-            <h1>Please Enter New User Information</h1>
-                {/* <p>
-                    Hello {this.state.firstName} {this.state.lastName}
+                <div className="row">
+                    <div className="col-sm-6">
+                        <h1>Please Enter New User Information</h1>
+                        {/* <p>
+                    Hello {this.state.userName} {this.state.userEmail}
                 </p> */}
-                <form className="form">
-                    <input
-                        value={this.state.firstName}
-                        name="firstName"
-                        onChange={this.handleInputChange}
-                        type="text"
-                        placeholder="First Name"
-                    />
-                    <input
-                        value={this.state.lastName}
-                        name="lastName"
-                        onChange={this.handleInputChange}
-                        type="text"
-                        placeholder="Last Name"
-                    />
-                    <input
-                        value={this.state.password}
-                        name="password"
-                        onChange={this.handleInputChange}
-                        type="password"
-                        placeholder="Password"
-                    />
-                    <button type="button" className="btn btn-success" onClick={this.handleFormSubmit}>Submit</button>
-                </form>
+                        <form className="form" action="/submit"  method="post">
+                            <input
+                                value={this.state.userName}
+                                name="userName"
+                                onChange={this.handleInputChange}
+                                type="text"
+                                placeholder="Username"
+                            />
+                            <input
+                                value={this.state.userEmail}
+                                name="userEmail"
+                                onChange={this.handleInputChange}
+                                type="text"
+                                placeholder="Email"
+                            />
+                            <input
+                                value={this.state.userPwd}
+                                name="userPwd"
+                                onChange={this.handleInputChange}
+                                type="userPwd"
+                                placeholder="Password"
+                            />
+                            <button type="button" className="btn btn-success" onClick={this.handleFormSubmit}>Submit</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
             </container>
         );
     }
