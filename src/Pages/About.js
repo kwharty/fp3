@@ -16,14 +16,14 @@ const About = () => {
       <Navbar />
       <BrandStatement />
       {developers.map(developer => (
-      <DeveloperCard 
-      id={developers.id}
-      key={developers.id}
-      name={developers.name}
-      about={developers.about}
-      message={developers.message}
-      contact={developers.contact}
-      />
+        <DeveloperCard
+          id={developer.id}
+          key={developer.id}
+          image={developer.image}
+          name={developer.name}
+          about={developer.about}
+          contact={developer.contact}
+        />
       ))}
       <Footer />
     </div>
@@ -31,4 +31,3 @@ const About = () => {
 }
 
 export default About;
-      
