@@ -1,3 +1,9 @@
+/* font-family: 'Fredoka One', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Monoton', cursive; */
+
+
+
 .form {
     margin: 20px;
   }
@@ -8,6 +14,19 @@
     margin-bottom: 5px;
     width: 100%;
   }
+
+ h2 {
+   color: rgb(110, 26, 206);
+   font-family: 'Luckiest Guy', cursive;
+ }
+
+ body {
+   background-color: rgba(232, 196, 253, 0.075);
+ }
+ .form-Control {
+   border: 2px solid red;
+   background-color: green;
+ }
 
 
   

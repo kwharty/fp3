@@ -3,8 +3,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Registration from "../components/Registration/Registration";
 
-
-
 const NewUser = () => {
 
     return (
@@ -12,10 +10,13 @@ const NewUser = () => {
             <Navbar />
             <Registration />
             <Footer />
-
         </div>
     );
 
 }
 
 export default NewUser;
+
+
+
+
