@@ -5,7 +5,7 @@ var mongoose = require("mongoose");
 var PORT = 3001;
 
 // Requiring the `User` model for accessing the `users` collection
-var User = require("../api/userModel");
+var User = require("./userModel");
 
 // Initialize Express
 var app = express();
