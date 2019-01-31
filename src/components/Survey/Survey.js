@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class Survey extends Component {
     render() {
         return (
-            <div className=".container">
-                <div className=".row">
+            <div className=".container .box1">
+                <div className=".row ">
                     <div className=".col-xs-4">
                         <form>
                             <div className="form-group">
