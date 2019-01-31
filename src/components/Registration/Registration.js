@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './Registration.module.css';
 // import User from '../api/userModel.js'
 import Survey from "../Survey/Survey";
-
-const axios = require('axios');
+import Api from "../../services/api";
 
 class Registration extends Component {
     // Setting the component's initial state
@@ -53,27 +52,39 @@ class Registration extends Component {
             userPwd: ""
         });
 
+        const userToCreate = {
+            userName: this.state.userName,
+            userPwd: this.state.userPwd,
+            userEmail: this.state.userEmail
+        }
+
+        return Api.register(userToCreate)
+            .then(user => {
+                console.log(user)
+                this.props.history.push(`/users/${user._id}`)
+            })
+
         //MAKE API CALL TO POST USER DATA TO DB
 
-        axios({
-            method: 'post',
-            url: 'http://localhost:3001/user',
-            data: {
-                userName: this.state.userName,
-                userEmail: this.state.userEmail,
-                userPwd: this.state.userPwd
-            }
+        // axios({
+        //     method: 'post',
+        //     url: 'http://localhost:3001/user',
+        //     data: {
+        //         userName: this.state.userName,
+        //         userEmail: this.state.userEmail,
+        //         userPwd: this.state.userPwd
+        //     }
 
-        })
+        // })
 
-            .then(function (response) {
-                //handle success
-                console.log(response);
-            })
-            .catch(function (response) {
-                //handle error
-                console.log(response);
-            });
+        //     .then(function (response) {
+        //         //handle success
+        //         console.log(response);
+        //     })
+        //     .catch(function (response) {
+        //         //handle error
+        //         console.log(response);
+        //     });
 
         console.log(this.state);
     };
@@ -83,7 +94,11 @@ class Registration extends Component {
         // 'onChange' props are
         return (
             <div className="container-fluid">
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 045f07b7ae73c78b692a21324271b78cae16fa2d
                 <div className=".row">
                     <div className=".col-xs-4">
                         <h2 className="title">Please Enter New User Information</h2>
