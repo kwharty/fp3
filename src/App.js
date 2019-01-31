@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Plans from "./pages/Plans";
-import NewUser from "./pages/NewUser";
+
 
 import './App.css';
 import Registration from "./components/Registration/Registration";
