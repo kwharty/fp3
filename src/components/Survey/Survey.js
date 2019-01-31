@@ -3,7 +3,14 @@ import React, { Component } from 'react';
 class Survey extends Component {
     render() {
         return (
-            <div className=".container">
+            <div className=".container"  style={{
+                backgroundImage: "url(" + "https://st3.depositphotos.com/10409000/19150/v/600/depositphotos_191509552-stock-video-realistic-dry-ice-smoke-clouds.jpg" + ")",
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                margin: '7%',
+                opacity: 10
+              }}>
                 <div className=".row">
                     <div className=".col-xs-4">
                         <form>
