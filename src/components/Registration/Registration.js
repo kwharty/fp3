@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Registration.module.css';
 // import User from '../api/userModel.js'
+import Survey from "../Survey/Survey";
 
 const axios = require('axios');
 
@@ -65,15 +66,15 @@ class Registration extends Component {
 
         })
 
-        .then(function (response) {
-            //handle success
-            console.log(response);
-        })
-        .catch(function (response) {
-            //handle error
-            console.log(response);
-        });
-        
+            .then(function (response) {
+                //handle success
+                console.log(response);
+            })
+            .catch(function (response) {
+                //handle error
+                console.log(response);
+            });
+
         console.log(this.state);
     };
 
@@ -81,43 +82,62 @@ class Registration extends Component {
         // This is where the 'value', 'name', and 
         // 'onChange' props are
         return (
-            <container>
-                <div className="row">
-                    <div className="col-sm-6">
-                        <h1>Please Enter New User Information</h1>
-                       
-                        <form className="form" action ="/submit"  method="post">
-                            <input
-                                value={this.state.userName}
-                                name="userName"
-                                onChange={this.handleInputChange}
-                                type="text"
-                                placeholder="Username"
-                            />
-                            <input
-                                value={this.state.userEmail}
-                                name="userEmail"
-                                onChange={this.handleInputChange}
-                                type="text"
-                                placeholder="Email"
-                            />
-                            <input
-                                value={this.state.userPwd}
-                                name="userPwd"
-                                onChange={this.handleInputChange}
-                                type="userPwd"
-                                placeholder="Password"
-                            />
-                            <button type="button" className="btn btn-success" onClick={this.handleFormSubmit}>Submit</button>
-                        </form>
+            <div className="container-fluid">
+                <div className=".row">
+                    <div className=".col-xs-4">
+                        <h2 className="title">Please Enter New User Information</h2>
+                        <div className=".row">
+                            <div className=".col-xs-4">
+                                <form className="form-inline" action="/submit" method="post">
+                                    <div className="form-group">
+                                        <input className=".form-Control"
+                                            value={this.state.userName}
+                                            name="userName"
+                                            onChange={this.handleInputChange}
+                                            type="text"
+                                            placeholder="Username"
+                                        />
+                                    </div>
+                                    <div className="form-group">
+                                        <input
+                                            value={this.state.userEmail}
+                                            name="userEmail"
+                                            onChange={this.handleInputChange}
+                                            type="text"
+                                            placeholder="Email"
+                                        />
+                                    </div>
+                                    <div className="form-group">
+                                        <input
+                                            value={this.state.userPwd}
+                                            name="userPwd"
+                                            onChange={this.handleInputChange}
+                                            type="userPwd"
+                                            placeholder="Password"
+                                        />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div className=".row">
+                            <div className=".col-xs-4">
+                                <button type="button" className="btn btn-success"
+                                    onClick={this.handleFormSubmit}>Submit</button>
+                            </div>
+                        </div>
+                        <div>
+                            <Survey />
+                        </div>
                     </div>
                 </div>
-            </container>
+            </div>
         );
     }
 }
 
 export default Registration;
+
+
 
 
 
