@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Survey extends Component {
     render() {
         return (
-            <div className=".container .box1">
+            <div className=".container">
+            <div className="border">
+    
                 <div className=".row ">
                     <div className=".col-xs-4">
                         <form>
@@ -108,6 +110,7 @@ class Survey extends Component {
                         </form>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }

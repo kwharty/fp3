@@ -1,4 +1,5 @@
-.box1 {
-    /* border-style: dotted dashed solid double; */
+.border {
+    border-style: dotted dashed solid double;
     background-color: aqua;
+    box-shadow: 5px 10px;
 }
