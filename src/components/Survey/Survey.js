@@ -4,20 +4,8 @@ import './Survey.module.css';
 class Survey extends Component {
     render() {
         return (
-<<<<<<< HEAD
             <div className=".container .box1">
                 <div className=".row ">
-=======
-            <div className=".container"  style={{
-                backgroundImage: "url(" + "https://st3.depositphotos.com/10409000/19150/v/600/depositphotos_191509552-stock-video-realistic-dry-ice-smoke-clouds.jpg" + ")",
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                margin: '7%',
-                opacity: 10
-              }}>
-                <div className=".row">
->>>>>>> 045f07b7ae73c78b692a21324271b78cae16fa2d
                     <div className=".col-xs-4">
                         <form>
                             <div className="form-group">

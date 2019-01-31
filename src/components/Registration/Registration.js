@@ -93,12 +93,7 @@ class Registration extends Component {
         // This is where the 'value', 'name', and 
         // 'onChange' props are
         return (
-            <div className="container-fluid">
-<<<<<<< HEAD
-            
-=======
-
->>>>>>> 045f07b7ae73c78b692a21324271b78cae16fa2d
+            <div className=".container-fluid">
                 <div className=".row">
                     <div className=".col-xs-4">
                         <h2 className="title">Please Enter New User Information</h2>
