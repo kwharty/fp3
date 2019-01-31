@@ -86,7 +86,9 @@ class Survey extends Component {
                 <select>
                                             <option value="" disabled selected>Select One</option>
                                             <option value="choiceOne">Glass</option>
+                                            {/* <i>Glass is the standard and most smokers prefer the classic feel and tast glass gives, As nice as it is they are fragile.</i> */}
                                             <option value="choiceTwo">Silicone</option>
+                                            {/* <i>Silicone is heat resiantant, shatter-proof, and can be made in ways glass can't</i> */}
                                         </select>
                                     </label>
                                 </div>
