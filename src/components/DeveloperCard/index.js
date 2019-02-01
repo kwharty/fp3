@@ -15,7 +15,7 @@ const DeveloperCard = props => {
             <strong>About:</strong> {props.about}
           </li>
           <li>
-            <strong>Contact:</strong> {props.linkedIn}
+            <strong>Contact:</strong> {props.contact}
           </li>
         </ul>
       </div>

@@ -1,17 +1,19 @@
 import React from "react";
 import "./about.css";
 import { Link } from 'react-router-dom';
- import Background from "./valley.png";
+import Background from "./valley.png";
 
 function Header() {
   return (
-  
-    <div className="masthead container d-flex h-100 align-items-center ihatelife"   style={{  backgroundImage: "url(" + "https://st3.depositphotos.com/10409000/19150/v/600/depositphotos_191509552-stock-video-realistic-dry-ice-smoke-clouds.jpg" + ")",
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-  margin: '7%',
-opacity: 10}}
+
+    <div className="masthead container d-flex h-100 align-items-center ihatelife" style={{
+      backgroundImage: "url(" + "https://st3.depositphotos.com/10409000/19150/v/600/depositphotos_191509552-stock-video-realistic-dry-ice-smoke-clouds.jpg" + ")",
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      margin: '7%',
+      opacity: 10
+    }}
     >
       <div className="mx-auto text-center">
         <h1 className="mx-auto my-0 text-uppercase headerAutoBongs ">AutoBongs</h1>
@@ -19,10 +21,12 @@ opacity: 10}}
         <Link
           to="/login">
           <button type="button"
-          className="btn btn-primary">
-          Create New Account
+            className="btn btn-primary" style={{
+              fontFamily: 'Exo'
+            }}>
+            Create New Account
           </button>
-            </Link>
+        </Link>
       </div>
     </div>
   );
