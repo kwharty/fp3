@@ -1,14 +1,11 @@
-/* font-family: 'Fredoka One', cursive;
-font-family: 'Luckiest Guy', cursive;
-font-family: 'Monoton', cursive; */
 
-
-
-.form {
+form {
     margin: 20px;
+    /* border: 2px solid red; */
+    background: rgba(240, 237, 237, 0.5);
   }
   
-.form input {
+form input {
     display: block;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -16,17 +13,31 @@ font-family: 'Monoton', cursive; */
   }
 
  h2 {
-   color: rgb(110, 26, 206);
-   font-family: 'Luckiest Guy', cursive;
+   color: red;
+   font-family: 'Exo', sans-serif;
+   font-weight: bold;
  }
 
  body {
    background-color: rgba(232, 196, 253, 0.075);
- }
- .form-Control {
-   border: 2px solid red;
-   background-color: green;
+   background-image: url(../../img/Backgrounds/Smoke_Generic1_0.jpg);
+   background-position: center;
  }
 
+
+
+ label {
+   font-weight: bold;
+   color: black;
+ }
+
+ option {
+   background-color: aquamarine;
+ }
+
+
+
+  
+ 
 
   
