@@ -16,7 +16,10 @@ function Header() {
     }}
     >
       <div className="mx-auto text-center">
-        <h1 className="mx-auto my-0 text-uppercase headerAutoBongs ">AutoBongs</h1>
+        <h1 className="mx-auto my-0 text-uppercase headerAutoBongs " style={{
+          fontSize: '60px',
+        }} >
+        AutoBongs</h1>
         <h2 className="text-white-50 mx-auto mt-2 mb-5">The Ultimate Monthly Subscription for Glass Collectors </h2>
         <Link
           to="/login">
