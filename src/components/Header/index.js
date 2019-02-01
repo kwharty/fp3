@@ -20,7 +20,16 @@ function Header() {
           fontSize: '60px',
         }} >
         AutoBongs</h1>
-        <h2 className="text-white-50 mx-auto mt-2 mb-5">The Ultimate Monthly Subscription for Glass Collectors </h2>
+        <h2 className="text-white-50 mx-auto mt-2 mb-5"  style={{
+          fontSize: '30px',
+          color: 'white',
+          textShadow: '2px 2px 4px #000000',
+
+        }} 
+        
+        
+        
+        >The Ultimate Monthly Subscription for Glass Collectors </h2>
         <Link
           to="/login">
           <button type="button"
