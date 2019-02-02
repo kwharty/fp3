@@ -55,7 +55,7 @@ const getdatabaseurl = () => {
   }
 }
 // Connect to the Mongo DB
-mongoose.connect(getdatabaseurl()), { useNewUrlParser: true });
+mongoose.connect(getdatabaseurl()), ({ useNewUrlParser: true });
 
 // Routes
 app.use("/api", apiRouter)
