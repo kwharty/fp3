@@ -17,7 +17,13 @@ const Tier1 = () => {
 
 
 
-          <img className="d-block w-100" src={bong1} alt="GLASS10" />
+          <img className="d-block w-100" src={bong1} alt="GLASS10" style ={{
+
+width: "350px",
+height: "250px"
+
+
+        }}/>
 
 
 

@@ -13,7 +13,13 @@ const DeveloperCard = props => {
 
 
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <img alt={props.name} src={props.image} style ={{
+
+width: "30%",
+height: "30%"
+
+
+        }}/>
       </div>
       <div className="content">
         <ul>
