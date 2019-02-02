@@ -11,7 +11,7 @@ const Tier1 = () => {
       margin: '50px'
   }}>
       <div className="row justify-content-center no-gutters">
-        <div className="col-lg-6">
+        <div className="col-6">
           <div>
 
 

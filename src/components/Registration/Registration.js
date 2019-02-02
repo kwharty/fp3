@@ -158,9 +158,9 @@ class Registration extends Component {
 
                                                 </label>
                                                 <br></br>
-<li><b>Flower</b><i> the plant version that is the orginal form of the plant.</i></li>
-<br></br>
-<li><b>Concentrates</b><i> It comes in various forms but it is a concrated verion of the plant where its been extracted into an oil or shatter.</i></li>
+                                                <li><b>Flower</b><i> the plant version that is the orginal form of the plant.</i></li>
+                                                <br></br>
+                                                <li><b>Concentrates</b><i> It comes in various forms but it is a concrated verion of the plant where its been extracted into an oil or shatter.</i></li>
 
 
 
@@ -216,7 +216,7 @@ class Registration extends Component {
 
                                                 <br></br>
                                                 <li><b>Tree Arm</b><i> Tree percolators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion.    </i></li>
-                                           
+
                                                 <br></br>
                                                 <li><b>Tornado</b><i> Turbine percolators excel in function while also delivering a unique aesthetic. The shape of the percolator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals </i></li>
                                                 <br></br>
