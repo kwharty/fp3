@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Registration.module.css';
 // import User from '../api/userModel.js'
-import Survey from "../Survey/Survey";
 import Api from "../../services/api";
 
 class Registration extends Component {
@@ -93,63 +92,65 @@ class Registration extends Component {
         // This is where the 'value', 'name', and 
         // 'onChange' props are
         return (
-            <div className=".container-fluid">
+            <div className="container-fluid">
                 <div className=".row">
                     <div className=".col-xs-4">
-                        <h2 className="title">Please Enter New User Information</h2>
-                        <div className=".row">
-                            <div className=".col-xs-4">
-                                <form className="form-inline" action="/submit" method="post">
-                                    <div className="form-group">
-                                        <input className=".form-Control"
-                                            value={this.state.userName}
-                                            name="userName"
-                                            onChange={this.handleInputChange}
-                                            type="text"
-                                            placeholder="Username"
-                                        />
-                                    </div>
-                                    <div className="form-group">
-                                        <input
-                                            value={this.state.userEmail}
-                                            name="userEmail"
-                                            onChange={this.handleInputChange}
-                                            type="text"
-                                            placeholder="Email"
-                                        />
-                                    </div>
-                                    <div className="form-group">
-                                        <input
-                                            value={this.state.userPwd}
-                                            name="userPwd"
-                                            onChange={this.handleInputChange}
-                                            type="userPwd"
-                                            placeholder="Password"
-                                        />
-                                    </div>
-                                </form>
+                            <h2 className="title">Please Enter New User Information</h2>
+                        
+                            <div className=".row">
+                                <div className=".col-xs-4">
+                                    <form className="form-inline form1" action="/submit" method="post">
+                                        <div className="form-group">
+                                            <input className=".form-Control"
+                                                value={this.state.userName}
+                                                name="userName"
+                                                onChange={this.handleInputChange}
+                                                type="text"
+                                                placeholder="Username"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <input
+                                                value={this.state.userEmail}
+                                                name="userEmail"
+                                                onChange={this.handleInputChange}
+                                                type="text"
+                                                placeholder="Email"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <input
+                                                value={this.state.userPwd}
+                                                name="userPwd"
+                                                onChange={this.handleInputChange}
+                                                type="userPwd"
+                                                placeholder="Password"
+                                            />
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                        <div className=".row">
-                            <div className=".col-xs-4">
-                                <button type="button" className="btn btn-success"
-                                    onClick={this.handleFormSubmit}>Submit</button>
+                            <div className=".row">
+                                <div className=".col-xs-4">
+                                    <button type="button" className="btn btn-success"
+                                        onClick={this.handleFormSubmit}>Submit</button>
+                                </div>
                             </div>
-                        </div>
+                        
                         <div>
-                            <div className=".container .box1">
+                            {/* <div className=".container .box1"> */}
                                 <div className=".row ">
                                     <div className=".col-xs-4">
                                         <form>
-                                            <div className="form-group">
                                                 <h2>Please Answer the Following Questions</h2>
+                                            <div className="form-group">
                                             </div>
                                             <div className=".row form-group">
                                                 <div className=".col-xs-4">
 
                                                     <label className="label">
                                                         What type of material will you be using in this Autobong?
-                <select>
+                <select className="select">
                                                             <option value="" disabled selected>Select One</option>
                                                             <option value="choiceOne">Flower</option>
                                                             <option value="choiceTwo">Concentrates</option>
@@ -183,14 +184,14 @@ class Registration extends Component {
                                                             {/* <p>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</p> */}
 
                                                             <option value="choiceTwo">Tree Arm</option>
-                                                            {/* <p>Tree percolators are fairly simple. Within the tube of the bong, there is a collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
+                                                            {/* <p>Tree per.colators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
 
 
                                                             <option value="choiceThree">Tornado Perc</option>
-                                                            {/* <p>Turbine percolators excel in function while also delivering a unique aesthetic. The shape of the percolator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
+                                                            {/* <p>Turbine per.colators excel in function while also delivering a unique aesthetic. The shape of the per.colator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
 
                                                             <option value="choiceFour">Slotted Barrel</option>
-                                                            {/* <p>Matrix percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix percolator operates in a similar way to showerhead percss.</p> */}
+                                                            {/* <p>Matrix per.colators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix per.colator operates in a similar way to showerhead percss.</p> */}
 
                                                         </select>
                                                     </label>
@@ -243,11 +244,11 @@ class Registration extends Component {
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         );
     }

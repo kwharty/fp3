@@ -1,21 +1,37 @@
 
 form {
-    margin: 20px;
+  padding-top: 17px;
+    padding-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
     /* border: 2px solid red; */
-    background: rgba(240, 237, 237, 0.5);
+    background: rgba(241, 240, 240, 0.658);
+    text-align: center;
   }
-  
+ 
+
+  .formGroup {
+    text-align: center;
+  }
+
+  input {
+    margin: auto;
+    text-align: center;
+  }
 form input {
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
+  /* border: 3px solid greenyellow; */
+  width: auto;
+  margin: auto;
+  text-align: center;
+  margin-left: 50%;
   }
 
  h2 {
-   color: red;
+   color: rgb(199, 0, 0);
    font-family: 'Exo', sans-serif;
    font-weight: bold;
+   text-align: center;
  }
 
  body {
@@ -27,17 +43,26 @@ form input {
 
 
  label {
+   /* border: 2px solid red; */
    font-weight: bold;
    color: black;
+   margin: auto;
  }
 
  option {
    background-color: aquamarine;
  }
 
+ select {
+   background-color: rgba(235, 188, 247, 0.514);
+   margin-left: 15px;
+ }
+
+button {
+  width: 200px;
+}
 
 
-  
  
 
   
