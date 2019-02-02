@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const DeveloperCard = props => {
@@ -29,7 +30,7 @@ height: "30%"
             <strong>About:</strong> {props.about}
           </li>
           <li>
-            <strong>Contact:</strong> <a>{props.contact}</a>
+            <a href={props.contact}>Link</a>
           </li>
         </ul>
       </div>
