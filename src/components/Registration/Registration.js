@@ -95,161 +95,189 @@ class Registration extends Component {
             <div className="container-fluid">
                 <div className=".row">
                     <div className=".col-xs-4">
-                            <h2 className="title">Please Enter New User Information</h2>
-                        
-                            <div className=".row">
+                        <h2 className="title">Please Enter New User Information</h2>
+
+                        <div className=".row">
+                            <div className=".col-xs-4">
+                                <form className="form-inline form1" action="/submit" method="post">
+                                    <div className="form-group">
+                                        <input className=".form-Control"
+                                            value={this.state.userName}
+                                            name="userName"
+                                            onChange={this.handleInputChange}
+                                            type="text"
+                                            placeholder="Username"
+                                        />
+                                    </div>
+                                    <div className="form-group">
+                                        <input
+                                            value={this.state.userEmail}
+                                            name="userEmail"
+                                            onChange={this.handleInputChange}
+                                            type="text"
+                                            placeholder="Email"
+                                        />
+                                    </div>
+                                    <div className="form-group">
+                                        <input
+                                            value={this.state.userPwd}
+                                            name="userPwd"
+                                            onChange={this.handleInputChange}
+                                            type="userPwd"
+                                            placeholder="Password"
+                                        />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div className=".row">
+                            <div className=".col-xs-4">
+                                <button type="button" className="btn btn-success"
+                                    onClick={this.handleFormSubmit}>Submit</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            {/* <div className=".container .box1"> */}
+                            <div className=".row ">
                                 <div className=".col-xs-4">
-                                    <form className="form-inline form1" action="/submit" method="post">
+                                    <form>
+                                        <h2>Please Answer the Following Questions</h2>
                                         <div className="form-group">
-                                            <input className=".form-Control"
-                                                value={this.state.userName}
-                                                name="userName"
-                                                onChange={this.handleInputChange}
-                                                type="text"
-                                                placeholder="Username"
-                                            />
                                         </div>
-                                        <div className="form-group">
-                                            <input
-                                                value={this.state.userEmail}
-                                                name="userEmail"
-                                                onChange={this.handleInputChange}
-                                                type="text"
-                                                placeholder="Email"
-                                            />
+                                        <div className=".row form-group">
+                                            <div className=".col-xs-4">
+
+                                                <label className="label">
+                                                    What type of material will you be using in this Autobong?
+                <select className="select">
+                                                        <option value="" disabled selected>Select One</option>
+                                                        <option value="choiceOne">Flower</option>
+                                                        <option value="choiceTwo">Concentrates</option>
+                                                    </select>
+
+                                                </label>
+                                                <br></br>
+<li><b>Flower</b><i> the plant version that is the orginal form of the plant.</i></li>
+<br></br>
+<li><b>Concentrates</b><i> It comes in various forms but it is a concrated verion of the plant where its been extracted into an oil or shatter.</i></li>
+
+
+
+                                            </div>
                                         </div>
-                                        <div className="form-group">
-                                            <input
-                                                value={this.state.userPwd}
-                                                name="userPwd"
-                                                onChange={this.handleInputChange}
-                                                type="userPwd"
-                                                placeholder="Password"
-                                            />
+
+                                        <br></br>
+                                        <br></br>
+                                        <div className=".row form-group">
+                                            <div className=".col-xs-4">
+                                                <label className="label">
+                                                    What style of stem do you prefer?
+                <select>
+                                                        <option value="" disabled selected>Select One</option>
+                                                        <option value="choiceOne">Direct Inject</option>
+                                                        <option value="choiceTwo">Normal Diffused</option>
+                                                        {/* <p>this downstem is inserted into the bong and removeable for cleaning and are diffused for extra percalation</p> */}
+                                                    </select>
+                                                </label>
+                                                <br></br>
+                                                <li> <i>Direct Inject is a popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</i></li>
+                                                <br></br>
+                                                <li>      <i>Normal Diffused are inserted into the bong and removeable for cleaning and are diffused for extra percalation </i></li>
+
+
+                                            </div>
+                                        </div>
+                                        <br></br>
+                                        <br></br>
+                                        <div className=".row form-group">
+                                            <div className=".col-xs-4">
+                                                <label className="label">
+                                                    When it comes to percolation, which style do you prefer?
+                <select>
+                                                        <option value="" disabled selected>Select One</option>
+                                                        <option value="choiceOne">Honeycomb</option>
+                                                        {/* <p>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</p> */}
+
+                                                        <option value="choiceTwo">Tree Arm</option>
+                                                        {/* <p>Tree per.colators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
+
+
+                                                        <option value="choiceThree">Tornado Perc</option>
+                                                        {/* <p>Turbine per.colators excel in function while also delivering a unique aesthetic. The shape of the per.colator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
+
+                                                        <option value="choiceFour">Slotted Barrel</option>
+                                                        {/* <p>Matrix per.colators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix per.colator operates in a similar way to showerhead percss.</p> */}
+
+                                                    </select>
+                                                </label>
+                                                <br></br>
+                                                <li><b>Honeycomb</b><i>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.    </i></li>
+
+                                                <br></br>
+                                                <li><b>Tree Arm</b><i> Tree percolators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion.    </i></li>
+                                           
+                                                <br></br>
+                                                <li><b>Tornado</b><i> Turbine percolators excel in function while also delivering a unique aesthetic. The shape of the percolator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals </i></li>
+                                                <br></br>
+                                                <li><b>Slotted Barrel</b> <i></i> A barrel or a Matrix percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix percolator operates in a similar way to showerhead percss.    </li>
+
+
+                                            </div>
+                                        </div>
+                                        <div className=".row form-group">
+                                            <div className=".col-xs-4">
+                                                <label className="label">
+                                                    Which joint size would you like?
+                <select>
+                                                        <option value="" disabled selected>Select One</option>
+                                                        <option value="choiceOne">18mm Female</option>
+                                                        <option value="choiceTwo">14mm Female</option>
+                                                        <option value="choiceThree">18mm Male</option>
+                                                        <option value="choiceFour">14mm Male</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className=".row form-group">
+                                            <div className=".col-xs-4">
+                                                <label className="label">
+                                                    What material would you like?
+                <select>
+                                                        <option value="" disabled selected>Select One</option>
+                                                        <option value="choiceOne">Glass</option>
+                                                        <option value="choiceTwo">Silicone</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className=".row form-group">
+                                            <div className=".col-xs-4">
+                                                <label className="label">
+                                                    Do you like ice, and would you like an ice catcher?
+                <select>
+                                                        <option value="" disabled selected>Select One</option>
+                                                        <option value="choiceOne">Yes, I would like an ice catcher</option>
+                                                        <option value="choiceTwo">No, I prefer to not have an ice catcher</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className=".row form-group">
+                                            <div className=".col-xs-4">
+                                                <button type="button" className="btn btn-success"
+                                                    onClick={this.handleFormSubmit}>Submit</button>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <div className=".row">
-                                <div className=".col-xs-4">
-                                    <button type="button" className="btn btn-success"
-                                        onClick={this.handleFormSubmit}>Submit</button>
-                                </div>
-                            </div>
-                        
-                        <div>
-                            {/* <div className=".container .box1"> */}
-                                <div className=".row ">
-                                    <div className=".col-xs-4">
-                                        <form>
-                                                <h2>Please Answer the Following Questions</h2>
-                                            <div className="form-group">
-                                            </div>
-                                            <div className=".row form-group">
-                                                <div className=".col-xs-4">
-
-                                                    <label className="label">
-                                                        What type of material will you be using in this Autobong?
-                <select className="select">
-                                                            <option value="" disabled selected>Select One</option>
-                                                            <option value="choiceOne">Flower</option>
-                                                            <option value="choiceTwo">Concentrates</option>
-                                                        </select>
-
-                                                    </label>
-
-                                                </div>
-                                            </div>
-                                            <div className=".row form-group">
-                                                <div className=".col-xs-4">
-                                                    <label className="label">
-                                                        What style of stem do you prefer?
-                <select>
-                                                            <option value="" disabled selected>Select One</option>
-                                                            <option value="choiceOne">Direct Inject</option>
-                                                            {/* <p>A popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</p> */}
-                                                            <option value="choiceTwo">Normal Diffused</option>
-                                                            {/* <p>this downstem is inserted into the bong and removeable for cleaning and are diffused for extra percalation</p> */}
-                                                        </select>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className=".row form-group">
-                                                <div className=".col-xs-4">
-                                                    <label className="label">
-                                                        When it comes to percolation, which style do you prefer?
-                <select>
-                                                            <option value="" disabled selected>Select One</option>
-                                                            <option value="choiceOne">Honeycomb</option>
-                                                            {/* <p>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</p> */}
-
-                                                            <option value="choiceTwo">Tree Arm</option>
-                                                            {/* <p>Tree per.colators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
-
-
-                                                            <option value="choiceThree">Tornado Perc</option>
-                                                            {/* <p>Turbine per.colators excel in function while also delivering a unique aesthetic. The shape of the per.colator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
-
-                                                            <option value="choiceFour">Slotted Barrel</option>
-                                                            {/* <p>Matrix per.colators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix per.colator operates in a similar way to showerhead percss.</p> */}
-
-                                                        </select>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className=".row form-group">
-                                                <div className=".col-xs-4">
-                                                    <label className="label">
-                                                        Which joint size would you like?
-                <select>
-                                                            <option value="" disabled selected>Select One</option>
-                                                            <option value="choiceOne">18mm Female</option>
-                                                            <option value="choiceTwo">14mm Female</option>
-                                                            <option value="choiceThree">18mm Male</option>
-                                                            <option value="choiceFour">14mm Male</option>
-                                                        </select>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className=".row form-group">
-                                                <div className=".col-xs-4">
-                                                    <label className="label">
-                                                        What material would you like?
-                <select>
-                                                            <option value="" disabled selected>Select One</option>
-                                                            <option value="choiceOne">Glass</option>
-                                                            <option value="choiceTwo">Silicone</option>
-                                                        </select>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className=".row form-group">
-                                                <div className=".col-xs-4">
-                                                    <label className="label">
-                                                        Do you like ice, and would you like an ice catcher?
-                <select>
-                                                            <option value="" disabled selected>Select One</option>
-                                                            <option value="choiceOne">Yes, I would like an ice catcher</option>
-                                                            <option value="choiceTwo">No, I prefer to not have an ice catcher</option>
-                                                        </select>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div className=".row form-group">
-                                                <div className=".col-xs-4">
-                                                    <button type="button" className="btn btn-success"
-                                                        onClick={this.handleFormSubmit}>Submit</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
                             {/* </div> */}
                         </div>
                     </div>
                 </div>
 
-            </div>
+            </div >
         );
     }
 }
