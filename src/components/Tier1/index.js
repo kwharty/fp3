@@ -47,7 +47,7 @@ const Tier1 = () => {
 
 
           </div>
-          <div className="col-lg-6 order-lg-first">
+          <div className="col-12 order-lg-first">
             <div className="bg-black  text-center h-100 project" />
             <div className="d-flex h-100">
               <div className="project-text w-100 my-auto text-center text-lg-right">
