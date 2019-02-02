@@ -21,6 +21,7 @@ apiRouter
       }
       return User.create(req.body,(err,user)=>{
         // if(err) return send error message
+        if(err) return next(err)
         return res.status(201).json(user)
       })
     })

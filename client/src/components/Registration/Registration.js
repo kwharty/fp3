@@ -50,12 +50,12 @@ class Registration extends Component {
             userName: "",
             userEmail: "",
             userPwd: "",
-            userAns0:0,
-            userAns1:0,
-            userAns2:0,
-            userAns3:0,
-            userAns4:0,
-            userAns5:0
+            userAns0: 0,
+            userAns1: 0,
+            userAns2: 0,
+            userAns3: 0,
+            userAns4: 0,
+            userAns5: 0
 
         });
 
@@ -73,8 +73,11 @@ class Registration extends Component {
 
         return Api.register(userToCreate)
             .then(user => {
+
                 console.log(user)
                 this.props.history.push(`/users/${user._id}`)
+            }).catch(error => {
+                console.log(error.response.data)
             })
 
         //MAKE API CALL TO POST USER DATA TO DB
@@ -165,7 +168,7 @@ class Registration extends Component {
                                                 <label className="label">
                                                     What type of material will you be using in this Autobong?
                 {/* INPUTTING SURVEY SELECTIONS BELOW */}
-                                                    <select className="select" 
+                                                    <select className="select"
                                                         value={this.state.userAns0}
                                                         name="userAns"
                                                         onChange={this.handleInputChange}>
@@ -304,13 +307,13 @@ class Registration extends Component {
                         </div>
                     </div>
                 </div>
-
-            </div >
+            </div>
         );
     }
 }
 
 export default Registration;
+
 
 
 
