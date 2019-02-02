@@ -23,7 +23,7 @@ const DeveloperCard = props => {
             <strong>About:</strong> {props.about}
           </li>
           <li>
-            <strong>Contact:</strong> {props.contact}
+            <strong>Contact:</strong> <a>{props.contact}</a>
           </li>
         </ul>
       </div>

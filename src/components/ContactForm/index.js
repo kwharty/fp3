@@ -13,13 +13,13 @@ const ContactForm = () => {
                      marginLeft: '0%',
                 }} >
                     <label for="exampleFormControlInput1">Name</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Michael Jordan"></input>
+                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Michael Jordan"></input>
                 </div>
                 <div className="form-group" style={{
                      marginLeft: '0%',
                 }}>
                     <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></input>
+                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></input>
                 </div>
 
                 <div className="form-group">
@@ -31,8 +31,8 @@ const ContactForm = () => {
             
             
          
-            
-           
+ 
+
     );
 }
 

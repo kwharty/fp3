@@ -130,12 +130,12 @@ class Registration extends Component {
                                 </form>
                             </div>
                         </div>
-                        <div className=".row">
-                            <div className=".col-xs-4">
-                                <button type="button" className="btn btn-success"
-                                    onClick={this.handleFormSubmit}>Submit</button>
-                            </div>
-                        </div>
+                        {/* <div className=".row">
+                            <div className=".col-xs-4"> */}
+                                {/* <button type="button" className="btn btn-success"
+                                    onClick={this.handleFormSubmit}>Submit</button> */}
+                            {/* </div>
+                        </div> */}
 
                         <div>
                             {/* <div className=".container .box1"> */}
