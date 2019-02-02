@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DeveloperCard = props => {
     return (
@@ -15,7 +16,7 @@ const DeveloperCard = props => {
             <strong>About:</strong> {props.about}
           </li>
           <li>
-            <strong>Contact:</strong> <a>{props.contact}</a>
+            <strong>Contact:</strong> <a href="{props.contact}"></a>
           </li>
         </ul>
       </div>
