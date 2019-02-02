@@ -54,6 +54,11 @@ const getdatabaseurl = () => {
     return "mongodb://localhost:27017/bonguserDB"
   }
 }
+//HEROKU BUILD LANGUAGE
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+}
+
 // Connect to the Mongo DB
 mongoose.connect(getdatabaseurl()), ({ useNewUrlParser: true });
 
