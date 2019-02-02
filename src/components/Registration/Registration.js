@@ -8,7 +8,8 @@ class Registration extends Component {
     state = {
         userName: "",
         userEmail: "",
-        userPwd: ""
+        userPwd: "",
+        userAns: 0
     };
 
     handleInputChange = event => {
@@ -48,13 +49,26 @@ class Registration extends Component {
         this.setState({
             userName: "",
             userEmail: "",
-            userPwd: ""
+            userPwd: "",
+            userAns0:0,
+            userAns1:0,
+            userAns2:0,
+            userAns3:0,
+            userAns4:0,
+            userAns5:0
+
         });
 
         const userToCreate = {
             userName: this.state.userName,
             userPwd: this.state.userPwd,
-            userEmail: this.state.userEmail
+            userEmail: this.state.userEmail,
+            userAns0: this.state.userAns0,
+            userAns1: this.state.userAns1,
+            userAns2: this.state.userAns2,
+            userAns3: this.state.userAns3,
+            userAns4: this.state.userAns4,
+            userAns5: this.state.userAns5
         }
 
         return Api.register(userToCreate)
@@ -130,12 +144,12 @@ class Registration extends Component {
                                 </form>
                             </div>
                         </div>
-                        <div className=".row">
-                            <div className=".col-xs-4">
-                                <button type="button" className="btn btn-success"
-                                    onClick={this.handleFormSubmit}>Submit</button>
-                            </div>
-                        </div>
+                        {/* <div className=".row">
+                            <div className=".col-xs-4"> */}
+                        {/* <button type="button" className="btn btn-success"
+                                    onClick={this.handleFormSubmit}>Submit</button> */}
+                        {/* </div>
+                        </div> */}
 
                         <div>
                             {/* <div className=".container .box1"> */}
@@ -150,10 +164,14 @@ class Registration extends Component {
 
                                                 <label className="label">
                                                     What type of material will you be using in this Autobong?
-                <select className="select">
+                {/* INPUTTING SURVEY SELECTIONS BELOW */}
+                                                    <select className="select" 
+                                                        value={this.state.userAns0}
+                                                        name="userAns"
+                                                        onChange={this.handleInputChange}>
                                                         <option value="" disabled selected>Select One</option>
-                                                        <option value="choiceOne">Flower</option>
-                                                        <option value="choiceTwo">Concentrates</option>
+                                                        <option value="1">Flower</option>
+                                                        <option value="2">Concentrates</option>
                                                     </select>
 
                                                 </label>
@@ -173,10 +191,12 @@ class Registration extends Component {
                                             <div className=".col-xs-4">
                                                 <label className="label">
                                                     What style of stem do you prefer?
-                <select>
+                <select value={this.state.userAns1}
+                                                        name="userAns1"
+                                                        onChange={this.handleInputChange}>
                                                         <option value="" disabled selected>Select One</option>
-                                                        <option value="choiceOne">Direct Inject</option>
-                                                        <option value="choiceTwo">Normal Diffused</option>
+                                                        <option value="1">Direct Inject</option>
+                                                        <option value="2">Normal Diffused</option>
                                                         {/* <p>this downstem is inserted into the bong and removeable for cleaning and are diffused for extra percalation</p> */}
                                                     </select>
                                                 </label>
@@ -194,19 +214,21 @@ class Registration extends Component {
                                             <div className=".col-xs-4">
                                                 <label className="label">
                                                     When it comes to percolation, which style do you prefer?
-                <select>
+                <select value={this.state.userAns2}
+                                                        name="userAns2"
+                                                        onChange={this.handleInputChange}>
                                                         <option value="" disabled selected>Select One</option>
-                                                        <option value="choiceOne">Honeycomb</option>
+                                                        <option value="1">Honeycomb</option>
                                                         {/* <p>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</p> */}
 
-                                                        <option value="choiceTwo">Tree Arm</option>
+                                                        <option value="2">Tree Arm</option>
                                                         {/* <p>Tree per.colators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
 
 
-                                                        <option value="choiceThree">Tornado Perc</option>
+                                                        <option value="3">Tornado Perc</option>
                                                         {/* <p>Turbine per.colators excel in function while also delivering a unique aesthetic. The shape of the per.colator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
 
-                                                        <option value="choiceFour">Slotted Barrel</option>
+                                                        <option value="4">Slotted Barrel</option>
                                                         {/* <p>Matrix per.colators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix per.colator operates in a similar way to showerhead percss.</p> */}
 
                                                     </select>
@@ -229,12 +251,14 @@ class Registration extends Component {
                                             <div className=".col-xs-4">
                                                 <label className="label">
                                                     Which joint size would you like?
-                <select>
+                <select value={this.state.userAns3}
+                                                        name="userAns3"
+                                                        onChange={this.handleInputChange}>
                                                         <option value="" disabled selected>Select One</option>
-                                                        <option value="choiceOne">18mm Female</option>
-                                                        <option value="choiceTwo">14mm Female</option>
-                                                        <option value="choiceThree">18mm Male</option>
-                                                        <option value="choiceFour">14mm Male</option>
+                                                        <option value="1">18mm Female</option>
+                                                        <option value="2">14mm Female</option>
+                                                        <option value="3">18mm Male</option>
+                                                        <option value="4">14mm Male</option>
                                                     </select>
                                                 </label>
                                             </div>
@@ -243,10 +267,12 @@ class Registration extends Component {
                                             <div className=".col-xs-4">
                                                 <label className="label">
                                                     What material would you like?
-                <select>
+                <select value={this.state.userAns4}
+                                                        name="userAns4"
+                                                        onChange={this.handleInputChange}>
                                                         <option value="" disabled selected>Select One</option>
-                                                        <option value="choiceOne">Glass</option>
-                                                        <option value="choiceTwo">Silicone</option>
+                                                        <option value="1">Glass</option>
+                                                        <option value="2">Silicone</option>
                                                     </select>
                                                 </label>
                                             </div>
@@ -255,10 +281,12 @@ class Registration extends Component {
                                             <div className=".col-xs-4">
                                                 <label className="label">
                                                     Do you like ice, and would you like an ice catcher?
-                <select>
+                <select value={this.state.userAns5}
+                                                        name="userAns5"
+                                                        onChange={this.handleInputChange}>
                                                         <option value="" disabled selected>Select One</option>
-                                                        <option value="choiceOne">Yes, I would like an ice catcher</option>
-                                                        <option value="choiceTwo">No, I prefer to not have an ice catcher</option>
+                                                        <option value="1">Yes, I would like an ice catcher</option>
+                                                        <option value="2">No, I prefer to not have an ice catcher</option>
                                                     </select>
                                                 </label>
                                             </div>
