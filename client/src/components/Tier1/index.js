@@ -10,7 +10,7 @@ const Tier1 = () => {
     <div style={{
       margin: '50px'
   }}>
-      <div className="row justify-content-left no-gutters">
+      <div className="row justify-content-center no-gutters">
         <div className="col-6">
           <div>
 

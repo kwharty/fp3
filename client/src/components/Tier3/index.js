@@ -18,7 +18,7 @@ const Tier3 = () => {
           <div>
 
 
-          <img className="d-block w-100" src={bong1} alt="glass" />
+          <img className="d-block w-100" src={bong2} alt="glass" />
 
 
             {/* <div>
