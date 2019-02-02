@@ -2,7 +2,8 @@ var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 
-var PORT = 3001;
+
+var PORT = process.env.PORT || 3001;
 
 // Requiring the `User` model for accessing the `users` collection
 var User = require("./userModel");
@@ -45,8 +46,16 @@ app.use(express.json());
 // Make public a static folder
 app.use(express.static("public"));
 
+
+const getdatabaseurl = () => {
+  if (process.env.MONGODB_URI) {
+    return process.env.MONGODB_URI
+  } else {
+    return "mongodb://localhost:27017/bonguserDB"
+  }
+}
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost:27017/bonguserDB", { useNewUrlParser: true });
+mongoose.connect(getdatabaseurl()), { useNewUrlParser: true });
 
 // Routes
 app.use("/api", apiRouter)
