@@ -1,12 +1,15 @@
 import React from "react";
+import "./brand.css";
+
 
 const BrandStatement = () => {
     return (
-        <div className="text-center well-lg" style={{
+        <div className="text-center well-lg pannel" style={{
             margin: '50px',
             color: 'white',
             fontSize: '25px',
             textShadow: '5px 5px 8px #000000',
+
             
 
         }}>
@@ -25,13 +28,12 @@ const BrandStatement = () => {
     <br></br>
     <br></br>
     <br></br>
+
+
     <h1 style={{
 fontSize: '60px',
 textAlign: 'center',
 textShadow: '2px 2px 5px black',
- 
-
-
 }} >Meet the creators of Autobongs</h1>
 
 <hr style={{
