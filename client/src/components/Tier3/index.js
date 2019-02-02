@@ -18,7 +18,10 @@ const Tier3 = () => {
           <div>
 
 
-            <div>
+          <img className="d-block w-100" src={bong1} alt="glass" />
+
+
+            {/* <div>
               <img className="img-fluid" src={bong} alt="" />
               <div id="carouselExampleIndicators3" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
@@ -46,10 +49,14 @@ const Tier3 = () => {
                   <span className="sr-only">Next</span>
                 </a>
               </div>
-            </div>
+            </div>*/}
 
 
-          </div>
+
+          </div> 
+
+
+
           <div className="col-lg-12 order-lg-first">
             <div className="bg-black  text-center h-100 project" />
             <div className="d-flex h-100">
