@@ -15,7 +15,7 @@ class Survey extends Component {
                                 <div className=".col-xs-4">
 
                                     <label className="label">
-                                        What type of material will you be using in this Autobong?
+                                        What type of material will you be using in this Autobongz?
                 <select>
                                             <option value="" disabled selected>Select One</option>
                                             <option value="choiceOne">Flower</option>
@@ -24,8 +24,18 @@ class Survey extends Component {
 
                                     </label>
 
+
                                 </div>
                             </div>
+
+                            <div className=".row">
+                                <div className=".col-xs-4">
+                                    <i>Discription section of</i>
+                                </div>
+                            </div>
+
+
+
                             <div className=".row form-group">
                                 <div className=".col-xs-4">
                                     <label className="label">
