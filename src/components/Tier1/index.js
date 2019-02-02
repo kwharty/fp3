@@ -10,12 +10,21 @@ const Tier1 = () => {
     <div style={{
       margin: '50px'
   }}>
-      <div className="row justify-content-center no-gutters">
-        <div className="col-6">
+      <div className="row justify-content-left no-gutters">
+        <div className="col-12">
           <div>
 
 
-            <div>
+
+
+          <img className="d-block w-100" src={bong1} alt="GLASS10" />
+
+
+
+
+
+
+            {/* <div>
               <img className="img-fluid" src="../img/bong.jpg" alt="" />
               <div id="carouselExampleIndicators1" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
@@ -44,13 +53,13 @@ const Tier1 = () => {
                 </a>
               </div>
             </div>
-
+ */}
 
           </div>
-          <div className="col-12 order-lg-first">
+          <div className="col-12 justify-content-right">
             <div className="bg-black  text-center h-100 project" />
             <div className="d-flex h-100">
-              <div className="project-text w-100 my-auto text-center text-lg-right">
+              <div className="project-text w-100 my-auto text-center text-lg-left">
                 <div className="card mb-4 box-shadow">
                   <div className="card-header">
                     <h2 className="my-0 font-weight-normal">Teir 1</h2>

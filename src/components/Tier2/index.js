@@ -11,9 +11,16 @@ import bong4 from "./bong2.jpg";
 const Tier2 = () => {
   return (
 
-    <div>
-      <div>
-        <div className="row bg-black justify-content-center no-gutters mb-5 mb-lg-0">
+    <div className="row justify-content-center no-gutters">
+
+
+    <div className="col-sm-4" >
+
+<img className="d-block w-100" src={bong3} alt="glass" />
+
+
+      {/* <div> */}
+        {/* <div className="row bg-black justify-content-center no-gutters mb-5 mb-lg-0">
           <div className="col-6">
             <div>
 
@@ -49,12 +56,12 @@ const Tier2 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
 
       </div>
-      <div className="col-6">
+      <div className="col-sm-4">
         <div className="bg-black text-center h-100 project">
           <div className="d-flex h-100">
             <div className="project-text w-100 my-auto text-center text-lg-left">
