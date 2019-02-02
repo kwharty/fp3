@@ -2,12 +2,31 @@ var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 
-var PORT = 3001;
+
+var PORT = process.env.PORT || 3001;
 
 // Requiring the `User` model for accessing the `users` collection
 var User = require("./userModel");
 
-// Initialize Express
+
+const apiRouter = express.Router()
+
+apiRouter
+  .post("/users",(req,res,next)=>{
+    console.log(req.body)
+    return User.findOne(req.body,(err,foundUser)=>{
+      if(err) return res.sendStatus(400);
+      if(foundUser){
+        return res.status(400).json({message:"email exists already"})
+      }
+      return User.create(req.body,(err,user)=>{
+        // if(err) return send error message
+        return res.status(201).json(user)
+      })
+    })
+  })
+
+  // Initialize Express
 var app = express();
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -27,10 +46,19 @@ app.use(express.json());
 // Make public a static folder
 app.use(express.static("public"));
 
+
+const getdatabaseurl = () => {
+  if (process.env.MONGODB_URI) {
+    return process.env.MONGODB_URI
+  } else {
+    return "mongodb://localhost:27017/bonguserDB"
+  }
+}
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost:27017/bonguserDB", { useNewUrlParser: true });
+mongoose.connect(getdatabaseurl()), { useNewUrlParser: true });
 
 // Routes
+app.use("/api", apiRouter)
 
 // Route to post our form submission to mongoDB via mongoose
 app.post("/user", function (req, res) {

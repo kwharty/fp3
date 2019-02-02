@@ -14,7 +14,7 @@ const Tier2 = () => {
     <div>
       <div>
         <div className="row bg-black justify-content-center no-gutters mb-5 mb-lg-0">
-          <div className="col-lg-6">
+          <div className="col-6">
             <div>
 
 
@@ -54,7 +54,7 @@ const Tier2 = () => {
 
 
       </div>
-      <div className="col-lg-6">
+      <div className="col-6">
         <div className="bg-black text-center h-100 project">
           <div className="d-flex h-100">
             <div className="project-text w-100 my-auto text-center text-lg-left">

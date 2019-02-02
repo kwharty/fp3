@@ -1,32 +1,68 @@
-/* font-family: 'Fredoka One', cursive;
-font-family: 'Luckiest Guy', cursive;
-font-family: 'Monoton', cursive; */
 
-
-
-.form {
-    margin: 20px;
+form {
+  padding-top: 17px;
+    padding-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    /* border: 2px solid red; */
+    background: rgba(241, 240, 240, 0.658);
+    text-align: center;
   }
-  
-.form input {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
+ 
+
+  .formGroup {
+    text-align: center;
+  }
+
+  input {
+    margin: auto;
+    text-align: center;
+  }
+form input {
+  /* border: 3px solid greenyellow; */
+  width: auto;
+  margin: auto;
+  text-align: center;
+  margin-left: 50%;
   }
 
  h2 {
-   color: rgb(110, 26, 206);
-   font-family: 'Luckiest Guy', cursive;
+   color: rgb(199, 0, 0);
+   font-family: 'Exo', sans-serif;
+   font-weight: bold;
+   text-align: center;
  }
 
  body {
    background-color: rgba(232, 196, 253, 0.075);
- }
- .form-Control {
-   border: 2px solid red;
-   background-color: green;
+   background-image: url(../../img/Backgrounds/Smoke_Generic1_0.jpg);
+   background-position: center;
  }
 
+
+
+ label {
+   /* border: 2px solid red; */
+   font-weight: bold;
+   color: black;
+   margin: auto;
+ }
+
+ option {
+   background-color: aquamarine;
+ }
+
+ select {
+   background-color: rgba(235, 188, 247, 0.514);
+   margin-left: 15px;
+ }
+
+button {
+  width: 200px;
+}
+
+
+ 
 
   

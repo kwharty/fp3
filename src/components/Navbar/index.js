@@ -6,19 +6,19 @@ import "./nav.css";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top" style={{
-     background: '#bdc3c7'
-      
+      background: '#bdc3c7',
+      fontFamily: 'Exo'
 
     }}>
-      <Link 
-      to="/"
-      className={
-        window.location.pathname === "/" ? "nav-link active" : "nav-link"
-      }>
+      <Link
+        to="/"
+        className={
+          window.location.pathname === "/" ? "nav-link active" : "nav-link"
+        }>
         AutoBongs
         </Link >
       <div>
-    
+
         <ul className="navbar-nav" >
           <li className="nav-item">
             <Link
@@ -49,20 +49,24 @@ function Navbar() {
             <input className="nav-item" style={{
               position: 'relative', WebkitFilter: 'blur(0.75px) saturate(7)',
               float: "left",
-              margin:'3px'
+              margin: '3px',
+              fontFamily: 'Exo'
 
-             }}
-             type="text" placeholder="username" name="username"  >
-          </input>
+            }}
+              type="text" placeholder="username" name="username"  >
+            </input>
           </li>
           <li>
-           <input className="nav-item" style={{
+            <input className="nav-item" style={{
               position: 'relative', WebkitFilter: 'blur(0.75px) saturate(7)',
               float: "right",
-              margin: "3px"
+              margin: "3px",
 
-             }}
-            type="password" placeholder="password" name="password">
+              fontFamily: 'Exo'
+
+
+            }}
+              type="password" placeholder="password" name="password">
             </input>
           </li>
         </ul>
@@ -72,3 +76,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+

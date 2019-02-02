@@ -1,58 +1,81 @@
 import React, { Component } from 'react';
+import './Survey.module.css';
 
 class Survey extends Component {
     render() {
         return (
-            <div className=".container">
-                <div className=".row">
+            <div className=".container .box1">
+                <div className=".row ">
                     <div className=".col-xs-4">
                         <form>
-                        <div className="form-group">     
-                            <h2>Please Answer the Following Questions</h2>
+                            <div className="form-group">
+                                <h2>Please Answer the Following Questions</h2>
                             </div>
                             <div className=".row form-group">
                                 <div className=".col-xs-4">
-                                
-                                    <label>
-                                        What type of material will you be using in this Autobong?
+
+                                    <label className="label">
+                                        What type of material will you be using in this Autobongz?
                 <select>
                                             <option value="" disabled selected>Select One</option>
                                             <option value="choiceOne">Flower</option>
                                             <option value="choiceTwo">Concentrates</option>
                                         </select>
+
                                     </label>
-                                    
+
+
                                 </div>
                             </div>
+
+                            <div className=".row">
+                                <div className=".col-xs-4">
+                                    <i>Discription section of</i>
+                                </div>
+                            </div>
+
+
+
                             <div className=".row form-group">
                                 <div className=".col-xs-4">
-                                    <label>
+                                    <label className="label">
                                         What style of stem do you prefer?
                 <select>
                                             <option value="" disabled selected>Select One</option>
-                                            <option value="choiceOne">Natural Downstem</option>
+                                            <option value="choiceOne">Direct Inject</option>
+                                            {/* <p>A popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</p> */}
                                             <option value="choiceTwo">Normal Diffused</option>
+                                            {/* <p>this downstem is inserted into the bong and removeable for cleaning and are diffused for extra percalation</p> */}
                                         </select>
                                     </label>
                                 </div>
                             </div>
                             <div className=".row form-group">
                                 <div className=".col-xs-4">
-                                    <label>
+                                    <label className="label">
                                         When it comes to percolation, which style do you prefer?
                 <select>
                                             <option value="" disabled selected>Select One</option>
                                             <option value="choiceOne">Honeycomb</option>
+                                            {/* <p>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</p> */}
+
                                             <option value="choiceTwo">Tree Arm</option>
-                                            <option value="choiceThree">Slotted</option>
+                                            {/* <p>Tree percolators are fairly simple. Within the tube of the bong, there is a collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
+
+
+                                            <option value="choiceThree">Tornado Perc</option>
+                                            {/* <p>Turbine percolators excel in function while also delivering a unique aesthetic. The shape of the percolator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
+
                                             <option value="choiceFour">Slotted Barrel</option>
+                                            {/* <p>Matrix percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix percolator operates in a similar way to showerhead percss.</p> */}
+
                                         </select>
                                     </label>
                                 </div>
                             </div>
                             <div className=".row form-group">
                                 <div className=".col-xs-4">
-                                    <label>
+                                    <label className="label">
                                         Which joint size would you like?
                 <select>
                                             <option value="" disabled selected>Select One</option>
@@ -66,7 +89,7 @@ class Survey extends Component {
                             </div>
                             <div className=".row form-group">
                                 <div className=".col-xs-4">
-                                    <label>
+                                    <label className="label">
                                         What material would you like?
                 <select>
                                             <option value="" disabled selected>Select One</option>
@@ -78,7 +101,7 @@ class Survey extends Component {
                             </div>
                             <div className=".row form-group">
                                 <div className=".col-xs-4">
-                                    <label>
+                                    <label className="label">
                                         Do you like ice, and would you like an ice catcher?
                 <select>
                                             <option value="" disabled selected>Select One</option>

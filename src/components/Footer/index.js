@@ -3,7 +3,7 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <footer className="footer" style={{
+    <footer className="footer text-center" style={{
       margin:'50px'
     }}>
       <span>Copyright &copy; AutoBongs 2019
