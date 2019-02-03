@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Registration.module.css';
 // import User from '../api/userModel.js'
 import Api from "../../services/api";
+import flower from "./flower.jpg";
+import Wax from "./Wax.jpg";
 
 class Registration extends Component {
     // Setting the component's initial state
@@ -175,10 +177,37 @@ class Registration extends Component {
                                                     </select>
 
                                                 </label>
+
+
                                                 <br></br>
-                                                <li><b>Flower</b><i> the plant version that is the orginal form of the plant.</i></li>
+                                                <img  className="allign-center" alt="flower" src={flower} style ={{
+
+width: "20%",
+height: "20%",
+alignContent: "left",
+// display: "block",
+marginLeft: "auto",
+marginRight: "auto",
+
+
+
+        }}/>  <b>Flower</b><i> the plant version that is the orginal form of the plant.</i>                                             
+
                                                 <br></br>
-                                                <li><b>Concentrates</b><i> It comes in various forms but it is a concrated verion of the plant where its been extracted into an oil or shatter.</i></li>
+                                                <br></br>
+                                                <img  className="allign-center" alt="wax" src={Wax} style ={{
+
+width: "20%",
+height: "20%",
+alignContent: "left",
+// display: "block",
+marginLeft: "auto",
+marginRight: "auto",
+
+
+
+        }}/> <b>Concentrates</b>  <br></br>
+        <i> It comes in various forms but it's a concentrated verion of the plant where its been extracted into an oil or shatter.</i>
 
 
 
