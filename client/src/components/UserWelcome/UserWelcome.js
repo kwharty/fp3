@@ -11,6 +11,13 @@ class UserWelcome extends Component {
                     <h2>TESTING</h2>
                     </div>
                 </div>
+                <div className="row">
+                    <div className="col-xs-">
+                        <h2>Based on your survey answers, we recommend the following components:</h2>
+                    </div>
+
+                </div>
+
             </div>
 
 
