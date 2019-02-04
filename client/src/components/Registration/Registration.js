@@ -176,11 +176,11 @@ class Registration extends Component {
                                                 <h3>      What type of material will you be using in this Autobong? </h3>
                                                 <div className="row">
 
-                                                    <div className="card col-6" style={{ width: "100%" }}>
+                                                    <div className="card col-6" style={{ width: "80%" }}>
                                                         <img className="allign-center card flower" alt="flower" src={flower} style={{
 
-                                                            width: "100%",
-                                                            height: "100%",
+                                                            width: "50%",
+                                                            height: "50%",
                                                             alignContent: "left",
                                                             // display: "block",
                                                             marginLeft: "auto",
@@ -191,11 +191,11 @@ class Registration extends Component {
                                                         </div>
                                                     </div>
 
-                                                    <div className="card col-6" style={{ width: "100%" }}>
+                                                    <div className="card col-6" style={{ width: "80%" }}>
                                                         <img className="allign-center card flower" alt="concentrate" src={Wax} style={{
 
-                                                            width: "100%",
-                                                            height: "100%",
+                                                            width: "50%",
+                                                            height: "50%",
                                                             alignContent: "right",
                                                             // display: "block",
                                                             marginLeft: "auto",
