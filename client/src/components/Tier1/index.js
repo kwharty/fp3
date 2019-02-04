@@ -10,8 +10,8 @@ const Tier1 = () => {
     <div style={{
       margin: '50px'
   }}>
-      <div className="row justify-content-left no-gutters">
-        <div className="col-12">
+      <div className="row justify-content-center no-gutters">
+        <div className="col-6">
           <div>
 
 
@@ -19,8 +19,8 @@ const Tier1 = () => {
 
           <img className="d-block w-100" src={bong1} alt="GLASS10" style ={{
 
-width: "350px",
-height: "250px"
+width: "300px",
+height: "500px"
 
 
         }}/>

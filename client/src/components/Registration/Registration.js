@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './Registration.module.css';
 // import User from '../api/userModel.js'
 import Api from "../../services/api";
+import flower from "./flower.jpg";
+import Wax from "./Wax.jpg";
+import natural from "./natural.jpg";
+import downstem from "./downstem.jpg";
 
 class Registration extends Component {
     // Setting the component's initial state
@@ -160,14 +164,53 @@ class Registration extends Component {
                                 <div className=".col-xs-4">
                                     <form>
                                         <h2>Please Answer the Following Questions</h2>
+
+                                        {/* question 1 */}
+
                                         <div className="form-group">
                                         </div>
                                         <div className=".row form-group">
-                                            <div className=".col-xs-4">
+                                            <div className="col-12">
+
+                                                <h3>      What type of material will you be using in this Autobong? </h3>
+                                                <div className="row">
+
+                                                    <div className="card col-6" style={{ width: "50%" }}>
+                                                        <img className="allign-center card flower" alt="flower" src={flower} style={{
+
+                                                            width: "30%",
+                                                            height: "30%",
+                                                            alignContent: "left",
+                                                            // display: "block",
+                                                            marginLeft: "auto",
+                                                            marginRight: "auto",
+                                                            // backgroundImage: "{{flower}}"
+                                                        }} />   <div className="card-body">
+                                                            <p className="card-text"> <b>Flower</b><i> the plant version that is the orginal form of the plant.</i></p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="card col-6" style={{ width: "50%" }}>
+                                                        <img className="allign-center card flower" alt="concentrate" src={Wax} style={{
+
+                                                            width: "30%",
+                                                            height: "30%",
+                                                            alignContent: "right",
+                                                            // display: "block",
+                                                            marginLeft: "auto",
+                                                            marginRight: "auto",
+                                                            // backgroundImage: "{{flower}}"
+                                                        }} />   <div className="card-body">
+                                                            <p className="card-text"> <b>Concentrates</b> <i> It comes in various forms but it's a concentrated verion of the plant where its been extracted into an oil or shatter.</i></p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
 
                                                 <label className="label">
-                                                    What type of material will you be using in this Autobong?
-                {/* INPUTTING SURVEY SELECTIONS BELOW */}
+                                                    {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
+                                                    {/* INPUTTING SURVEY SELECTIONS BELOW */}
                                                     <select className="select"
                                                         value={this.state.userAns0}
                                                         name="userAns"
@@ -178,43 +221,87 @@ class Registration extends Component {
                                                     </select>
 
                                                 </label>
-                                                <br></br>
-                                                <li><b>Flower</b><i> the plant version that is the orginal form of the plant.</i></li>
-                                                <br></br>
-                                                <li><b>Concentrates</b><i> It comes in various forms but it is a concrated verion of the plant where its been extracted into an oil or shatter.</i></li>
-
-
 
                                             </div>
                                         </div>
 
+
                                         <br></br>
                                         <br></br>
+
+
+                                        {/* question 2 */}
+
                                         <div className=".row form-group">
-                                            <div className=".col-xs-4">
+                                            <div className="col-12">
+
+                                                <h3>  What style of downstem do you prefer?</h3>
+
+                                                <div className="row">
+
+                                                    <div className="card col-6" style={{ width: "50%" }}>
+                                                        <img className="allign-center card " alt="natural down stem" src={natural} style={{
+
+                                                            width: "40%",
+                                                            height: "40%",
+                                                            alignContent: "left",
+                                                            // display: "block",
+                                                            marginLeft: "auto",
+                                                            marginRight: "auto",
+                                                            // backgroundImage: "{{flower}}"
+                                                        }} />   <div className="card-body">
+                                                            <p className="card-text"> <b>Direct Inject</b><i> is a popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</i></p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="card col-6" style={{ width: "50%" }}>
+                                                        <img className="allign-center card flower" alt="downstem" src={downstem} style={{
+
+                                                            width: "40%",
+                                                            height: "40%",
+                                                            alignContent: "left",
+                                                            // display: "block",
+                                                            marginLeft: "auto",
+                                                            marginRight: "auto",
+                                                            // backgroundImage: "{{flower}}"
+                                                        }} />   <div className="card-body">
+                                                            <p className="card-text"> <b>Diffused Downstem</b> <i>Normal Diffused are inserted into the bong and removeable for cleaning and are diffused for extra percalation </i></p>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+
+
+
                                                 <label className="label">
-                                                    What style of stem do you prefer?
-                <select value={this.state.userAns1}
+                                                    <select value={this.state.userAns1}
                                                         name="userAns1"
                                                         onChange={this.handleInputChange}>
                                                         <option value="" disabled selected>Select One</option>
                                                         <option value="1">Direct Inject</option>
                                                         <option value="2">Normal Diffused</option>
-                                                        {/* <p>this downstem is inserted into the bong and removeable for cleaning and are diffused for extra percalation</p> */}
                                                     </select>
                                                 </label>
-                                                <br></br>
-                                                <li> <i>Direct Inject is a popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</i></li>
-                                                <br></br>
-                                                <li>      <i>Normal Diffused are inserted into the bong and removeable for cleaning and are diffused for extra percalation </i></li>
 
 
                                             </div>
                                         </div>
                                         <br></br>
                                         <br></br>
+
+
+
+                                        {/* question three */}
+
+
+
                                         <div className=".row form-group">
-                                            <div className=".col-xs-4">
+                                            <div className=".col-12">
+
+
+
                                                 <label className="label">
                                                     When it comes to percolation, which style do you prefer?
                 <select value={this.state.userAns2}

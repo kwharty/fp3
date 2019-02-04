@@ -14,9 +14,15 @@ const Tier2 = () => {
     <div className="row justify-content-center no-gutters">
 
 
-    <div className="col-sm-4" >
+    <div className="col-6" >
 
-<img className="d-block w-100" src={bong3} alt="glass" />
+<img className="d-block w-100" src={bong1} alt="glass" style ={{
+
+width: "300px",
+height: "500px"
+
+
+        }}  />
 
 
       {/* <div> */}
@@ -61,7 +67,7 @@ const Tier2 = () => {
 
 
       </div>
-      <div className="col-sm-4">
+      <div className="col-6">
         <div className="bg-black text-center h-100 project">
           <div className="d-flex h-100">
             <div className="project-text w-100 my-auto text-center text-lg-left">
