@@ -1,5 +1,57 @@
-/* .form-group {
-   
-        margin-left: "0%";
-   
-} */
+#formContainer {
+        
+        text-align: center;
+        border: 25px solid rebeccapurple;
+        margin-top: 20px;
+
+}
+
+.newFormGroup {
+        border: 2px solid red;
+        padding: 8px;
+        margin: auto;
+}
+
+.newFormLabel {
+        padding-right: 20px;
+}
+
+#contactTitle {
+        margin:auto;
+        border: 1px solid red;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        background-color: rgba(84, 112, 119, 0.548);
+        width: 65%;
+        color: white;
+        font-family: monospace;
+}
+
+#infoBucket {
+        display: inline-block;
+        padding: 50px 0;
+        border: 1px solid greenyellow;
+        margin: auto;
+        width: 65%;
+        font-family: monospace;
+          
+}
+
+#formControlInput1 {
+        width: 50%;
+        margin:auto;
+        
+}
+
+#formControlInput2 {
+        width: 50%;
+        margin: auto;
+}
+
+#formControlInput3 {
+        width: 300px;
+        margin: auto;
+
+}
+
