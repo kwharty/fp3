@@ -10,6 +10,10 @@ class NavBar extends Component {
     userPwd: ""
   };
 
+  handleFormSubmit = event => {
+    
+  }
+
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light fixed-top" style={{

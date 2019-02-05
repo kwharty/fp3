@@ -6,6 +6,10 @@ import flower from "./flower.jpg";
 import Wax from "./Wax.jpg";
 import natural from "./natural.jpg";
 import downstem from "./downstem.jpg";
+import honey from "./honeycomb.jpg";
+import tree from "./tree.jpg";
+import barrel from "./barrel.jpg";
+import tornado from "./tornado.jpg";
 
 class Registration extends Component {
     // Setting the component's initial state
@@ -166,17 +170,17 @@ class Registration extends Component {
 
                                         <div className="form-group">
                                         </div>
-                                        <div className=".row form-group">
+                                        <div className="row form-group">
                                             <div className="col-12">
 
                                                 <h3>      What type of material will you be using in this Autobong? </h3>
                                                 <div className="row">
 
-                                                    <div className="card col-6" style={{ width: "50%" }}>
+                                                    <div className="card col-6" style={{ width: "80%" }}>
                                                         <img className="allign-center card flower" alt="flower" src={flower} style={{
 
-                                                            width: "30%",
-                                                            height: "30%",
+                                                            width: "50%",
+                                                            height: "50%",
                                                             alignContent: "left",
                                                             // display: "block",
                                                             marginLeft: "auto",
@@ -187,11 +191,11 @@ class Registration extends Component {
                                                         </div>
                                                     </div>
 
-                                                    <div className="card col-6" style={{ width: "50%" }}>
+                                                    <div className="card col-6" style={{ width: "80%" }}>
                                                         <img className="allign-center card flower" alt="concentrate" src={Wax} style={{
 
-                                                            width: "30%",
-                                                            height: "30%",
+                                                            width: "50%",
+                                                            height: "50%",
                                                             alignContent: "right",
                                                             // display: "block",
                                                             marginLeft: "auto",
@@ -285,6 +289,9 @@ class Registration extends Component {
 
                                             </div>
                                         </div>
+
+                                        <br></br>
+                                        <br></br>
                                         <br></br>
                                         <br></br>
 
@@ -294,46 +301,136 @@ class Registration extends Component {
 
 
 
-                                        <div className=".row form-group">
-                                            <div className=".col-12">
+                                        <div className="row form-group">
+                                            <div className="col-12">
+
+                                                <h3> When it comes to percolation, which style do you prefer?</h3>
+
+                                                <div className="row">
+                                                    <br></br>
+                                                    <div className="card col-6" style={{ width: "50%" }}>
+                                                        <img className="allign-center card " alt="natural down stem" src={honey} style={{
+                                                            // padding: "10px",
+                                                            width: "50%",
+                                                            height: "35%",
+                                                            alignContent: "left",
+                                                            // display: "block",
+                                                            marginLeft: "auto",
+                                                            marginRight: "auto",
+                                                            // backgroundImage: "{{flower}}"
+                                                        }} />   <div className="card-body">
+                                                            <p className="card-text"> <b>Honeycomb</b><i>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.  </i></p>
+                                                        </div>
+                                                    </div>
 
 
 
-                                                <label className="label">
-                                                    When it comes to percolation, which style do you prefer?
-                <select value={this.state.userAns2}
-                                                        name="userAns2"
-                                                        onChange={this.handleInputChange}>
-                                                        <option value="" disabled selected>Select One</option>
-                                                        <option value="1">Honeycomb</option>
-                                                        {/* <p>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</p> */}
-
-                                                        <option value="2">Tree Arm</option>
-                                                        {/* <p>Tree per.colators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
-
-
-                                                        <option value="3">Tornado Perc</option>
-                                                        {/* <p>Turbine per.colators excel in function while also delivering a unique aesthetic. The shape of the per.colator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
-
-                                                        <option value="4">Slotted Barrel</option>
-                                                        {/* <p>Matrix per.colators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix per.colator operates in a similar way to showerhead percss.</p> */}
-
-                                                    </select>
-                                                </label>
-                                                <br></br>
-                                                <li><b>Honeycomb</b><i>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.    </i></li>
-
-                                                <br></br>
-                                                <li><b>Tree Arm</b><i> Tree percolators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion.    </i></li>
-
-                                                <br></br>
-                                                <li><b>Tornado</b><i> Turbine percolators excel in function while also delivering a unique aesthetic. The shape of the percolator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals </i></li>
-                                                <br></br>
-                                                <li><b>Slotted Barrel</b> <i></i> A barrel or a Matrix percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix percolator operates in a similar way to showerhead percss.    </li>
+                                                    <div className="card col-6" style={{ width: "50%" }}>
+                                                        <img className="allign-center card flower" alt="tree perc" src={tree} style={{
+                                                            // padding: "10px",
+                                                            width: "60%",
+                                                            height: "40%",
+                                                            alignContent: "right",
+                                                            // display: "block",
+                                                            marginLeft: "auto",
+                                                            marginRight: "auto",
+                                                            // backgroundImage: "{{flower}}"
+                                                        }} />   <div className="card-body">
+                                                            <p className="card-text"> <b>Tree Arm</b> <i> Tree percolators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. </i></p>
+                                                        </div>
+                                                    </div>
 
 
+
+
+
+
+
+
+                                                    <div className="row">
+                                                    
+                                                    <div className="card col-6" style={{ width: "100%" }}>
+                                                        <img className="allign-center card " alt="tornado" src={tornado} style={{
+
+                                                            width: "50%",
+                                                            height: "50%",
+                                                            alignContent: "left",
+                                                            // display: "block",
+                                                            marginLeft: "auto",
+                                                            marginRight: "auto",
+                                                            // backgroundImage: "{{flower}}"
+                                                        }} />   <div className="card-body">
+                                                            <p className="card-text"> <b>Tornado</b><i> Turbine percolators excel in function while also delivering a unique aesthetic. The shape of the percolator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals </i></p>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div className="card col-6" style={{ width: "100%" }}>
+                                                        <img className="allign-center card flower" alt="berrel perc" src={barrel} style={{
+                                                            padding: "10px",
+                                                            width: "100%",
+                                                            height: "50%",
+                                                            alignContent: "right",
+                                                            // display: "block",
+                                                            marginLeft: "auto",
+                                                            marginRight: "auto",
+                                                            // backgroundImage: "{{flower}}"
+                                                        }} />   <div className="card-body">
+                                                            <p className="card-text"> <b>Slotted Barrel</b> <i> Tree percolators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. </i></p>
+                                                        </div>
+                                                    </div>
+                                                    
+
+
+                                                </div>
                                             </div>
                                         </div>
+
+
+
+                                        <label className="label">
+
+
+                                            <select value={this.state.userAns2}
+                                                name="userAns2"
+                                                onChange={this.handleInputChange}>
+                                                <option value="" disabled selected>Select One</option>
+                                                <option value="1">Honeycomb</option>
+                                                {/* <p>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</p> */}
+
+                                                <option value="2">Tree Arm</option>
+                                                {/* <p>Tree per.colators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
+
+
+                                                <option value="3">Tornado Perc</option>
+                                                {/* <p>Turbine per.colators excel in function while also delivering a unique aesthetic. The shape of the per.colator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
+
+                                                <option value="4">Slotted Barrel</option>
+                                                {/* <p>Matrix per.colators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix per.colator operates in a similar way to showerhead percss.</p> */}
+
+                                            </select>
+
+                                        </label>
+
+
+
+
+                                        </div>
+
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+
+
+
+
+
+
+                                        {/* question 4 */}
                                         <div className=".row form-group">
                                             <div className=".col-xs-4">
                                                 <label className="label">
