@@ -60,6 +60,8 @@ class Registration extends Component {
                 to Autobongs!`)
         }
 
+        //calculate score
+        //based on score set nat to resultOne, Two, or Three
         this.setState({nav:"welcome"}, ()=>console.log("state after submit", this.state));
 
         // this.setState({
