@@ -27,40 +27,6 @@ height: "500px"
 
 
 
-
-
-
-            {/* <div>
-              <img className="img-fluid" src="../img/bong.jpg" alt="" />
-              <div id="carouselExampleIndicators1" className="carousel slide" data-ride="carousel">
-                <ol className="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <img className="d-block w-100" src={bong1} alt="GLASS10" />
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block w-100" src="../img/ashCatch1.jpg" alt="Accoriess" />
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block w-100" src="../img/bowl1.jpg" alt="swag" />
-                  </div>
-                </div>
-                <a className="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
- */}
-
           </div>
           <div className="col-12 justify-content-right">
             <div className="bg-black  text-center h-100 project" />

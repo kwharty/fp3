@@ -16,58 +16,19 @@ const Tier3 = () => {
       <div className="row justify-content-center no-gutters">
         <div className="col-lg-6">
           <div>
-
-
-          <img className="d-block w-100" src={bong2} alt="glass" />
-
-
-            {/* <div>
-              <img className="img-fluid" src={bong} alt="" />
-              <div id="carouselExampleIndicators3" className="carousel slide" data-ride="carousel">
-                <ol className="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <img className="d-block w-100" src={bong1} alt="glass" />
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block w-100" src={bong2} alt="Accoriess" />
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block w-100" src={bong3} alt="swag" />
-                  </div>
-                </div>
-                <a className="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="sr-only">Next</span>
-                </a>
-              </div>
-            </div>*/}
-
-
-
-          </div> 
-
-
-
+            <img className="d-block w-100" src={bong2} alt="glass" />
+          </div>
           <div className="col-lg-12 order-lg-first">
             <div className="bg-black  text-center h-100 project" />
             <div className="d-flex h-100">
-              <div className="project-text w-100 my-auto text-center text-lg-right">
+              <div className="project-text w-100 my-auto text-center text-lg-left">
                 <div className="card mb-4 box-shadow">
                   <div className="card-header">
                     <h2 className="my-0 font-weight-normal">Teir 3</h2>
                   </div>
                   <div className="card-body">
                     <h1 className="card-title pricing-card-title">$175 <small className="text-muted">/ mo</small></h1>
-                    <ul className="list-unstyled mt-3 mb-4" />
+                    <ul className="list-unstyled mt-3 mb-4 text-left" />
                     <li>or a single box $200</li>
                     <li>Shipped to you in discrete packaging.</li>
                     <li>Collectible box</li>
