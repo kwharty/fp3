@@ -17,7 +17,13 @@ class Registration extends Component {
         userName: "",
         userEmail: "",
         userPwd: "",
-        userAns: 0
+        userAns0: 0,
+        userAns1: 0,
+        userAns2: 0,
+        userAns3: 0,
+        userAns4: 0,
+        userAns5: 0,
+        nav:"registration"
     };
 
     handleInputChange = event => {
@@ -54,19 +60,22 @@ class Registration extends Component {
                 to Autobongs!`)
         }
 
-        this.setState({
-            userName: "",
-            userEmail: "",
-            userPwd: "",
-            userAns0: 0,
-            userAns1: 0,
-            userAns2: 0,
-            userAns3: 0,
-            userAns4: 0,
-            userAns5: 0
+        this.setState({nav:"welcome"}, ()=>console.log("state after submit", this.state));
 
-        });
+        // this.setState({
+        //     userName: "",
+        //     userEmail: "",
+        //     userPwd: "",
+        //     userAns0: 0,
+        //     userAns1: 0,
+        //     userAns2: 0,
+        //     userAns3: 0,
+        //     userAns4: 0,
+        //     userAns5: 0
 
+        // });
+
+        //for API call 
         const userToCreate = {
             userName: this.state.userName,
             userPwd: this.state.userPwd,
@@ -81,9 +90,16 @@ class Registration extends Component {
 
         return Api.register(userToCreate)
             .then(user => {
+
                 console.log(user)
-                this.props.history.push(`/users/${user._id}`)
+                //redirect
+                //this.props.history.push(`/users/${user._id}`)
+            }).catch(error => {
+                console.log(error.response.data)
             })
+            //END API CALL
+
+
 
         //MAKE API CALL TO POST USER DATA TO DB
 
@@ -113,6 +129,10 @@ class Registration extends Component {
     render() {
         // This is where the 'value', 'name', and 
         // 'onChange' props are
+        console.log('nav in render ', this.state.nav);
+        switch(this.state.nav)
+        {
+        case "registration":
         return (
             <div className="container-fluid">
                 <div className=".row">
@@ -121,7 +141,7 @@ class Registration extends Component {
 
                         <div className=".row">
                             <div className=".col-xs-4">
-                                <form className="form-inline form1" action="/submit" method="post">
+                                <form className="form-inline form1" >
                                     <div className="form-group">
                                         <input className=".form-Control"
                                             value={this.state.userName}
@@ -478,7 +498,7 @@ class Registration extends Component {
                                         <div className=".row form-group">
                                             <div className=".col-xs-4">
                                                 <button type="button" className="btn btn-success"
-                                                    onClick={this.handleFormSubmit}>Submit</button>
+                                                    onClick={(event)=>{this.handleFormSubmit(event)}}>Submit</button>
                                             </div>
                                         </div>
                                     </form>
@@ -488,13 +508,22 @@ class Registration extends Component {
                         </div>
                     </div>
                 </div>
-
-            </div >
-        );
+            </div>
+        )
+        break;
+        case "resultOne":
+        return <div>Welcome here </div>;
+        case "resultTwo":
+        return <div>Welcome here </div>;
+        case "resultThree":
+        return <div>Welcome here </div>;
+        break;
+                                                    }//end switch
     }
 }
 
 export default Registration;
+
 
 
 

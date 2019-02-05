@@ -41,37 +41,37 @@ var UserSchema = new Schema({
 
   userAns0: {
     type: Number,
-    unique: true,
+    // unique: true,
     // match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
   },
 
   userAns1: {
     type: Number,
-    unique: true,
+    // unique: true,
     // match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
   },
 
   userAns2: {
     type: Number,
-    unique: true,
+    // unique: true,
     // match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
   },
 
   userAns3: {
     type: Number,
-    unique: true,
+    // unique: true,
     // match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
   },
 
   userAns4: {
     type: Number,
-    unique: true,
+    // unique: true,
     // match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
   },
 
   userAns5: {
     type: Number,
-    unique: true,
+    // unique: true,
     // match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
   },
   // `date` must be of type Date. The default value is the current date
