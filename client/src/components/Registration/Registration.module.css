@@ -55,7 +55,7 @@ form input {
 
  select {
    background-color: rgba(235, 188, 247, 0.514);
-   margin-left: 15px;
+   /* margin-left: 15px; */
  }
 
 button {
@@ -69,14 +69,16 @@ button {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   /* width: 10%; */
+  padding: 10px 10px 10px;
+
 }
 
 .card:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
 }
 
-.containerz {
-  padding: 2px 4px;
+.container {
+  padding: 10px 10px 10px;
 }
 
 .flower {
