@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer text-center" style={{
       margin:'50px'
     }}>
-      <span>Copyright &copy; AutoBongs 2019
+      <span>Copyright &copy; Automatic Glass 2019
 </span>
     </footer>
   );

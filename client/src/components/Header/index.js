@@ -19,7 +19,7 @@ function Header() {
         <h1 className="mx-auto my-0 text-uppercase headerAutoBongs " style={{
           fontSize: '60px',
         }} >
-        AutoBongs</h1>
+        Automatic Glass</h1>
         <h2 className="text-white-50 mx-auto mt-2 mb-5"  style={{
           fontSize: '30px',
           color: 'white',
