@@ -8,7 +8,9 @@ const ContactForm = () => {
         <div className="container" id="formContainer">
             <div className="title" id="contactTitle">
                 <h1 id="contactBanner">Contact Us</h1>
+                <p className="lead">Here at Automatic Glass we love hearing from you, as well as to provide first class customer service. Contacting us for questions & concerns, as well as returns.</p>
                 <p className="lead">Please enter your information below.</p>
+
             </div>
             <form className="form" id="infoBucket">
                 <div className="newFormGroup">
