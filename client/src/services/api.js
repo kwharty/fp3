@@ -5,4 +5,6 @@ export default {
         return axios.post("/api/users", userInfo)
             .then(newUser => newUser.data)
     }
+    
+  
 }
