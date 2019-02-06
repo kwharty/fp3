@@ -21,20 +21,20 @@ function Header() {
 
 
 
-<div className="" style={{
-         
-
-}}> 
-        <h1 className="mx-auto my-0 text-uppercase newHeader1  r " style={{
-          fontSize: '80px',
-          textShadow: '2px 2px 4px grey',
-          opacity: "100%",
+        <div className="" style={{
 
 
-        }} >
-          Automatic Glass</h1>
-          </div>
-<br></br>
+        }}>
+          <h1 className="mx-auto my-0 text-uppercase newHeader1  r " style={{
+            fontSize: '80px',
+            textShadow: '2px 2px 4px grey',
+            opacity: "100%",
+
+
+          }} >
+            Automatic Glass</h1>
+        </div>
+        <br></br>
         <h2 className="text-white  mx-auto  " style={{
           fontSize: '40px',
           color: 'white',
@@ -52,25 +52,41 @@ function Header() {
           <br></br>
           <br></br>
 
-          As well as the ultimate monthly subscription for glass collectors or the perfect gift. </h2>
-
+          As well as the ultimate monthly subscription for glass collectors or the perfect gift.
 <br></br>
 <br></br>
 
 
+          <Link
+            to="/about">
+            <button type="button"
+              className="btn btn-block btn-primary philBTN" style={{
+                fontFamily: 'Exo'
+              }}>
+              <h4 className="" style={{
+                fontSize: "30px",
+              }} > Learn more</h4>
+            </button>
+          </Link>
+        </h2>
+        <br></br>
+        <h1>OR</h1>
+
+<p className="text-white" style={{
+fontSize: "20px",
+}}>
+take the next step in upping your glass game by...
+</p>
+
+        <br></br>
         <Link
           to="/login">
           <button type="button"
             className="btn btn-block btn-primary philBTN" style={{
               fontFamily: 'Exo'
-
-
-
             }}>
             <h4 className="" style={{
               fontSize: "30px",
-
-
             }} > Create New Account</h4>
           </button>
         </Link>
