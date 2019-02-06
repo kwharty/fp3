@@ -15,41 +15,68 @@ function Header() {
       opacity: 10
     }}
     >
-      <div className="mx-auto text-cente">
+      <div className="mx-auto text-center" style={{
+
+      }} >
+
+
+
+<div className="" style={{
+          backgroundColor: "purple",
+padding: "25px",
+
+}}> 
         <h1 className="mx-auto my-0 text-uppercase headerAutoBongs  r " style={{
           fontSize: '80px',
-          // color: 'white',
           textShadow: '2px 2px 4px grey',
 
 
 
         }} >
           Automatic Glass</h1>
-        <h2 className="text-white-50  mx-auto mt-2 mb-5" style={{
-          fontSize: '35px',
+          </div>
+<br></br>
+        <h2 className="text-white  mx-auto  " style={{
+          fontSize: '40px',
           color: 'white',
           textShadow: '2px 2px 4px black',
+          maxWidth: "60rem",
+          padding: "50px",
+          borderStyle: "groove",
+          borderRadius: "8px",
+          border: "5px solid white",
+
 
         }}>
 
           The best no hassle, bang for your buck, and professionaly hand picked bong.
-      <br></br>
+          <br></br>
           <br></br>
 
+          As well as the ultimate monthly subscription for glass collectors or the perfect gift. </h2>
 
-          As well as the Ultimate Monthly Subscription for Glass Collectors </h2>
+<br></br>
+<br></br>
+
+
         <Link
           to="/login">
           <button type="button"
             className="btn btn-block btn-primary philBTN" style={{
               fontFamily: 'Exo'
-            
+
 
 
             }}>
-            Create New Account
+            <h4 className="" style={{
+              fontSize: "30px",
+
+
+            }} > Create New Account</h4>
           </button>
         </Link>
+        <br></br><br></br>
+
       </div>
     </div>
   );
