@@ -155,11 +155,11 @@ class Registration extends Component {
                     <div className="container-fluid">
                         <div className=".row">
                             <div className=".col-xs-4">
-                                <h2 className="title">Please Enter New User Information</h2>
+                                <h1 className="title" id="title">Please Enter New User Information</h1>
 
                                 <div className=".row">
-                                    <div className=".col-xs-4">
-                                        <form className="form-inline form1" >
+                                    <div className=".col-xs-12">
+                                        <form className="form-inline">
                                             <div className="form-group">
                                                 <input className=".form-Control"
                                                     value={this.state.userName}
@@ -200,20 +200,20 @@ class Registration extends Component {
                                 <div>
                                     {/* <div className=".container .box1"> */}
                                     <div className=".row ">
-                                        <div className=".col-xs-4">
+                                        <div className="col-lg-12">
                                             <form>
                                                 <h2>Please Answer the Following Questions</h2>
 
                                                 {/* question 1 */}
 
-                                                <div className="form-group">
-                                                </div>
+                                                {/* <div className="form-group">
+                                                </div> */}
                                                 <div className="row form-group">
                                                     <div className="col-12">
 
                                                         <h3>      What type of material will you be using in this Autobong? </h3>
+                                                        {/* <div className="row"> */}
                                                         <div className="row">
-
                                                             <div className="card col-6" style={{ width: "80%" }}>
                                                                 <img className="allign-center card flower" alt="flower" src={flower} style={{
 
@@ -224,7 +224,9 @@ class Registration extends Component {
                                                                     marginLeft: "auto",
                                                                     marginRight: "auto",
                                                                     // backgroundImage: "{{flower}}"
-                                                                }} />   <div className="card-body">
+
+                                                                }} />
+                                                                <div className="card-body">
                                                                     <p className="card-text"> <b>Flower</b><i> the plant version that is the orginal form of the plant.</i></p>
                                                                 </div>
                                                             </div>
@@ -243,19 +245,20 @@ class Registration extends Component {
                                                                     <p className="card-text"> <b>Concentrates</b> <i> It comes in various forms but it's a concentrated verion of the plant where its been extracted into an oil or shatter.</i></p>
                                                                 </div>
                                                             </div>
+                                                            {/* </div> */}
+                                                            <label className="label">
+                                                                {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
+                                                                {/* INPUTTING SURVEY SELECTIONS BELOW */}
+                                                                <select className="select"
+                                                                    value={this.state.userAns0}
+                                                                    name="userAns"
+                                                                    onChange={this.handleInputChange}>
+                                                                    <option value="" disabled selected>Select One</option>
+                                                                    <option value="1">Flower</option>
+                                                                    <option value="2">Concentrates</option>
+                                                                </select>
+                                                            </label>
                                                         </div>
-                                                        <label className="label">
-                                                            {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
-                                                            {/* INPUTTING SURVEY SELECTIONS BELOW */}
-                                                            <select className="select"
-                                                                value={this.state.userAns0}
-                                                                name="userAns"
-                                                                onChange={this.handleInputChange}>
-                                                                <option value="" disabled selected>Select One</option>
-                                                                <option value="1">Flower</option>
-                                                                <option value="2">Concentrates</option>
-                                                            </select>
-                                                        </label>
                                                     </div>
                                                 </div>
                                                 <br></br>
@@ -278,7 +281,7 @@ class Registration extends Component {
                                                                     <p className="card-text"> <b>Direct Inject</b><i> is a popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</i></p>
                                                                 </div>
                                                             </div>
-                                                            <div className="card col-6" style={{ width: "50%" }}>
+                                                            <div className="card col-6" style={{ width: "0%" }}>
                                                                 <img className="allign-center card flower" alt="downstem" src={downstem} style={{
                                                                     width: "40%",
                                                                     height: "40%",
@@ -391,9 +394,9 @@ class Registration extends Component {
                                                 <br></br>
                                                 <br></br>
                                                 <br></br>
+                                                {/* <br></br>
                                                 <br></br>
-                                                <br></br>
-                                                <br></br>
+                                                <br></br> */}
                                                 {/* question 4 */}
                                                 <div className=".row form-group">
                                                     <div className=".col-xs-4">

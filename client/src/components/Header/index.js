@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import { Link } from 'react-router-dom';
-import Background from "./valley.png";
+// import Background from "./valley.png";
 
 function Header() {
   return (

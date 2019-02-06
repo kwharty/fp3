@@ -7,7 +7,7 @@ const ContactForm = () => {
         // <div className="jumbotron jumbotron-fluid">
         <div className="container" id="formContainer">
             <div className="title" id="contactTitle">
-                <h1>Contact Us</h1>
+                <h1 id="contactBanner">Contact Us</h1>
                 <p className="lead">Please enter your information below.</p>
             </div>
             <form className="form" id="infoBucket">
