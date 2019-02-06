@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import bong from "./bong5.jpg";
 
 
 const DeveloperCard = props => {
@@ -8,7 +9,7 @@ const DeveloperCard = props => {
 
 
 
-        <div className="card" style ={{
+        <div className="container" style ={{
           backgroundColor: "grey",
           backgroundImage: 'radial-gradient(white, grey, black)',
 
@@ -26,20 +27,26 @@ alignContent: "center",
 display: "block",
 marginLeft: "auto",
 marginRight: "auto",
+paddingTop: "100px",
+paddingBottom: "30px",
 
 
 
         }}/>
       </div>
-      <div className="content text-center" style ={{
+      <div className="content text-center " style ={{
 // backgroundColor: "grey",
 color: "white",
 fontSize: "25px",
 textShadow: "2px 2px 4px #000000",
-
-
-      }} >
-        <ul >
+textAlign: "center",
+paddingBottom: "50px",
+border: "2px solid white",
+borderRadius: "8px",
+borderStyle: "solid",
+borderWidth: "5px",
+        }} >
+        {/* <ul > */}
           <li>
             <strong>Name:</strong> {props.name}
           </li>
@@ -49,7 +56,7 @@ textShadow: "2px 2px 4px #000000",
           <li>
             <a href={props.contact}>Link</a>
           </li>
-        </ul>
+        {/* </ul> */}
       </div>
       </div>
     );
