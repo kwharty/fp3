@@ -16,7 +16,7 @@ const BrandStatement = () => {
             <br></br>
             <br></br>
 
-            Autobongs is the premiere monthly subscription box for the fine water pipe enthusiast.
+            Automatic Glass is the premiere monthly subscription box for the fine water pipe enthusiast.
             We strive to deliver the most quality bang for your buck. Each box contains a varety of water pipes and accessories with quality and quantity increasing with each tier.
             <br></br>
             <br></br>
@@ -34,7 +34,7 @@ const BrandStatement = () => {
 fontSize: '60px',
 textAlign: 'center',
 textShadow: '2px 2px 5px black',
-}} >Meet the creators of Autobongs</h1>
+}} >Meet the creators of Automatic Glass</h1>
 
 <hr style={{
     

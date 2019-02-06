@@ -31,8 +31,7 @@ class NavBar extends Component {
           className={
             window.location.pathname === "/" ? "nav-link active" : "nav-link"
           }>
-          AutoBongs
-          </Link >
+Automatic Glass          </Link >
         <div>
   
           <ul className="navbar-nav" >
