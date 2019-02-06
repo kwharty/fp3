@@ -369,7 +369,7 @@ class Registration extends Component {
                                                                         marginRight: "auto",
                                                                         // backgroundImage: "{{flower}}"
                                                                     }} />   <div className="card-body">
-                                                                        <p className="card-text"> <b>Slotted Barrel</b> <i> Tree percolators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. </i></p>
+                                                                        <p className="card-text"> <b>Slotted Barrel</b> <i> Slotted percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. </i></p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -387,7 +387,7 @@ class Registration extends Component {
                                                             <option value="3">Tornado Perc</option>
                                                             {/* <p>Turbine per.colators excel in function while also delivering a unique aesthetic. The shape of the per.colator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
                                                             <option value="4">Slotted Barrel</option>
-                                                            {/* <p>Matrix per.colators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix per.colator operates in a similar way to showerhead percss.</p> */}
+                                                            {/* <p>Matrix percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix percolator operates in a similar way to showerhead percss.</p> */}
                                                         </select>
                                                     </label>
                                                 </div>
