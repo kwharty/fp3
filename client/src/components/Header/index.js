@@ -22,14 +22,13 @@ function Header() {
 
 
 <div className="" style={{
-          backgroundColor: "purple",
-padding: "25px",
+         
 
 }}> 
-        <h1 className="mx-auto my-0 text-uppercase headerAutoBongs  r " style={{
+        <h1 className="mx-auto my-0 text-uppercase newHeader1  r " style={{
           fontSize: '80px',
           textShadow: '2px 2px 4px grey',
-
+          opacity: "100%",
 
 
         }} >
