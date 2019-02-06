@@ -63,10 +63,11 @@ class NavBar extends Component {
             </li>
             <li >
               <input className="nav-item" style={{
-                position: 'relative', WebkitFilter: 'blur(0.75px) saturate(7)',
-                float: "left",
+                position: 'absolute', WebkitFilter: 'blur(0.75px) saturate(7)',
+                // float: "left",
                 margin: '3px',
-                fontFamily: 'Exo'
+                fontFamily: 'Exo',
+                right:'600px'
   
               }}
                 value={this.state.userName}
@@ -79,10 +80,10 @@ class NavBar extends Component {
             </li>
             <li>
               <input className="nav-item" style={{
-                position: 'relative', WebkitFilter: 'blur(0.75px) saturate(7)',
-                float: "right",
+                position: 'absolute', WebkitFilter: 'blur(0.75px) saturate(7)',
+                // float: "right",
                 margin: "3px",
-  
+                right:'400px',
                 fontFamily: 'Exo'
   
   
@@ -96,7 +97,15 @@ class NavBar extends Component {
             </li>
           </ul>
         </div>
-      <button type="button" className="btn btn-success"
+      <button type="button" className="btn btn-success" style={{
+                position: 'absolute', 
+                // float: "right",
+                margin: "-1px",
+                right:'175px',
+                fontFamily: 'Exo'
+  
+  
+              }}
                                                     onClick={this.handleFormSubmit}>Submit</button>
       </nav>
       
