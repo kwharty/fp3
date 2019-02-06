@@ -1,10 +1,10 @@
 import React from 'react';
 import "./about.css";
-import bong from "./bong.jpg";
+// import bong from "./bong.jpg";
 import bong1 from "./bong1.jpg";
-import bong2 from "./bong3.jpg";
-import bong3 from "./bowl1.jpg";
-import bong4 from "./bong2.jpg";
+// import bong2 from "./bong3.jpg";
+// import bong3 from "./bowl1.jpg";
+// import bong4 from "./bong2.jpg";
 
 
 
