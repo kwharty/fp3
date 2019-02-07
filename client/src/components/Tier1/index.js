@@ -2,8 +2,6 @@ import React from "react";
 import "./about.css";
 import bong1 from "./bong.jpg";
 
-
-
 const Tier1 = () => {
   return (
 
@@ -45,7 +43,7 @@ paddingBottom: "0px",
                     <li>A $60 value!</li>
 
 
-                    <button type="button" className="btn btn-md btn-block btn-primary"><a href="pages/login.html">
+                    <button type="button" className="btn btn-md btn-block btn-primary" ><a href="/checkout1">
                       <h4 className="text-white"> Get started</h4>
                     </a></button>
                   </div>
@@ -58,11 +56,6 @@ paddingBottom: "0px",
       </div>
 
     </div>
-
-
-
-
-
 
 
   );

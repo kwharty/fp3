@@ -44,7 +44,7 @@ paddingBottom: "0px",
                     <li>A $420 Value!</li>
 
 
-                    <button type="button" className="btn btn-md btn-block btn-primary"><a href="pages/login.html">
+                    <button type="button" className="btn btn-md btn-block btn-primary"><a href="checkout3">
                       <h4 className="text-white"> Get started</h4>
                     </a></button>
                   </div>
