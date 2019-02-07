@@ -40,6 +40,7 @@ form input {
     font-family: 'Exo', sans-serif;
     font-weight: bold;
     text-align: center;
+    
   }
 
  h2 {
@@ -49,6 +50,7 @@ form input {
    font-family: 'Exo', sans-serif;
    font-weight: bold;
    text-align: center;
+   background: rgba(192, 189, 214, 0.51);
  }
 
  body {
@@ -80,9 +82,9 @@ form input {
 
  }
 
-button {
+/* button {
   width: 200px;
-}
+} */
 
 
  
@@ -121,6 +123,7 @@ h3 {
   color: rgba(9, 15, 15, 0.883);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
+  
 
 }
 

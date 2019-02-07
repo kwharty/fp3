@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Registration.module.css';
-// import User from '../api/userModel.js'
 import Api from "../../services/api";
 import flower from "./flower.jpg";
 import Wax from "./Wax.jpg";
@@ -88,19 +87,6 @@ class Registration extends Component {
             this.setState({ nav: "resultThree" }, () => console.log("state after submit", this.state));
         }
 
-        // this.setState({
-        //     userName: "",
-        //     userEmail: "",
-        //     userPwd: "",
-        //     userAns0: 0,
-        //     userAns1: 0,
-        //     userAns2: 0,
-        //     userAns3: 0,
-        //     userAns4: 0,
-        //     userAns5: 0
-
-        // });
-
         //for API call 
         const userToCreate = {
             userName: this.state.userName,
@@ -124,32 +110,6 @@ class Registration extends Component {
                 console.log(error.response.data)
             })
         //END API CALL
-
-
-
-        //MAKE API CALL TO POST USER DATA TO DB
-
-        // axios({
-        //     method: 'post',
-        //     url: 'http://localhost:3001/user',
-        //     data: {
-        //         userName: this.state.userName,
-        //         userEmail: this.state.userEmail,
-        //         userPwd: this.state.userPwd
-        //     }
-
-        // })
-
-        //     .then(function (response) {
-        //         //handle success
-        //         console.log(response);
-        //     })
-        //     .catch(function (response) {
-        //         //handle error
-        //         console.log(response);
-        //     });
-
-        console.log(this.state);
     };
 
     render() {
@@ -160,14 +120,19 @@ class Registration extends Component {
             selected: { border: "3px solid red", "height": "500px", "overflow-y": "auto" },
             border: { "height": "500px", "overflow-y": "auto" },
             grey: { "background": "rgba(192, 189, 214, 0.521)"},
-            dev: { border: "thin solid red" }
+            dev: {  textAlign: "center"}
         }
         switch (this.state.nav) {
             case "registration":
                 return (
-                    <div className="container-fluid">
-                        <div className="row title" style={{ "textAlign": "center", "width": "100%" }}>
-                            Please Enter New User Informationsssss
+                    <div className="containerFluid">
+                    <div className="row">
+                    
+                        <div className="row" style={{ "background": "rgba(192, 189, 214, 0.321)", "marginTop": "10px", "color": "white", "textAlign": "center", "width": "100%"}}>
+                            <div className="col">
+                            <h1>Please Enter New User Information</h1>
+                            </div>
+                            </div>
                         </div>
                         <div className="row">
                             <div className="col-2 offset-5" >
@@ -202,28 +167,14 @@ class Registration extends Component {
                                 </form>
                             </div>
                         </div>
-                        {/* <div className=".row">
-                            <div className=".col-xs-4"> */}
-                        {/* <button type="button" className="btn btn-success"
-                                    onClick={this.handleFormSubmit}>Submit</button> */}
-                        {/* </div>
-                        </div> */}
-
                         <div>
-                            {/* <div className=".container .box1"> */}
                             <div className="row ">
                                 <div className="col-8 offset-2" style={style.grey}>
                                     <form>
                                         <h2>Please Answer the Following Questions</h2>
-
-                                        {/* question 1 */}
-
-                                        {/* <div className="form-group">
-                                                </div> */}
                                         <div className="row form-group">
                                             <div className="col-12">
                                                 <h3>What type of material will you be using in this Autobong?</h3>
-                                                {/* <div className="row"> */}
                                                 <div className="row">
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns0 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns0", 1) }}>
@@ -246,20 +197,6 @@ class Registration extends Component {
                                                 </div>
                                             </div>
                                         </div>
-
-                                        {/* </div> */}
-                                        {/* <label className="label">
-                                                        {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
-                                        {/* INPUTTING SURVEY SELECTIONS BELOW */}
-                                        {/* <select className="select">
-                                                            value={this.state.userAns0}
-                                                            name="userAns"
-                                                                    onChange={this.handleInputChange}>
-                                                                    <option value="" disabled selected>Select One</option>
-                                                            <option value="1">Flower</option>
-                                                            <option value="2">Concentrates</option>
-                                                        </select>
-                                                    </label> */}
                                         <br></br>
                                         <br></br>
                                         {/* question 2 */}
@@ -288,15 +225,6 @@ class Registration extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* <label className="label">
-                                                        <select value={this.state.userAns1}
-                                                            name="userAns1"
-                                                            onChange={this.handleInputChange}>
-                                                            <option value="" disabled selected>Select One</option>
-                                                            <option value="1">Direct Inject</option>
-                                                            <option value="2">Normal Diffused</option>
-                                                        </select>
-                                                    </label> */}
 
                                         <br></br>
                                         <br></br>
@@ -306,7 +234,6 @@ class Registration extends Component {
                                         <div className="row form-group">
                                             <div className="col-12">
                                                 <h3>When it comes to percolation, which style do you prefer?</h3>
-                                                {/* <div className="row"> */}
                                                 <div className="row">
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns2 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 1) }}>
@@ -357,63 +284,13 @@ class Registration extends Component {
                                         <br></br>
                                         <br></br>
                                         <br></br>
-                                                
-                                            
-                                        
-
-
-                                        {/* </div> */}
-                                        {/* <label className="label">
-                                                        {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
-                                        {/* INPUTTING SURVEY SELECTIONS BELOW */}
-                                        {/* <select className="select">
-                                                            value={this.state.userAns0}
-                                                            name="userAns"
-                                                                    onChange={this.handleInputChange}>
-                                                                    <option value="" disabled selected>Select One</option>
-                                                            <option value="1">Flower</option>
-                                                            <option value="2">Concentrates</option>
-                                                        </select>
-                                                    </label>  */}
-                                        {/* </div> */}
-                                        {/* <label className="label">
-                                                        {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
-                                        {/* INPUTTING SURVEY SELECTIONS BELOW */}
-                                        {/* <select className="select">
-                                                            value={this.state.userAns0}
-                                                            name="userAns"
-                                                                    onChange={this.handleInputChange}>
-                                                                    <option value="" disabled selected>Select One</option>
-                                                            <option value="1">Flower</option>
-                                                            <option value="2">Concentrates</option>
-                                                        </select>
-                                                    </label>  */}
-
-
-
-                                        {/* <label className="label">
-                                                <select value={this.state.userAns2}
-                                                    name="userAns2"
-                                                    onChange={this.handleInputChange}>
-                                                    <option value="" disabled selected>Select One</option>
-                                                    <option value="1">Honeycomb</option>
-                                                    {/* <p>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</p> */}
-                                        {/* <option value="2">Tree Arm</option>
-                                                    {/* <p>Tree per.colators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
-                                        {/* <option value="3">Tornado Perc</option> */}
-                                        {/* <p>Turbine per.colators excel in function while also delivering a unique aesthetic. The shape of the per.colator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
-                                        {/* <option value="4">Slotted Barrel</option> */}
-                                        {/* <p>Matrix percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix percolator operates in a similar way to showerhead percss.</p> */}
-                                        {/* </select> */}
-                                        {/* </label>  */}
-                                        {/* <br></br>
-                                                <br></br>
-                                                <br></br> */}
-                                        {/* question 4 */}
+                                         <h3>Just a few more questions...</h3>
+                                            <br></br>
                                         <div className="row" style={style.dev}>
-                                            <div className="col-xs-4">
+                                            <div className="col-12">
                                                 <label className="label">
                                                     Which joint size would you like?
+                                                    <br></br>
                 <select value={this.state.userAns3}
                                                         name="userAns3"
                                                         onChange={this.handleInputChange}>
@@ -426,10 +303,12 @@ class Registration extends Component {
                                                 </label>
                                             </div>
                                         </div>
-                                        <div className="row form-group">
-                                            <div className="col-xs-4">
+                                        <br></br>
+                                        <div className="row form-group" style={style.dev}>
+                                            <div className="col-12">
                                                 <label className="label">
                                                     What material would you like?
+                                                    <br></br>
                 <select value={this.state.userAns4}
                                                         name="userAns4"
                                                         onChange={this.handleInputChange}>
@@ -440,8 +319,8 @@ class Registration extends Component {
                                                 </label>
                                             </div>
                                         </div>
-                                        <div className="row form-group">
-                                            <div className="col-xs-4">
+                                        <div className="row form-group" style={style.dev}>
+                                            <div className="col-12">
                                                 <label className="label">
                                                     Do you like ice, and would you like an ice catcher?
                 <select value={this.state.userAns5}
@@ -454,9 +333,9 @@ class Registration extends Component {
                                                 </label>
                                             </div>
                                         </div>
-                                        <div className="row form-group">
-                                            <div className="col-xs-4">
-                                                <button type="button" className="btn btn-success"
+                                        <div className="row form-group" style={style.dev}>
+                                            <div className="col-12">
+                                                <button type="button" id="elButton" className="btn btn-success" 
                                                     onClick={(event) => { this.handleFormSubmit(event) }}>Submit</button>
                                             </div>
                                         </div>
@@ -464,7 +343,6 @@ class Registration extends Component {
                                     </form>
                                 </div>
                             </div>
-                            {/* </div> */}
                         </div>
                     </div>
 

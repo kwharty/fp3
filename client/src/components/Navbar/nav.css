@@ -86,11 +86,12 @@ nav.navbar.navbar-default {
 }
 
 #elButton {
-        
+        width: 15%;
         margin-top: 20px;
         background-color: rgba(129, 106, 134, 0.432);
         text-align: center;
         color: black;
+        font-family: exo;
         font-weight: 900;
         border-radius: 4px;
         border: 1px solid rgb(32, 4, 4);
