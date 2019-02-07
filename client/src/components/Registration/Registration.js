@@ -45,6 +45,13 @@ class Registration extends Component {
         });
     };
 
+    handleClick(name, value) {
+        console.log('clicked');
+        this.setState({
+            [name]: value
+        }, () => { console.log("state after click: ", this.state) });
+    }
+
     handleFormSubmit = event => {
         // Preventing the default behavior of the 
         // form submit ( which is to refresh the page)
@@ -149,313 +156,319 @@ class Registration extends Component {
         // This is where the 'value', 'name', and 
         // 'onChange' props are
         console.log('nav in render ', this.state.nav);
+        const style = {
+            selected: { border: "3px solid red", "height": "500px", "overflow-y": "auto" },
+            border: { "height": "500px", "overflow-y": "auto" },
+            grey: { background: "grey" },
+            dev: { border: "thin solid red" }
+        }
         switch (this.state.nav) {
             case "registration":
                 return (
                     <div className="container-fluid">
-                        <div className=".row">
-                            <div className=".col-xs-4">
-                                <h1 className="title" id="title">Please Enter New User Information</h1>
-
-                                <div className=".row">
-                                    <div className=".col-xs-12">
-                                        <form className="form-inline">
-                                            <div className="form-group">
-                                                <input className=".form-Control"
-                                                    value={this.state.userName}
-                                                    name="userName"
-                                                    onChange={this.handleInputChange}
-                                                    type="text"
-                                                    placeholder="Username"
-                                                />
-                                            </div>
-                                            <div className="form-group">
-                                                <input
-                                                    value={this.state.userEmail}
-                                                    name="userEmail"
-                                                    onChange={this.handleInputChange}
-                                                    type="text"
-                                                    placeholder="Email"
-                                                />
-                                            </div>
-                                            <div className="form-group">
-                                                <input
-                                                    value={this.state.userPwd}
-                                                    name="userPwd"
-                                                    onChange={this.handleInputChange}
-                                                    type="userPwd"
-                                                    placeholder="Password"
-                                                />
-                                            </div>
-                                        </form>
+                        <div className="row title" style={{ "textAlign": "center", "width": "100%" }}>
+                            Please Enter New User Informationsssss
+                        </div>
+                        <div className="row">
+                            <div className="col-2 offset-5" >
+                                <form className="form justify-content-center" >
+                                    <div className="form-group" >
+                                        <input className="form-Control "
+                                            value={this.state.userName}
+                                            name="userName"
+                                            onChange={this.handleInputChange}
+                                            type="text"
+                                            placeholder="Username"
+                                        />
                                     </div>
-                                </div>
-                                {/* <div className=".row">
-                            <div className=".col-xs-4"> */}
-                                {/* <button type="button" className="btn btn-success"
-                                    onClick={this.handleFormSubmit}>Submit</button> */}
-                                {/* </div>
-                        </div> */}
-
-                                <div>
-                                    {/* <div className=".container .box1"> */}
-                                    <div className=".row ">
-                                        <div className="col-lg-12">
-                                            <form>
-                                                <h2>Please Answer the Following Questions</h2>
-
-                                                {/* question 1 */}
-
-                                                {/* <div className="form-group">
-                                                </div> */}
-                                                <div className="row form-group">
-                                                    <div className="col-12">
-
-                                                        <h3>      What type of material will you be using in this Autobong? </h3>
-                                                        {/* <div className="row"> */}
-                                                        <div className="row">
-                                                            <div className="card col-6" style={{ width: "80%" }}>
-                                                                <img className="allign-center card flower" alt="flower" src={flower} style={{
-
-                                                                    width: "50%",
-                                                                    height: "50%",
-                                                                    alignContent: "left",
-                                                                    // display: "block",
-                                                                    marginLeft: "auto",
-                                                                    marginRight: "auto",
-                                                                    // backgroundImage: "{{flower}}"
-
-                                                                }} />
-                                                                <div className="card-body">
-                                                                    <p className="card-text"> <b>Flower</b><i> the plant version that is the orginal form of the plant.</i></p>
-                                                                </div>
-                                                            </div>
-
-                                                            <div className="card col-6" style={{ width: "80%" }}>
-                                                                <img className="allign-center card flower" alt="concentrate" src={Wax} style={{
-
-                                                                    width: "50%",
-                                                                    height: "50%",
-                                                                    alignContent: "right",
-                                                                    // display: "block",
-                                                                    marginLeft: "auto",
-                                                                    marginRight: "auto",
-                                                                    // backgroundImage: "{{flower}}"
-                                                                }} />   <div className="card-body">
-                                                                    <p className="card-text"> <b>Concentrates</b> <i> It comes in various forms but it's a concentrated verion of the plant where its been extracted into an oil or shatter.</i></p>
-                                                                </div>
-                                                            </div>
-                                                            {/* </div> */}
-                                                            <label className="label">
-                                                                {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
-                                                                {/* INPUTTING SURVEY SELECTIONS BELOW */}
-                                                                <select className="select">
-                                                                    value={this.state.userAns0}
-                                                                    name="userAns"
-                                                                    onChange={this.handleInputChange}>
-                                                                    <option value="" disabled selected>Select One</option>
-                                                                    <option value="1">Flower</option>
-                                                                    <option value="2">Concentrates</option>
-                                                                </select>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br></br>
-                                                <br></br>
-                                                {/* question 2 */}
-                                                <div className=".row form-group">
-                                                    <div className="col-12">
-                                                        <h3>  What style of downstem do you prefer?</h3>
-                                                        <div className="row">
-                                                            <div className="card col-6" style={{ width: "50%" }}>
-                                                                <img className="allign-center card " alt="natural down stem" src={natural} style={{
-                                                                    width: "40%",
-                                                                    height: "40%",
-                                                                    alignContent: "left",
-                                                                    // display: "block",
-                                                                    marginLeft: "auto",
-                                                                    marginRight: "auto",
-                                                                    // backgroundImage: "{{flower}}"
-                                                                }} />   <div className="card-body">
-                                                                    <p className="card-text"> <b>Direct Inject</b><i> is a popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</i></p>
-                                                                </div>
-                                                            </div>
-                                                            <div className="card col-6" style={{ width: "0%" }}>
-                                                                <img className="allign-center card flower" alt="downstem" src={downstem} style={{
-                                                                    width: "40%",
-                                                                    height: "40%",
-                                                                    alignContent: "left",
-                                                                    // display: "block",
-                                                                    marginLeft: "auto",
-                                                                    marginRight: "auto",
-                                                                    // backgroundImage: "{{flower}}"
-                                                                }} />   <div className="card-body">
-                                                                    <p className="card-text"> <b>Diffused Downstem</b> <i>Normal Diffused are inserted into the bong and removeable for cleaning and are diffused for extra percalation </i></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <label className="label">
-                                                            <select value={this.state.userAns1}
-                                                                name="userAns1"
-                                                                onChange={this.handleInputChange}>
-                                                                <option value="" disabled selected>Select One</option>
-                                                                <option value="1">Direct Inject</option>
-                                                                <option value="2">Normal Diffused</option>
-                                                            </select>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <br></br>
-                                                <br></br>
-                                                <br></br>
-                                                <br></br>
-                                                {/* question three */}
-                                                <div className="row form-group">
-                                                    <div className="col-12">
-                                                        <h3> When it comes to percolation, which style do you prefer?</h3>
-                                                        <div className="row">
-                                                            <br></br>
-                                                            <div className="card col-6" style={{ width: "50%" }}>
-                                                                <img className="allign-center card " alt="natural down stem" src={honey} style={{
-                                                                    // padding: "10px",
-                                                                    width: "50%",
-                                                                    height: "35%",
-                                                                    alignContent: "left",
-                                                                    // display: "block",
-                                                                    marginLeft: "auto",
-                                                                    marginRight: "auto",
-                                                                    // backgroundImage: "{{flower}}"
-                                                                }} />   <div className="card-body">
-                                                                    <p className="card-text"> <b>Honeycomb</b><i>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.  </i></p>
-                                                                </div>
-                                                            </div>
-                                                            <div className="card col-6" style={{ width: "50%" }}>
-                                                                <img className="allign-center card flower" alt="tree perc" src={tree} style={{
-                                                                    // padding: "10px",
-                                                                    width: "60%",
-                                                                    height: "40%",
-                                                                    alignContent: "right",
-                                                                    // display: "block",
-                                                                    marginLeft: "auto",
-                                                                    marginRight: "auto",
-                                                                    // backgroundImage: "{{flower}}"
-                                                                }} />   <div className="card-body">
-                                                                    <p className="card-text"> <b>Tree Arm</b> <i> Tree percolators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. </i></p>
-                                                                </div>
-                                                            </div>
-                                                            <div className="row">
-                                                                <div className="card col-6" style={{ width: "100%" }}>
-                                                                    <img className="allign-center card " alt="tornado" src={tornado} style={{
-                                                                        width: "50%",
-                                                                        height: "50%",
-                                                                        alignContent: "left",
-                                                                        // display: "block",
-                                                                        marginLeft: "auto",
-                                                                        marginRight: "auto",
-                                                                        // backgroundImage: "{{flower}}"
-                                                                    }} />   <div className="card-body">
-                                                                        <p className="card-text"> <b>Tornado</b><i> Turbine percolators excel in function while also delivering a unique aesthetic. The shape of the percolator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals </i></p>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="card col-6" style={{ width: "100%" }}>
-                                                                    <img className="allign-center card flower" alt="berrel perc" src={barrel} style={{
-                                                                        padding: "10px",
-                                                                        width: "100%",
-                                                                        height: "50%",
-                                                                        alignContent: "right",
-                                                                        // display: "block",
-                                                                        marginLeft: "auto",
-                                                                        marginRight: "auto",
-                                                                        // backgroundImage: "{{flower}}"
-                                                                    }} />   <div className="card-body">
-                                                                        <p className="card-text"> <b>Slotted Barrel</b> <i> Slotted percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. </i></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <label className="label">
-                                                        <select value={this.state.userAns2}
-                                                            name="userAns2"
-                                                            onChange={this.handleInputChange}>
-                                                            <option value="" disabled selected>Select One</option>
-                                                            <option value="1">Honeycomb</option>
-                                                            {/* <p>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</p> */}
-                                                            <option value="2">Tree Arm</option>
-                                                            {/* <p>Tree per.colators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
-                                                            <option value="3">Tornado Perc</option>
-                                                            {/* <p>Turbine per.colators excel in function while also delivering a unique aesthetic. The shape of the per.colator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
-                                                            <option value="4">Slotted Barrel</option>
-                                                            {/* <p>Matrix percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix percolator operates in a similar way to showerhead percss.</p> */}
-                                                        </select>
-                                                    </label>
-                                                </div>
-                                                <br></br>
-                                                <br></br>
-                                                <br></br>
-                                                {/* <br></br>
-                                                <br></br>
-                                                <br></br> */}
-                                                {/* question 4 */}
-                                                <div className=".row form-group">
-                                                    <div className=".col-xs-4">
-                                                        <label className="label">
-                                                            Which joint size would you like?
-                <select value={this.state.userAns3}
-                                                                name="userAns3"
-                                                                onChange={this.handleInputChange}>
-                                                                <option value="" disabled selected>Select One</option>
-                                                                <option value="1">18mm Female</option>
-                                                                <option value="2">14mm Female</option>
-                                                                <option value="3">18mm Male</option>
-                                                                <option value="4">14mm Male</option>
-                                                            </select>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div className=".row form-group">
-                                                    <div className=".col-xs-4">
-                                                        <label className="label">
-                                                            What material would you like?
-                <select value={this.state.userAns4}
-                                                                name="userAns4"
-                                                                onChange={this.handleInputChange}>
-                                                                <option value="" disabled selected>Select One</option>
-                                                                <option value="1">Glass</option>
-                                                                <option value="2">Silicone</option>
-                                                            </select>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div className=".row form-group">
-                                                    <div className=".col-xs-4">
-                                                        <label className="label">
-                                                            Do you like ice, and would you like an ice catcher?
-                <select value={this.state.userAns5}
-                                                                name="userAns5"
-                                                                onChange={this.handleInputChange}>
-                                                                <option value="" disabled selected>Select One</option>
-                                                                <option value="1">Yes, I would like an ice catcher</option>
-                                                                <option value="2">No, I prefer to not have an ice catcher</option>
-                                                            </select>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div className=".row form-group">
-                                                    <div className=".col-xs-4">
-                                                        <button type="button" className="btn btn-success"
-                                                            onClick={(event) => { this.handleFormSubmit(event) }}>Submit</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
+                                    <div className="form-group">
+                                        <input
+                                            value={this.state.userEmail}
+                                            name="userEmail"
+                                            onChange={this.handleInputChange}
+                                            type="text"
+                                            placeholder="Email"
+                                        />
                                     </div>
-                                    {/* </div> */}
-                                </div>
+                                    <div className="form-group">
+                                        <input
+                                            value={this.state.userPwd}
+                                            name="userPwd"
+                                            onChange={this.handleInputChange}
+                                            type="userPwd"
+                                            placeholder="Password"
+                                        />
+                                    </div>
+                                </form>
                             </div>
                         </div>
+                        {/* <div className=".row">
+                            <div className=".col-xs-4"> */}
+                        {/* <button type="button" className="btn btn-success"
+                                    onClick={this.handleFormSubmit}>Submit</button> */}
+                        {/* </div>
+                        </div> */}
+
+                        <div>
+                            {/* <div className=".container .box1"> */}
+                            <div className="row ">
+                                <div className="col-8 offset-2" style={style.grey}>
+                                    <form>
+                                        <h2>Please Answer the Following Questions</h2>
+
+                                        {/* question 1 */}
+
+                                        {/* <div className="form-group">
+                                                </div> */}
+                                        <div className="row form-group">
+                                            <div className="col-12">
+                                                <h3>What type of material will you be using in this Autobong?</h3>
+                                                {/* <div className="row"> */}
+                                                <div className="row">
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns0 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns0", 1) }}>
+                                                            <img className="card-img-top" alt="flower" src={flower} />
+                                                            <div className="card-body">
+                                                                <h5 clasName="card-title">Flower</h5>
+                                                                <p className="card-text"> <i> the plant version that is the orginal form of the plant.</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns0 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns0", 2) }}>
+                                                            <img className="card-img-top" alt="concentrate" src={Wax} />
+                                                            <div className="card-body">
+                                                                <h5 className="card-title">Concentrates</h5>
+                                                                <p className="card-text"> <i> It comes in various forms but it's a concentrated verion of the plant where its been extracted into an oil or shatter.</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* </div> */}
+                                        {/* <label className="label">
+                                                        {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
+                                        {/* INPUTTING SURVEY SELECTIONS BELOW */}
+                                        {/* <select className="select">
+                                                            value={this.state.userAns0}
+                                                            name="userAns"
+                                                                    onChange={this.handleInputChange}>
+                                                                    <option value="" disabled selected>Select One</option>
+                                                            <option value="1">Flower</option>
+                                                            <option value="2">Concentrates</option>
+                                                        </select>
+                                                    </label> */}
+                                        <br></br>
+                                        <br></br>
+                                        {/* question 2 */}
+                                        <div className="row form-group">
+                                            <div className="col-12">
+                                                <h3>What style of downstem do you prefer?</h3>
+                                                <div className="row">
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns1 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns1", 1) }}>
+                                                            <img className="card-img-top" alt="natural down stem" src={natural} />
+                                                            <div className="card-body">
+                                                                <h5 className="card-title">Direct Inject</h5>
+                                                                <p className="card-text"><i> is a popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns1 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns1", 2) }}>
+                                                            <img className="card-img-top" alt="downstem" src={downstem} />
+                                                            <div className="card-body">
+                                                                <h5 className="card-title">Diffused Downstem</h5>
+                                                                <p className="card-text"><i>Normal Diffused are inserted into the bong and removeable for cleaning and are diffused for extra percalation </i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/* <label className="label">
+                                                        <select value={this.state.userAns1}
+                                                            name="userAns1"
+                                                            onChange={this.handleInputChange}>
+                                                            <option value="" disabled selected>Select One</option>
+                                                            <option value="1">Direct Inject</option>
+                                                            <option value="2">Normal Diffused</option>
+                                                        </select>
+                                                    </label> */}
+
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                        {/* question three */}
+                                        <div className="row form-group">
+                                            <div className="col-12">
+                                                <h3>When it comes to percolation, which style do you prefer?</h3>
+                                                {/* <div className="row"> */}
+                                                <div className="row">
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns2 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 1) }}>
+                                                            <img className="card-img-top" alt="flower" src={honey} />
+                                                            <div className="card-body">
+                                                                <h5 clasName="card-title">Honeycomb</h5>
+                                                                <p className="card-text"><i>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns2 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 2) }}>
+                                                            <img className="card-img-top" alt="natural down stem" src={tree} />
+                                                            <div className="card-body">
+                                                                <h5 className="card-title">Tree Arm</h5>
+                                                                <p className="card-text"> <i> It comes in various forms but it's a concentrated verion of the plant where its been extracted into an oil or shatter.</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                        </div>
+                                                    <div className="row form-group">
+                                                        <div className="col-12">
+                                                        <h3></h3>
+                                                            <div className="row">
+                                                                <div className="col-6">
+                                                                    <div className="card" style={this.state.userAns2 == 3 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 3) }}>
+                                                                        <img className="card-img-top" alt="tornado" src={tornado} />
+                                                                        <div className="card-body">
+                                                                            <h5 clasName="card-title">Tornado</h5>
+                                                                            <p className="card-text"> <i>Turbine percolators excel in function while also delivering a unique aesthetic. The shape of the percolator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</i></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="col-6">
+                                                                    <div className="card" style={this.state.userAns2 == 4 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 4) }}>
+                                                                        <img className="card-img-top" alt="slotted barrel" src={barrel} />
+                                                                        <div className="card-body">
+                                                                            <h5 className="card-title">Slotted Barrel</h5>
+                                                                            <p className="card-text"> <i>Slotted percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in.</i></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+                                                
+                                            
+                                        
+
+
+                                        {/* </div> */}
+                                        {/* <label className="label">
+                                                        {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
+                                        {/* INPUTTING SURVEY SELECTIONS BELOW */}
+                                        {/* <select className="select">
+                                                            value={this.state.userAns0}
+                                                            name="userAns"
+                                                                    onChange={this.handleInputChange}>
+                                                                    <option value="" disabled selected>Select One</option>
+                                                            <option value="1">Flower</option>
+                                                            <option value="2">Concentrates</option>
+                                                        </select>
+                                                    </label>  */}
+                                        {/* </div> */}
+                                        {/* <label className="label">
+                                                        {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
+                                        {/* INPUTTING SURVEY SELECTIONS BELOW */}
+                                        {/* <select className="select">
+                                                            value={this.state.userAns0}
+                                                            name="userAns"
+                                                                    onChange={this.handleInputChange}>
+                                                                    <option value="" disabled selected>Select One</option>
+                                                            <option value="1">Flower</option>
+                                                            <option value="2">Concentrates</option>
+                                                        </select>
+                                                    </label>  */}
+
+
+
+                                        {/* <label className="label">
+                                                <select value={this.state.userAns2}
+                                                    name="userAns2"
+                                                    onChange={this.handleInputChange}>
+                                                    <option value="" disabled selected>Select One</option>
+                                                    <option value="1">Honeycomb</option>
+                                                    {/* <p>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</p> */}
+                                        {/* <option value="2">Tree Arm</option>
+                                                    {/* <p>Tree per.colators are fairly simple. Within the tube of the bong, there is a .collection of rods that resemble tree limbs. With a few slits per “limb”, there will be plenty of diffusion. */}
+                                        {/* <option value="3">Tornado Perc</option> */}
+                                        {/* <p>Turbine per.colators excel in function while also delivering a unique aesthetic. The shape of the per.colator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</p> */}
+                                        {/* <option value="4">Slotted Barrel</option> */}
+                                        {/* <p>Matrix percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in. A matrix percolator operates in a similar way to showerhead percss.</p> */}
+                                        {/* </select> */}
+                                        {/* </label>  */}
+                                        {/* <br></br>
+                                                <br></br>
+                                                <br></br> */}
+                                        {/* question 4 */}
+                                        <div className="row" style={style.dev}>
+                                            <div className="col-xs-4">
+                                                <label className="label">
+                                                    Which joint size would you like?
+                <select value={this.state.userAns3}
+                                                        name="userAns3"
+                                                        onChange={this.handleInputChange}>
+                                                        <option value="" disabled selected>Select One</option>
+                                                        <option value="1">18mm Female</option>
+                                                        <option value="2">14mm Female</option>
+                                                        <option value="3">18mm Male</option>
+                                                        <option value="4">14mm Male</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className="row form-group">
+                                            <div className="col-xs-4">
+                                                <label className="label">
+                                                    What material would you like?
+                <select value={this.state.userAns4}
+                                                        name="userAns4"
+                                                        onChange={this.handleInputChange}>
+                                                        <option value="" disabled selected>Select One</option>
+                                                        <option value="1">Glass</option>
+                                                        <option value="2">Silicone</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className="row form-group">
+                                            <div className="col-xs-4">
+                                                <label className="label">
+                                                    Do you like ice, and would you like an ice catcher?
+                <select value={this.state.userAns5}
+                                                        name="userAns5"
+                                                        onChange={this.handleInputChange}>
+                                                        <option value="" disabled selected>Select One</option>
+                                                        <option value="1">Yes, I would like an ice catcher</option>
+                                                        <option value="2">No, I prefer to not have an ice catcher</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className="row form-group">
+                                            <div className="col-xs-4">
+                                                <button type="button" className="btn btn-success"
+                                                    onClick={(event) => { this.handleFormSubmit(event) }}>Submit</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            {/* </div> */}
+                        </div>
                     </div>
+
+
                 )
                 break;
             case "resultOne":
