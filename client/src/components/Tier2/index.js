@@ -58,7 +58,7 @@ paddingBottom: "0px",
                     <li> 2x Raffle entry for giveaways.</li>
                     <li> add a teir 1 combo for only $25</li>                   
                      <li>A $110 Value!</li>                    
-                    <button type="button" className="btn btn-md btn-block btn-primary"><a href="pages/login.html">
+                    <button type="button" className="btn btn-md btn-block btn-primary"><a href="/checkout2">
                       <h4 className="text-white"> Get started</h4>
                     </a></button>
                   </div>

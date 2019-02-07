@@ -1,25 +1,29 @@
 import React from "react";
 import "./about.css";
 import tier2 from "./teir2.jpg";
-
+import Navbar from "../Navbar";
+import Footer from "../Footer"
 
 
 const Checkout2 = () => {
   return (
 
-    <div style={{
-      margin: '50px'
-  }}>
-     
-          <img className="d-block w-100" src={tier2} alt="GLASS10" style ={{
+    <wrapper>
+      <Navbar />
+      <div style={{
+        margin: '150px'
+      }}>
 
-width: "300px",
-height: "500px"
+        <img className="d-block w-100" src={tier2} alt="GLASS10" style={{
 
-        }}/>
+          width: "100%",
+          height: "100%"
 
-</div>
+        }} />
 
+      </div>
+      <Footer />
+    </wrapper>
 
   );
 
