@@ -26,6 +26,22 @@ apiRouter
       })
     })
   })
+  .post("/user-login",(req,res,next)=>{
+    console.log(req.body)
+    return User.findOne(req.body,(err,foundUser)=>{
+      if(err) return res.sendStatus(400);
+      if(!foundUser){
+        return res.status(401).json({message: "no user found"})
+      }
+      if(foundUser){
+        if(foundUser.password === req.body.password){
+          return res.status(200).json(foundUser)
+        }else {
+          return res.sendStatus(401)
+        }
+      }
+    })
+  })
 
   // Initialize Express
 var app = express();
@@ -65,6 +81,17 @@ mongoose.connect(getdatabaseurl()), ({ useNewUrlParser: true });
 
 // Routes
 app.use("/api", apiRouter)
+
+//route to find user in 
+app.get("/user", function (req, res) {
+  User.findOne({userName : req.userName})
+  .then(function (dbUser) {
+    res.json(dbUser);
+  })
+  .catch(function (err) {
+    res.json
+  });
+})
 
 // Route to post our form submission to mongoDB via mongoose
 app.post("/user", function (req, res) {
