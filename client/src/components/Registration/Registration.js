@@ -7,7 +7,7 @@ import Wax from "./Wax.jpg";
 import natural from "./natural.jpg";
 import downstem from "./downstem.jpg";
 import honey from "./honeycomb.jpg";
-import tree from "./tree.jpg";
+import tree2 from "./tree2.jpg";
 import barrel from "./barrel.jpg";
 import tornado from "./tornado.jpg";
 import Tier1 from "../Tier1"
@@ -159,7 +159,7 @@ class Registration extends Component {
         const style = {
             selected: { border: "3px solid red", "height": "500px", "overflow-y": "auto" },
             border: { "height": "500px", "overflow-y": "auto" },
-            grey: { background: "grey" },
+            grey: { "background": "rgba(128, 128, 128, 0.756)"},
             dev: { border: "thin solid red" }
         }
         switch (this.state.nav) {
@@ -270,7 +270,7 @@ class Registration extends Component {
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns1 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns1", 1) }}>
                                                             <img className="card-img-top" alt="natural down stem" src={natural} />
-                                                            <div className="card-body">
+                                                            <div className="card-body">    
                                                                 <h5 className="card-title">Direct Inject</h5>
                                                                 <p className="card-text"><i> is a popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</i></p>
                                                             </div>
@@ -319,7 +319,7 @@ class Registration extends Component {
                                                     </div>
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns2 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 2) }}>
-                                                            <img className="card-img-top" alt="natural down stem" src={tree} />
+                                                            <img className="card-img-top" alt="natural down stem" src={tree2} />
                                                             <div className="card-body">
                                                                 <h5 className="card-title">Tree Arm</h5>
                                                                 <p className="card-text"> <i> It comes in various forms but it's a concentrated verion of the plant where its been extracted into an oil or shatter.</i></p>
@@ -344,7 +344,7 @@ class Registration extends Component {
                                                                 </div>
                                                                 <div className="col-6">
                                                                     <div className="card" style={this.state.userAns2 == 4 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 4) }}>
-                                                                        <img className="card-img-top" alt="slotted barrel" src={barrel} />
+                                                                        <img className="card-img-top" id="barrelImg" alt="slotted barrel" src={barrel} />
                                                                         <div className="card-body">
                                                                             <h5 className="card-title">Slotted Barrel</h5>
                                                                             <p className="card-text"> <i>Slotted percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in.</i></p>
