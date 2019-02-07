@@ -249,7 +249,7 @@ class Registration extends Component {
                                                             <label className="label">
                                                                 {/* <h3>      What type of material will you be using in this Autobong? </h3> */}
                                                                 {/* INPUTTING SURVEY SELECTIONS BELOW */}
-                                                                <select className="select"
+                                                                <select
                                                                     value={this.state.userAns0}
                                                                     name="userAns"
                                                                     onChange={this.handleInputChange}>
