@@ -18,7 +18,8 @@ function App() {
             <Route exact path="/plans" component={Plans} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/login" component={Registration} />
-        
+            {/* <Route exact path="/users/:id" component={Users} /> */}
+
     </div>
     </Router>
       );
