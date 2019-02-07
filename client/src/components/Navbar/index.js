@@ -130,12 +130,14 @@ Automatic Glass          </Link >
             </li>
           </ul>
         </div>
-      <button type="button" className="btn btn-success" style={{
+      <button type="button" className="btn btn-success" id="elButton" style={{
                 position: 'absolute', 
                 // float: "right",
                 margin: "-1px",
-                right:'175px',
-                fontFamily: 'Exo'
+                right:'75px',
+                fontFamily: 'Exo',
+                // backgroundColor: 'rgba(129, 106, 134, 0.432)',
+                borderRadius: '4px',
   
   
               }}

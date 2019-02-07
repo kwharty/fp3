@@ -84,3 +84,21 @@ nav.navbar.navbar-default {
     border-bottom: 0.25rem solid #64a19d;
   }
 }
+
+#elButton {
+        
+        margin-top: 20px;
+        background-color: rgba(129, 106, 134, 0.432);
+        text-align: center;
+        color: black;
+        font-weight: 900;
+        border-radius: 4px;
+        border: 1px solid rgb(32, 4, 4);
+        -webkit-transition-duration: 0.1s; 
+        transition-duration: 0.3s;
+}
+
+#elButton:hover {
+  background-color: rgba(129, 182, 94, 0.623);
+  color: white;
+}
