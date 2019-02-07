@@ -40,7 +40,8 @@ class NavBar extends Component {
 
     return Api.login(userToLogin)
       .then(foundUser=>{
-        console.log(foundUser)
+        console.log(foundUser);
+        alert("Welcome back " + foundUser.userName);
         // this.props.history.push("/")
       })
       .catch(err=>alert("Invalid username or password")
