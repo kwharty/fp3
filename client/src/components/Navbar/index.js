@@ -41,7 +41,7 @@ class NavBar extends Component {
     return Api.login(userToLogin)
       .then(foundUser=>{
         console.log(foundUser);
-        alert("Welcome back " + foundUser.userName);
+        alert("Welcome back " + foundUser.userName)
         // this.props.history.push("/")
       })
       .catch(err=>alert("Invalid username or password")
@@ -121,10 +121,10 @@ Automatic Glass          </Link >
   
   
               }}
-                value={this.state.userPwd}
+                value={this.state.userPwd} 
                 name="userPwd"
                 onChange={this.handleInputChange}
-                type="text"
+                type="password"
                 placeholder="Password">
               </input>
             </li>
@@ -139,7 +139,7 @@ Automatic Glass          </Link >
   
   
               }}
-                                                    onClick={this.handleFormSubmit}>Submit</button>
+                                                    onClick={this.handleFormSubmit}>Login</button>
       </nav>
       
     );
