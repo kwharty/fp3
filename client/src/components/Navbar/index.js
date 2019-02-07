@@ -43,7 +43,8 @@ class NavBar extends Component {
         console.log(foundUser)
         // this.props.history.push("/")
       })
-      .catch(err=>console.log(err.response.data))
+      .catch(err=>alert("Invalid username or password")
+      )
 
 
 
