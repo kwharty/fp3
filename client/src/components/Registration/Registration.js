@@ -159,7 +159,7 @@ class Registration extends Component {
         const style = {
             selected: { border: "3px solid red", "height": "500px", "overflow-y": "auto" },
             border: { "height": "500px", "overflow-y": "auto" },
-            grey: { "background": "rgba(128, 128, 128, 0.756)"},
+            grey: { "background": "rgba(192, 189, 214, 0.521)"},
             dev: { border: "thin solid red" }
         }
         switch (this.state.nav) {

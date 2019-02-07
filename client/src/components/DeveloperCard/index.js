@@ -54,7 +54,7 @@ borderWidth: "5px",
             <strong>About:</strong> {props.about}
           </li>
           <li>
-            <a href={props.contact}>Link</a>
+            <a href={props.contact}>Contact</a>
           </li>
         {/* </ul> */}
       </div>
