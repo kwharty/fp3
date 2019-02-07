@@ -68,7 +68,7 @@ form input {
    background-color: rgba(235, 188, 247, 0.514);
 
    margin:auto;
-   padding-left: 10px;
+   /* padding-left: 10px; */
    font-size: 28px;
 
  }

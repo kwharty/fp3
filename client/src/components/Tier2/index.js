@@ -17,7 +17,10 @@ const Tier2 = () => {
       margin: '50px'
   }}>
       <div className="row justify-content-center no-gutters">
-        <div className="col-6">
+        <div className="col-6" style={{
+// paddingTop: "100px",
+paddingBottom: "100px",
+        }}>
           <div>
 
 
@@ -34,7 +37,10 @@ height: "500px"
 
 
           </div>
-          <div className="col-12 justify-content-right">
+          <div className="col-12 justify-content-right" style={{
+paddingTop: "20px",
+paddingBottom: "0px",
+        }}>
             <div className="bg-black  text-center h-100 project" />
             <div className="d-flex h-100">
               <div className="project-text w-100 my-auto text-center text-lg-left">

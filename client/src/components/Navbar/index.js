@@ -11,11 +11,43 @@ class NavBar extends Component {
     userPwd: ""
   };
 
+
+
+  handleInputChange = event => {
+    // Getting the calue and name of the input
+    //  which triggered the change
+    let value = event.target.value;
+    const name = event.target.name;
+
+    if (name === "userPwd") {
+        value = value.substring(0, 15);
+    }
+    // Updating the input's state
+    this.setState({
+        [name]: value
+    });
+};
+
+
   handleFormSubmit = event => {
     event.preventDefault();
-    
 
-    
+    // const user = this.state.userName;
+    const userToLogin={
+      userName: this.state.userName,
+      password: this.state.password
+    }
+
+    return Api.login(userToLogin)
+      .then(foundUser=>{
+        console.log(foundUser)
+        // this.props.history.push("/")
+      })
+      .catch(err=>console.log(err.response.data))
+
+
+
+  
 
   };
 

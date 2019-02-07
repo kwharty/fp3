@@ -14,14 +14,20 @@ const Tier3 = () => {
 
     <div>
       <div className="row justify-content-center no-gutters">
-        <div className="col-lg-6">
+        <div className="col-lg-6"  style={{
+paddingTop: "100px",
+paddingBottom: "100px",
+        }} >
           <div>
             <img className="d-block w-100" src={bong2} alt="glass" />
           </div>
           <div className="col-lg-12 order-lg-first">
             <div className="bg-black  text-center h-100 project" />
             <div className="d-flex h-100">
-              <div className="project-text w-100 my-auto text-center text-lg-left">
+              <div className="project-text w-100 my-auto text-center text-lg-left" style={{
+paddingTop: "20px",
+paddingBottom: "0px",
+        }} >
                 <div className="card mb-4 box-shadow">
                   <div className="card-header">
                     <h2 className="my-0 font-weight-normal">Teir 3</h2>
