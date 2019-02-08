@@ -3,3 +3,9 @@
     width: 70%;
     margin: auto;
 }
+
+li {
+    font-family: 'Secular One', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Secular+One');

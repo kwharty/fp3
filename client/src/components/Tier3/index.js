@@ -5,10 +5,6 @@ import "./about.css";
 import bong2 from "./bong3.jpg";
 // import bong3 from "./bowl1.jpg";
 
-
-
-
-
 const Tier3 = () => {
   return (
 
@@ -38,7 +34,7 @@ paddingBottom: "0px",
                     <li>or a single box $200</li>
                     <li>Shipped to you in discrete packaging.</li>
                     <li>Collectible box</li>
-                    <li>Top shelf water pipe and accesorries</li>
+                    <li>Top shelf water pipe and accessories</li>
                     <li>add tier 1 + tier 2 combo for only $60</li>
                     <li>4x Raffle entry for giveaways.</li>
                     <li>A $420 Value!</li> <br></br><br></br>
@@ -67,5 +63,6 @@ paddingBottom: "0px",
   );
 
 }
+
 
 export default Tier3;

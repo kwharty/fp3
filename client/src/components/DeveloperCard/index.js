@@ -6,17 +6,11 @@ import bong from "./bong5.jpg";
 const DeveloperCard = props => {
     return (
 
-
-
-
         <div className="container" style ={{
           backgroundColor: "grey",
           backgroundImage: 'radial-gradient(white, grey, black)',
 
-
         }}  >
-
-
 
       <div className="img-container ">
         <img  className="allign-center" alt={props.name} src={props.image} style ={{
@@ -29,8 +23,6 @@ marginLeft: "auto",
 marginRight: "auto",
 paddingTop: "100px",
 paddingBottom: "30px",
-
-
 
         }}/>
       </div>
@@ -46,8 +38,8 @@ borderRadius: "8px",
 borderStyle: "solid",
 borderWidth: "5px",
         }} >
-        {/* <ul > */}
-          <li>
+         <ul style={{listStyle: "none"}} >
+         <br></br> <li>
             <strong>Name:</strong> {props.name}
           </li>
           <li>
@@ -56,7 +48,7 @@ borderWidth: "5px",
           <li>
             <a href={props.contact}>Contact</a>
           </li>
-        {/* </ul> */}
+        </ul>
       </div>
       </div>
     );
