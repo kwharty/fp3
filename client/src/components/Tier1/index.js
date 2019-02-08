@@ -40,8 +40,8 @@ paddingBottom: "0px",
                     <li>Collectible box</li>
                     <li>One handpicked water pipe & a clollection of accesorries</li>
                     <li>Raffle entry for giveaways.</li>
-                    <li>A $60 value!</li>
-
+                    <li>A $60 value!</li> 
+                    <br></br><br></br>
 
                     <button type="button" className="btn btn-md btn-block btn-primary" ><a href="/checkout1">
                       <h4 className="text-white"> Get started</h4>

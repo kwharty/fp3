@@ -53,11 +53,11 @@ paddingBottom: "0px",
                     <ul className="list-unstyled mt-3 mb-4" />
                     <li>Shipped to you in discrete packaging.</li>
                     <li>or a single box $65</li>
-                    <li>Collectible box</li><br />
+                    <li>Collectible box</li>
                     <li>One handpicked water pipe & a clollection of accesorries</li>
                     <li> 2x Raffle entry for giveaways.</li>
                     <li> add a tier 1 combo for only $25</li>                   
-                     <li>A $110 Value!</li>                    
+                     <li>A $110 Value!</li> <br></br><br></br>                   
                     <button type="button" className="btn btn-md btn-block btn-primary"><a href="/checkout2">
                       <h4 className="text-white"> Get started</h4>
                     </a></button>
