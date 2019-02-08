@@ -46,7 +46,7 @@ paddingBottom: "0px",
               <div className="project-text w-100 my-auto text-center text-lg-left">
                 <div className="card mb-4 box-shadow">
                   <div className="card-header">
-                    <h2 className="my-0 font-weight-normal">Teir 2</h2>
+                    <h2 className="my-0 font-weight-normal">Tier 2</h2>
                   </div>
                   <div className="card-body">
                     <h1 className="card-title pricing-card-title">$50 <small className="text-muted">/ mo</small></h1>
@@ -56,7 +56,7 @@ paddingBottom: "0px",
                     <li>Collectible box</li><br />
                     <li>One handpicked water pipe & a clollection of accesorries</li>
                     <li> 2x Raffle entry for giveaways.</li>
-                    <li> add a teir 1 combo for only $25</li>                   
+                    <li> add a tier 1 combo for only $25</li>                   
                      <li>A $110 Value!</li>                    
                     <button type="button" className="btn btn-md btn-block btn-primary"><a href="/checkout2">
                       <h4 className="text-white"> Get started</h4>
@@ -72,67 +72,6 @@ paddingBottom: "0px",
 
     </div>
 
-
-
-
-
-
-
-
-
-
-//     <div className="row justify-content-center no-gutters">
-
-
-//     <div className="col-6" >
-
-// <img className="d-block w-100" src={bong1} alt="glass" style ={{
-
-// width: "300px",
-// height: "500px"
-//         }}  />
-//       </div>
-
-//       <div className="">
-
-//       <div className="col-6">
-//         <div className="bg-black text-center h-100 project">
-//           <div className="d-flex h-100">
-//             <div className="project-text w-100 my-auto text-center text-lg-left">
-//               <div className="card mb-4 box-shadow">
-//                 <div className="card-header">
-//                   <h2 className="my-0 font-weight-normal">Teir 2</h2>
-//                 </div>
-//                 <div className="card-body">
-//                   <h1 className="card-title pricing-card-title">$50 <small className="text-muted">/ mo</small></h1>
-//                   <ul className="list-unstyled mt-3 mb-4" />
-//                   <li>or a single box $65</li>
-//                   <li>Shipped to you in discrete packaging.</li>
-//                   <li>Collectible box</li>
-//                   <li>An even higher quaility water pipe with accesorries</li>
-//                   <li> add a teir 1 combo for only $25</li>
-//                   <li> 2x Raffle entry for giveaways.</li>
-//                   <li>A $110 Value!</li>
-
-//                   <button type="button" className="btn btn-md btn-block btn-primary"><a href="pages/login.html">
-//                     <h4 className="text-white"> Get started</h4>
-//                   </a></button>
-//                 </div>
-//               </div>
-//               <hr className="d-none d-lg-block mb-0 ml-0"></hr>
-//                           </div>
-//           </div>
-//           </div>
-
-//         </div>
-//       </div>
-//       <div>
-
-
-//         {/* <p>TESTING RENDER</p> */}
-
-//       </div>
-//     </div>
 
   );
 }

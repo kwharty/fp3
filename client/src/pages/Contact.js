@@ -10,7 +10,6 @@ const Contact = () => {
         <div>
             <Navbar />
             <ContactForm />
-            {/* <Footer /> */}
         </div>
     );
 }

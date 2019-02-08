@@ -30,7 +30,7 @@ paddingBottom: "0px",
         }} >
                 <div className="card mb-4 box-shadow">
                   <div className="card-header">
-                    <h2 className="my-0 font-weight-normal">Teir 3</h2>
+                    <h2 className="my-0 font-weight-normal">Tier 3</h2>
                   </div>
                   <div className="card-body">
                     <h1 className="card-title pricing-card-title">$175 <small className="text-muted">/ mo</small></h1>
@@ -39,7 +39,7 @@ paddingBottom: "0px",
                     <li>Shipped to you in discrete packaging.</li>
                     <li>Collectible box</li>
                     <li>Top shelf water pipe and accesorries</li>
-                    <li>add teir 1 + teir 2 combo for only $60</li>
+                    <li>add tier 1 + tier 2 combo for only $60</li>
                     <li>4x Raffle entry for giveaways.</li>
                     <li>A $420 Value!</li>
 

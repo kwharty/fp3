@@ -31,7 +31,7 @@ paddingBottom: "0px",
               <div className="project-text w-100 my-auto text-center text-lg-left">
                 <div className="card mb-4 box-shadow">
                   <div className="card-header">
-                    <h2 className="my-0 font-weight-normal">Teir 1</h2>
+                    <h2 className="my-0 font-weight-normal">Tier 1</h2>
                   </div>
                   <div className="card-body">
                     <h1 className="card-title pricing-card-title">$30 <small className="text-muted">/ mo</small></h1>
