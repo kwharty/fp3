@@ -128,17 +128,18 @@ class Registration extends Component {
                     <div className="containerFluid">
                     <div className="row">
                     
-                        <div className="row" style={{ "background": "rgba(192, 189, 214, 0.321)", "marginTop": "10px", "color": "white", "textAlign": "center", "width": "100%"}}>
-                            <div className="col">
+                        <div className="row" style={{"marginLeft": "16%", "marginBottom": "15px", "background": "rgba(192, 189, 214, 0.321)", "marginTop": "10px", "color": "white", "textAlign": "center", "width": "68%"}}>
+                            <div className="col-12">
                             <h1>Please Enter New User Information</h1>
                             </div>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-2 offset-5" >
-                                <form className="form justify-content-center" >
-                                    <div className="form-group" >
-                                        <input className="form-Control "
+                            <div className="col-offset-8" style={{"margin": "auto"}}>
+                                <form className="form justify-content-center">
+                                    <div className="form-group">
+                                        <input className="form-Control"
+                                            style={{'width': "420px"}}
                                             value={this.state.userName}
                                             name="userName"
                                             onChange={this.handleInputChange}
@@ -148,6 +149,7 @@ class Registration extends Component {
                                     </div>
                                     <div className="form-group">
                                         <input
+                                            style={{'width': "420px"}}
                                             value={this.state.userEmail}
                                             name="userEmail"
                                             onChange={this.handleInputChange}
@@ -157,6 +159,7 @@ class Registration extends Component {
                                     </div>
                                     <div className="form-group">
                                         <input
+                                            style={{'width': "420px"}}
                                             value={this.state.userPwd}
                                             name="userPwd"
                                             onChange={this.handleInputChange}
@@ -179,17 +182,17 @@ class Registration extends Component {
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns0 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns0", 1) }}>
                                                             <img className="card-img-top" alt="flower" src={flower} />
-                                                            <div className="card-body">
-                                                                <h5 clasName="card-title">Flower</h5>
-                                                                <p className="card-text"> <i> the plant version that is the orginal form of the plant.</i></p>
+                                                            <div className="card-body" style={{"textAlign": "center"}}>
+                                                                <h5 clasName="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Flower</h5>
+                                                                <p className="card-text"> <i>The orginal form of the plant. For the smoking purist who like to keep things traditional.</i></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns0 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns0", 2) }}>
                                                             <img className="card-img-top" alt="concentrate" src={Wax} />
-                                                            <div className="card-body">
-                                                                <h5 className="card-title">Concentrates</h5>
+                                                            <div className="card-body" style={{"textAlign": "center"}}>
+                                                                <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Concentrates</h5>
                                                                 <p className="card-text"> <i> It comes in various forms but it's a concentrated verion of the plant where its been extracted into an oil or shatter.</i></p>
                                                             </div>
                                                         </div>
@@ -206,18 +209,18 @@ class Registration extends Component {
                                                 <div className="row">
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns1 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns1", 1) }}>
-                                                            <img className="card-img-top" alt="natural down stem" src={natural} />
-                                                            <div className="card-body">    
-                                                                <h5 className="card-title">Direct Inject</h5>
+                                                            <img className="card-img-top" style={{"width": "350px"}} alt="natural down stem" src={natural} />
+                                                            <div className="card-body" style={{"textAlign": "center"}}>    
+                                                                <h5 className="card-title" style={{ "fontSize": "25px","fontWeight": "bolder"}}>Direct Inject</h5>
                                                                 <p className="card-text"><i> is a popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</i></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns1 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns1", 2) }}>
-                                                            <img className="card-img-top" alt="downstem" src={downstem} />
-                                                            <div className="card-body">
-                                                                <h5 className="card-title">Diffused Downstem</h5>
+                                                            <img className="card-img-top" style={{"width": "350px", "marginLeft": "40px"}} alt="downstem" src={downstem} />
+                                                            <div className="card-body" style={{"textAlign": "center"}}>
+                                                                <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Diffused Downstem</h5>
                                                                 <p className="card-text"><i>Normal Diffused are inserted into the bong and removeable for cleaning and are diffused for extra percalation </i></p>
                                                             </div>
                                                         </div>
@@ -237,18 +240,18 @@ class Registration extends Component {
                                                 <div className="row">
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns2 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 1) }}>
-                                                            <img className="card-img-top" alt="flower" src={honey} />
-                                                            <div className="card-body">
-                                                                <h5 clasName="card-title">Honeycomb</h5>
-                                                                <p className="card-text"><i>The shape of honeycomb percs give them the functionality they need to filter smoke with such efficiency. The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</i></p>
+                                                            <img className="card-img-top" style={{"width": "220px", "marginLeft": "110px"}} alt="flower" src={honey} />
+                                                            <div className="card-body" style={{"textAlign": "center"}}>
+                                                                <h5 clasName="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Honeycomb</h5>
+                                                                <p className="card-text"><i>The round discs fit perfectly in the tube of the bong, and the small holes excel in diffusing the smoke. Most of all, they accomplish this without slowing down the smoking process.</i></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns2 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 2) }}>
-                                                            <img className="card-img-top" alt="natural down stem" src={tree2} />
-                                                            <div className="card-body">
-                                                                <h5 className="card-title">Tree Arm</h5>
+                                                            <img className="card-img-top" style={{"width": "185px", "marginLeft": "110px"}} alt="natural down stem" src={tree2} />
+                                                            <div className="card-body" style={{"textAlign": "center"}}>
+                                                                <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Tree Arm</h5>
                                                                 <p className="card-text"> <i> It comes in various forms but it's a concentrated verion of the plant where its been extracted into an oil or shatter.</i></p>
                                                             </div>
                                                         </div>
@@ -262,19 +265,19 @@ class Registration extends Component {
                                                             <div className="row">
                                                                 <div className="col-6">
                                                                     <div className="card" style={this.state.userAns2 == 3 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 3) }}>
-                                                                        <img className="card-img-top" alt="tornado" src={tornado} />
-                                                                        <div className="card-body">
-                                                                            <h5 clasName="card-title">Tornado</h5>
-                                                                            <p className="card-text"> <i>Turbine percolators excel in function while also delivering a unique aesthetic. The shape of the percolator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</i></p>
+                                                                        <img className="card-img-top" style={{"width": "285px", "marginLeft": "58px"}} alt="tornado" src={tornado} />
+                                                                        <div className="card-body" style={{"textAlign": "center"}}>
+                                                                            <h5 clasName="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Tornado</h5>
+                                                                            <p className="card-text" > <i>Functional, and beautiful. The shape of the percolator causes water to travel up the sides of the pipe, providing effective filtration in addition to incredible visuals.</i></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div className="col-6">
                                                                     <div className="card" style={this.state.userAns2 == 4 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 4) }}>
-                                                                        <img className="card-img-top" id="barrelImg" alt="slotted barrel" src={barrel} />
-                                                                        <div className="card-body">
-                                                                            <h5 className="card-title">Slotted Barrel</h5>
-                                                                            <p className="card-text"> <i>Slotted percolators are located in the center, with plenty of space around them, making for quite the aesthetic. Because the top holes do not have much resistance, the lower holes are not likely to bring enough smoke in.</i></p>
+                                                                        <img className="card-img-top" style={{"width": "245px", "marginLeft": "68px"}} id="barrelImg" alt="slotted barrel" src={barrel} />
+                                                                        <div className="card-body" style={{"textAlign": "center"}}>
+                                                                            <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Slotted Barrel</h5>
+                                                                            <p className="card-text"> <i>Slotted percolators are located in the center, with plenty of space around them, making for quite the aesthetic.</i></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
