@@ -26,14 +26,14 @@ paddingBottom: "100px",
 paddingTop: "20px",
 paddingBottom: "0px",
         }} >
-            <div className="bg-black  text-center h-100 project" />
+            <div className="bg-black  text-center h-100 project"/>
             <div className="d-flex h-100">
               <div className="project-text w-100 my-auto text-center text-lg-left">
                 <div className="card mb-4 box-shadow">
-                  <div className="card-header">
+                  <div className="card-header" id="tiers" >
                     <h2 className="my-0 font-weight-normal">Tier 1</h2>
                   </div>
-                  <div className="card-body">
+                  <div className="card-body" id="tiers">
                     <h1 className="card-title pricing-card-title">$30 <small className="text-muted">/ mo</small></h1>
                     <ul className="list-unstyled mt-3 mb-4" />
                     <li>Shipped to you in discrete packaging.</li>
