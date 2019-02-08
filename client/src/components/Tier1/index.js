@@ -38,7 +38,7 @@ paddingBottom: "0px",
                     <ul className="list-unstyled mt-3 mb-4" />
                     <li>Shipped to you in discrete packaging.</li>
                     <li>Collectible box</li>
-                    <li>One handpicked water pipe & a clollection of accesorries</li>
+                    <li>One handpicked water pipe & a collection of accessories</li>
                     <li>Raffle entry for giveaways.</li>
                     <li>A $60 value!</li> 
                     <br></br><br></br>

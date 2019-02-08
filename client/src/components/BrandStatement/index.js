@@ -16,13 +16,13 @@ const BrandStatement = () => {
             <br></br>
             <br></br>
 
-            Automatic Glass is the premiere monthly subscription box for the fine water pipe enthusiast.
-            We strive to deliver the most quality bang for your buck. Each box contains a varety of water pipes and accessories with quality and quantity increasing with each tier.
+            Automatic Glass is the premier monthly subscription box for the fine water pipe enthusiast.
+            We strive to deliver the most quality bang for your buck. Each box contains a variety of water pipes and accessories with quality and quantity increasing with each tier.
             <br></br>
             <br></br>
 
-            The service is comprised of 3 tiers of increasing quality and price. Each tier is curated according to your preferences, and allows us to build your perfect bong taste.
-            After signing up and filling out our survey, we personaly select you peice hand picked by one of our Autobong curiators.
+            The service is comprised of 3 tiers of increasing quality. Each tier is curated according to your preferences, allowing us to build to your tastes.
+            After signing up and filling out our survey, your pieces are hand-picked by one of our expert curiators.
     <br></br>
     <br></br>
     <br></br>

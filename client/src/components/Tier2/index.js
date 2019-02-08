@@ -54,7 +54,7 @@ paddingBottom: "0px",
                     <li>Shipped to you in discrete packaging.</li>
                     <li>or a single box $65</li>
                     <li>Collectible box</li>
-                    <li>One handpicked water pipe & a clollection of accesorries</li>
+                    <li>One handpicked water pipe & a collection of accessories</li>
                     <li> 2x Raffle entry for giveaways.</li>
                     <li> add a tier 1 combo for only $25</li>                   
                      <li>A $110 Value!</li> <br></br><br></br>                   
