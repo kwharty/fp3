@@ -22,7 +22,7 @@ const BrandStatement = () => {
             <br></br>
 
             The service is comprised of 3 tiers of increasing quality. Each tier is curated according to your preferences, allowing us to build to your tastes.
-            After signing up and filling out our survey, your pieces are hand-picked by one of our expert curiators.
+            After signing up and filling out our survey, your pieces are handpicked by one of our expert curiators.
     <br></br>
     <br></br>
     <br></br>

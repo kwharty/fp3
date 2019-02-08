@@ -48,11 +48,11 @@ function Header() {
 
         }}>
 
-          The best no hassle, bang for your buck, and professionaly hand picked bong.
+          The best no hassle, bang for your buck, professionally handpicked bong.
           <br></br>
           <br></br>
 
-          As well as the ultimate monthly subscription for glass collectors or the perfect gift.
+          this is THE ultimate monthly subscription for glass collectors and makes the perfect gift.
 <br></br>
 <br></br>
 
