@@ -41,7 +41,7 @@ paddingBottom: "0px",
                     <li>Top shelf water pipe and accesorries</li>
                     <li>add tier 1 + tier 2 combo for only $60</li>
                     <li>4x Raffle entry for giveaways.</li>
-                    <li>A $420 Value!</li>
+                    <li>A $420 Value!</li> <br></br><br></br>
 
 
                     <button type="button" className="btn btn-md btn-block btn-primary"><a href="checkout3">
