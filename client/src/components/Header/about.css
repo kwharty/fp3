@@ -77,12 +77,14 @@
   border: 1px solid rgb(32, 4, 4);
   -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
+  
 }
 
 .philBTN:hover {
   background-color: rgba(129, 182, 94, 0.623);
   color: white;
 }
+
 
 
 .newHeader1 {
