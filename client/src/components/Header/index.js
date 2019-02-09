@@ -83,7 +83,7 @@ take the next step in upping your glass game by...
           to="/login">
           <button type="button"
             className="btn btn-block btn-primary philBTN" style={{
-              fontFamily: 'Exo'
+              fontFamily: 'Exo',
             }}>
             <h4 className="" style={{
               fontSize: "30px",
@@ -98,3 +98,5 @@ take the next step in upping your glass game by...
 }
 
 export default Header;
+              
+              
