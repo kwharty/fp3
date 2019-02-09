@@ -9,10 +9,17 @@ import honey from "./honeycomb.jpg";
 import tree2 from "./tree2.jpg";
 import barrel from "./barrel.jpg";
 import tornado from "./tornado.jpg";
-import Tier1 from "../Tier1"
-import Tier2 from "../Tier2"
-import Tier3 from "../Tier3"
-import Navbar from "../Navbar"
+import Tier1 from "../Tier1";
+import Tier2 from "../Tier2";
+import Tier3 from "../Tier3";
+import Navbar from "../Navbar";
+import bowl1 from "./bowl1.jpg";
+import bowl2 from "./bowl2.jpg";
+import bowl3 from "./bowl3.jpg";
+import bowl4 from "./bowl4.jpg";
+import silicone from "./silicone.jpg";
+
+
 
 class Registration extends Component {
     // Setting the component's initial state
@@ -287,8 +294,68 @@ class Registration extends Component {
                                         <br></br>
                                         <br></br>
                                         <br></br>
+
+
                                          <h3>Just a few more questions...</h3>
+
+
+
                                             <br></br>
+
+
+                                            <div className="row form-group">
+                                            <div className="col-12">
+                                                <h3>Which joint size would you like?</h3>
+                                                <div className="row">
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns3 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns3", 1) }}>
+                                                            <img className="card-img-top" style={{"width": "220px", "marginLeft": "110px"}} alt="flower" src={bowl2} />
+                                                            <div className="card-body" style={{"textAlign": "center"}}>
+                                                                <h5 clasName="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>14mm Female</h5>
+                                                                <p className="card-text"><i>The smaller common universal join size with a indented joint.</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns3 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns3", 2) }}>
+                                                            <img className="card-img-top" style={{"width": "185px", "marginLeft": "110px"}} alt="natural down stem" src={bowl4} />
+                                                            <div className="card-body" style={{"textAlign": "center"}}>
+                                                                <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>14mm Male</h5>
+                                                                <p className="card-text"> <i>The smaller common universal join size with a outwards slant.</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                        </div>
+                                                    <div className="row form-group">
+                                                        <div className="col-12">
+                                                        <h3></h3>
+                                                            <div className="row">
+                                                                <div className="col-6">
+                                                                    <div className="card" style={this.state.userAns3 == 3 ? style.selected : style.border} onClick={() => { this.handleClick("userAns3", 3) }}>
+                                                                        <img className="card-img-top" style={{"width": "285px", "marginLeft": "58px"}} alt="tornado" src={bowl1} />
+                                                                        <div className="card-body" style={{"textAlign": "center"}}>
+                                                                            <h5 clasName="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>18mm Female</h5>
+                                                                            <p className="card-text" > <i>The larger uninversal common join size </i></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="col-6">
+                                                                    <div className="card" style={this.state.userAns3 == 4 ? style.selected : style.border} onClick={() => { this.handleClick("userAns3", 4) }}>
+                                                                        <img className="card-img-top" style={{"width": "245px", "marginLeft": "68px"}} id="barrelImg" alt="slotted barrel" src={bowl3} />
+                                                                        <div className="card-body" style={{"textAlign": "center"}}>
+                                                                            <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>18mm Male</h5>
+                                                                            <p className="card-text"> <i>The larger uninversal common join size</i></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+{/*                                             
                                         <div className="row" style={style.dev}>
                                             <div className="col-12">
                                                 <label className="label">
@@ -305,9 +372,42 @@ class Registration extends Component {
                                                     </select>
                                                 </label>
                                             </div>
-                                        </div>
+                                        </div> */}
+
+
                                         <br></br>
-                                        <div className="row form-group" style={style.dev}>
+                                        <br></br>
+                                        <br></br>
+
+
+                                        <div className="row form-group">
+                                            <div className="col-12">
+                                                <h3>What material would you like?</h3>
+                                                <div className="row">
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns4 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns4", 1) }}>
+                                                            <img className="card-img-top" style={{"width": "350px"}} alt="natural down stem" src={natural} />
+                                                            <div className="card-body" style={{"textAlign": "center"}}>    
+                                                                <h5 className="card-title" style={{ "fontSize": "25px","fontWeight": "bolder"}}>Glass</h5>
+                                                                <p className="card-text"><i> The classic choice and smoothe.</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns4 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns4", 2) }}>
+                                                            <img className="card-img-top" style={{"width": "350px", "height": "350px", "marginLeft": "40px"}} alt="downstem" src={silicone} />
+                                                            <div className="card-body" style={{"textAlign": "center"}}>
+                                                                <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Silicone</h5>
+                                                                <p className="card-text"><i>Medical grade and unbreakable</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        {/* <div className="row form-group" style={style.dev}>
                                             <div className="col-12">
                                                 <label className="label">
                                                     What material would you like?
@@ -321,7 +421,14 @@ class Registration extends Component {
                                                     </select>
                                                 </label>
                                             </div>
-                                        </div>
+                                        </div> */}
+
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+
+
+
                                         <div className="row form-group" style={style.dev}>
                                             <div className="col-12">
                                                 <label className="label">
