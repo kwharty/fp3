@@ -135,7 +135,7 @@ class Registration extends Component {
                     <div className="containerFluid">
                     <div className="row">
                     
-                        <div className="row" style={{"marginLeft": "16%", "marginBottom": "15px", "background": "rgba(192, 189, 214, 0.321)", "marginTop": "10px", "color": "white", "textAlign": "center", "width": "68%"}}>
+                        <div className="row" style={{"marginLeft": "16%", "marginBottom": "15px", "background": "rgba(192, 189, 214, 0.721)", "marginTop": "10px", "color": "white", "textAlign": "center", "width": "68%"}}>
                             <div className="col-12">
                             <h1>Please Enter New User Information</h1>
                             </div>
@@ -146,7 +146,7 @@ class Registration extends Component {
                                 <form className="form justify-content-center">
                                     <div className="form-group">
                                         <input className="form-Control"
-                                            style={{'width': "420px"}}
+                                            style={{'width': "420px", "fontWeight": "bold"}}
                                             value={this.state.userName}
                                             name="userName"
                                             onChange={this.handleInputChange}
@@ -156,7 +156,7 @@ class Registration extends Component {
                                     </div>
                                     <div className="form-group">
                                         <input
-                                            style={{'width': "420px"}}
+                                            style={{'width': "420px", "fontWeight": "bold"}}
                                             value={this.state.userEmail}
                                             name="userEmail"
                                             onChange={this.handleInputChange}
@@ -166,7 +166,7 @@ class Registration extends Component {
                                     </div>
                                     <div className="form-group">
                                         <input
-                                            style={{'width': "420px"}}
+                                            style={{'width': "420px", "fontWeight": "bold"}}
                                             value={this.state.userPwd}
                                             name="userPwd"
                                             onChange={this.handleInputChange}
@@ -216,7 +216,7 @@ class Registration extends Component {
                                                 <div className="row">
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns1 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns1", 1) }}>
-                                                            <img className="card-img-top" style={{"width": "350px"}} alt="natural down stem" src={natural} />
+                                                            <img className="card-img-top" style={{"width": "343px"}} alt="natural down stem" src={natural} />
                                                             <div className="card-body" style={{"textAlign": "center"}}>    
                                                                 <h5 className="card-title" style={{ "fontSize": "25px","fontWeight": "bolder"}}>Direct Inject</h5>
                                                                 <p className="card-text"><i> is a popular choice for less moving parts and functional, the direct inject downstem will come in a 90 degree angle</i></p>
@@ -225,7 +225,7 @@ class Registration extends Component {
                                                     </div>
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns1 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns1", 2) }}>
-                                                            <img className="card-img-top" style={{"width": "350px", "marginLeft": "40px"}} alt="downstem" src={downstem} />
+                                                            <img className="card-img-top" style={{"width": "340px", "marginLeft": "50px"}} alt="downstem" src={downstem} />
                                                             <div className="card-body" style={{"textAlign": "center"}}>
                                                                 <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Diffused Downstem</h5>
                                                                 <p className="card-text"><i>Normal Diffused are inserted into the bong and removeable for cleaning and are diffused for extra percalation </i></p>
@@ -259,7 +259,7 @@ class Registration extends Component {
                                                             <img className="card-img-top" style={{"width": "185px", "marginLeft": "110px"}} alt="natural down stem" src={tree2} />
                                                             <div className="card-body" style={{"textAlign": "center"}}>
                                                                 <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Tree Arm</h5>
-                                                                <p className="card-text"> <i> It comes in various forms but it's a concentrated verion of the plant where its been extracted into an oil or shatter.</i></p>
+                                                                <p className="card-text"> <i>The tree percolator provides ample cooling and percolation. Tree percs do a great job at diffusing smoke by utilizing multiple stems.</i></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -281,7 +281,7 @@ class Registration extends Component {
                                                                 </div>
                                                                 <div className="col-6">
                                                                     <div className="card" style={this.state.userAns2 == 4 ? style.selected : style.border} onClick={() => { this.handleClick("userAns2", 4) }}>
-                                                                        <img className="card-img-top" style={{"width": "245px", "marginLeft": "68px"}} id="barrelImg" alt="slotted barrel" src={barrel} />
+                                                                        <img className="card-img-top" style={{"width": "245px", "marginLeft": "78px"}} id="barrelImg" alt="slotted barrel" src={barrel} />
                                                                         <div className="card-body" style={{"textAlign": "center"}}>
                                                                             <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Slotted Barrel</h5>
                                                                             <p className="card-text"> <i>Slotted percolators are located in the center, with plenty of space around them, making for quite the aesthetic.</i></p>
@@ -309,19 +309,19 @@ class Registration extends Component {
                                                 <div className="row">
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns3 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns3", 1) }}>
-                                                            <img className="card-img-top" style={{"width": "220px", "marginLeft": "110px"}} alt="flower" src={bowl2} />
+                                                            <img className="card-img-top" style={{"width": "285px", "marginLeft": "55px"}} alt="flower" src={bowl2} />
                                                             <div className="card-body" style={{"textAlign": "center"}}>
                                                                 <h5 clasName="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>14mm Female</h5>
-                                                                <p className="card-text"><i>The smaller common universal join size with a indented joint.</i></p>
+                                                                <p className="card-text"><i>The smaller common universal joint size with a indented joint.</i></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns3 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns3", 2) }}>
-                                                            <img className="card-img-top" style={{"width": "185px", "marginLeft": "110px"}} alt="natural down stem" src={bowl4} />
+                                                            <img className="card-img-top" style={{"width": "289px", "marginLeft": "55px"}} alt="natural down stem" src={bowl4} />
                                                             <div className="card-body" style={{"textAlign": "center"}}>
                                                                 <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>14mm Male</h5>
-                                                                <p className="card-text"> <i>The smaller common universal join size with a outwards slant.</i></p>
+                                                                <p className="card-text"> <i>The smaller common universal joint size with a outwards slant.</i></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -334,19 +334,19 @@ class Registration extends Component {
                                                             <div className="row">
                                                                 <div className="col-6">
                                                                     <div className="card" style={this.state.userAns3 == 3 ? style.selected : style.border} onClick={() => { this.handleClick("userAns3", 3) }}>
-                                                                        <img className="card-img-top" style={{"width": "285px", "marginLeft": "58px"}} alt="tornado" src={bowl1} />
+                                                                        <img className="card-img-top" style={{"width": "285px", "marginLeft": "53px"}} alt="tornado" src={bowl1} />
                                                                         <div className="card-body" style={{"textAlign": "center"}}>
-                                                                            <h5 clasName="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>18mm Female</h5>
-                                                                            <p className="card-text" > <i>The larger uninversal common join size </i></p>
+                                                                            <h5 clasName="card-title" style={{"fontSize": "25px", "fontWeight": "bolder", "paddingTop": "10px"}}>18mm Female</h5>
+                                                                            <p className="card-text" > <i>The larger uninversal common joint size </i></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div className="col-6">
                                                                     <div className="card" style={this.state.userAns3 == 4 ? style.selected : style.border} onClick={() => { this.handleClick("userAns3", 4) }}>
-                                                                        <img className="card-img-top" style={{"width": "245px", "marginLeft": "68px"}} id="barrelImg" alt="slotted barrel" src={bowl3} />
+                                                                        <img className="card-img-top" style={{"width": "235px", "marginLeft": "83px"}} id="barrelImg" alt="slotted barrel" src={bowl3} />
                                                                         <div className="card-body" style={{"textAlign": "center"}}>
                                                                             <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>18mm Male</h5>
-                                                                            <p className="card-text"> <i>The larger uninversal common join size</i></p>
+                                                                            <p className="card-text"> <i>The larger uninversal common joint size</i></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -386,16 +386,16 @@ class Registration extends Component {
                                                 <div className="row">
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns4 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns4", 1) }}>
-                                                            <img className="card-img-top" style={{"width": "350px"}} alt="natural down stem" src={natural} />
+                                                            <img className="card-img-top" style={{"width": "350px", "paddingTop": "15px", "paddingBottom": "15px"}} alt="natural down stem" src={natural} />
                                                             <div className="card-body" style={{"textAlign": "center"}}>    
                                                                 <h5 className="card-title" style={{ "fontSize": "25px","fontWeight": "bolder"}}>Glass</h5>
-                                                                <p className="card-text"><i> The classic choice and smoothe.</i></p>
+                                                                <p className="card-text"><i> The classic choice and smooth.</i></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-6">
                                                         <div className="card" style={this.state.userAns4 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns4", 2) }}>
-                                                            <img className="card-img-top" style={{"width": "350px", "height": "350px", "marginLeft": "40px"}} alt="downstem" src={silicone} />
+                                                            <img className="card-img-top" style={{"width": "270px", "marginLeft": "60px", "paddingTop": "10px"}} alt="downstem" src={silicone} />
                                                             <div className="card-body" style={{"textAlign": "center"}}>
                                                                 <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Silicone</h5>
                                                                 <p className="card-text"><i>Medical grade and unbreakable</i></p>
