@@ -17,6 +17,7 @@ import bowl1 from "./bowl1.jpg";
 import bowl2 from "./bowl2.jpg";
 import bowl3 from "./bowl3.jpg";
 import bowl4 from "./bowl4.jpg";
+import silicone from "./silicone.jpg";
 
 
 
@@ -375,12 +376,38 @@ class Registration extends Component {
 
 
                                         <br></br>
+                                        <br></br>
+                                        <br></br>
 
 
+                                        <div className="row form-group">
+                                            <div className="col-12">
+                                                <h3>What material would you like?</h3>
+                                                <div className="row">
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns4 == 1 ? style.selected : style.border} onClick={() => { this.handleClick("userAns4", 1) }}>
+                                                            <img className="card-img-top" style={{"width": "350px"}} alt="natural down stem" src={natural} />
+                                                            <div className="card-body" style={{"textAlign": "center"}}>    
+                                                                <h5 className="card-title" style={{ "fontSize": "25px","fontWeight": "bolder"}}>Glass</h5>
+                                                                <p className="card-text"><i> The classic choice and smoothe.</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-6">
+                                                        <div className="card" style={this.state.userAns4 == 2 ? style.selected : style.border} onClick={() => { this.handleClick("userAns4", 2) }}>
+                                                            <img className="card-img-top" style={{"width": "350px", "height": "350px", "marginLeft": "40px"}} alt="downstem" src={silicone} />
+                                                            <div className="card-body" style={{"textAlign": "center"}}>
+                                                                <h5 className="card-title" style={{"fontSize": "25px", "fontWeight": "bolder"}}>Silicone</h5>
+                                                                <p className="card-text"><i>Medical grade and unbreakable</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
-
-                                        <div className="row form-group" style={style.dev}>
+                                        {/* <div className="row form-group" style={style.dev}>
                                             <div className="col-12">
                                                 <label className="label">
                                                     What material would you like?
@@ -394,7 +421,14 @@ class Registration extends Component {
                                                     </select>
                                                 </label>
                                             </div>
-                                        </div>
+                                        </div> */}
+
+                                        <br></br>
+                                        <br></br>
+                                        <br></br>
+
+
+
                                         <div className="row form-group" style={style.dev}>
                                             <div className="col-12">
                                                 <label className="label">
